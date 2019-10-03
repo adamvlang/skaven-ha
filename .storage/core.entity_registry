@@ -1,0 +1,143 @@
+{
+    "data": {
+        "entities": [
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.updater",
+                "name": null,
+                "platform": "updater",
+                "unique_id": "updater"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "person.adam",
+                "name": null,
+                "platform": "person",
+                "unique_id": "7bd4385ffe554c96aa40dec61638b596"
+            },
+            {
+                "config_entry_id": "551072e212cc47a99332e38f7cbf5dd8",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "weather.skaven",
+                "name": null,
+                "platform": "met",
+                "unique_id": "home"
+            },
+            {
+                "config_entry_id": "91e9022209284274b556ed7642415b52",
+                "device_id": "890bd440e9bf4b3f871bcc20e059ad70",
+                "disabled_by": null,
+                "entity_id": "device_tracker.adam_s_oneplus_a6003",
+                "name": null,
+                "platform": "mobile_app",
+                "unique_id": "3acf96009c3a482998c619fc5e04a7bc"
+            },
+            {
+                "config_entry_id": "760e39f05d184d4db3bd9db6c0b7560b",
+                "device_id": "da28d5524140437f9ffb3cc82f946077",
+                "disabled_by": null,
+                "entity_id": "device_tracker.oneplus_6",
+                "name": null,
+                "platform": "mobile_app",
+                "unique_id": "a0133cf40f8242298b488877d599127c"
+            },
+            {
+                "config_entry_id": "482999ac18064a8795941d276254bd20",
+                "device_id": "a851cdc8ad394d7d8d37e4b590900935",
+                "disabled_by": null,
+                "entity_id": "media_player.storarum",
+                "name": null,
+                "platform": "sonos",
+                "unique_id": "RINCON_7828CA2579F401400"
+            },
+            {
+                "config_entry_id": "febe0a7ce56845a8b76812fefbcc04be",
+                "device_id": "ea50d29e76b2432a9ce423ed1e2065a4",
+                "disabled_by": null,
+                "entity_id": "sensor.hue_motion_sensor_1_temperature",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:06:f5:2d:b2-02-0402"
+            },
+            {
+                "config_entry_id": "febe0a7ce56845a8b76812fefbcc04be",
+                "device_id": "ea50d29e76b2432a9ce423ed1e2065a4",
+                "disabled_by": null,
+                "entity_id": "sensor.hue_motion_sensor_1_light_level",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:06:f5:2d:b2-02-0400"
+            },
+            {
+                "config_entry_id": "febe0a7ce56845a8b76812fefbcc04be",
+                "device_id": "ea50d29e76b2432a9ce423ed1e2065a4",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.hue_motion_sensor_1_motion",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:06:f5:2d:b2-02-0406"
+            },
+            {
+                "config_entry_id": "febe0a7ce56845a8b76812fefbcc04be",
+                "device_id": "dadbe6e8165544d3880b03efc3a20cd9",
+                "disabled_by": null,
+                "entity_id": "light.matsal_1",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:03:79:8a:f0-0b"
+            },
+            {
+                "config_entry_id": "febe0a7ce56845a8b76812fefbcc04be",
+                "device_id": "ec111c649d934c41892648fa6b6475a7",
+                "disabled_by": null,
+                "entity_id": "light.kok",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:04:d3:4f:98-0b"
+            },
+            {
+                "config_entry_id": "febe0a7ce56845a8b76812fefbcc04be",
+                "device_id": "c60fba02bed54084a6d35f45e28cfa27",
+                "disabled_by": null,
+                "entity_id": "light.vardagsrum",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:03:12:cd:11-0b"
+            },
+            {
+                "config_entry_id": "febe0a7ce56845a8b76812fefbcc04be",
+                "device_id": "7467f57552414855ac6df8e5c52ec06c",
+                "disabled_by": null,
+                "entity_id": "light.hall",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:04:d3:35:b0-0b"
+            },
+            {
+                "config_entry_id": "febe0a7ce56845a8b76812fefbcc04be",
+                "device_id": "04335869bdc54407b3603dd832308c9d",
+                "disabled_by": null,
+                "entity_id": "light.matsal_2",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:03:11:b2:9a-0b"
+            },
+            {
+                "config_entry_id": "febe0a7ce56845a8b76812fefbcc04be",
+                "device_id": "d740b12c930f476395e460847352fd21",
+                "disabled_by": null,
+                "entity_id": "light.piano",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:03:7e:1f:e2-0b"
+            }
+        ]
+    },
+    "key": "core.entity_registry",
+    "version": 1
+}

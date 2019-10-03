@@ -1,0 +1,20 @@
+{
+    "data": {
+        "areas": [
+            {
+                "id": "224f64ab60904f398e5eda9be945019b",
+                "name": "Vardagsrum"
+            },
+            {
+                "id": "fae2eacff5ae41d7861483609dde0253",
+                "name": "K\u00f6k"
+            },
+            {
+                "id": "62092ab4e9fa43e39ea4bab2cd14e2d5",
+                "name": "Sovrum"
+            }
+        ]
+    },
+    "key": "core.area_registry",
+    "version": 1
+}

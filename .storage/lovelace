@@ -1,0 +1,53 @@
+{
+    "data": {
+        "config": {
+            "title": "Skaven",
+            "views": [
+                {
+                    "badges": [
+                        "binary_sensor.updater",
+                        "binary_sensor.hue_motion_sensor_1_motion",
+                        "person.adam",
+                        "sensor.hue_motion_sensor_1_temperature",
+                        "sensor.hue_motion_sensor_1_light_level",
+                        "sun.sun"
+                    ],
+                    "cards": [
+                        {
+                            "entity": "media_player.storarum",
+                            "type": "media-control"
+                        },
+                        {
+                            "entities": [
+                                "group.livingroom_lights",
+                                "light.matsal_2",
+                                "light.matsal_1",
+                                "light.hall",
+                                "light.kok",
+                                "light.vardagsrum",
+                                "light.piano",
+                                "light.vardagsrum_2",
+                                "light.nedervaningen",
+                                "light.vardagsrum_3",
+                                "light.hall_2",
+                                "light.matsal",
+                                "light.kok_2",
+                                "light.matsal_3"
+                            ],
+                            "title": "Lampor",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "weather.skaven",
+                            "type": "weather-forecast"
+                        }
+                    ],
+                    "path": "default_view",
+                    "title": "Home"
+                }
+            ]
+        }
+    },
+    "key": "lovelace",
+    "version": 1
+}

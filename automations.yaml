@@ -1,0 +1,32 @@
+- alias: morgonrutin
+  trigger: 
+    - platform: sensor
+      entity_id: sensor_binary.hue_motion_sensor_1
+      to: 'on'
+  condition:
+    - condition: state
+      entity_id: sun.sun
+      state: 'below_horizon'
+  action:
+    service: light.turn_on
+    entity_id:
+      - light.hall
+      - light.kok
+- alias: darkness
+  trigger:
+    platform: state
+    entity_id: sun.sun
+    state: "sunset"
+  action:
+    - service: homeassistant.turn_on
+      data:
+        entity_id: group.livingroom
+        brightness: 130
+- alias: light
+  trigger:
+    platform: state
+    entity_id: sun.sun
+    state: "sunrise"
+  action:
+  - service: light.turn_off
+    entity_id: light.all

@@ -1,0 +1,16 @@
+secrets: /config/secrets.yaml
+log:
+  logfile: STDOUT
+  errorfile: STDERR
+appdaemon:
+  threads: 10
+  app_dir: /config/appdaemon/apps
+  plugins:
+    HASS:
+      type: hass
+      ha_url: http://hassio/homeassistant
+      token: 53825baaece748ca45168604827a62e63c8e5aacb99880c149b1032c3308123aa80243770de2c4a5654f68348df9144add18a03767ed7e9b
+hadashboard:
+  dash_url: http://127.0.0.1:5050
+  dash_dir: /config/appdaemon/dashboards
+  dash_password: Gummianka

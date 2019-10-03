@@ -1,0 +1,281 @@
+{
+    "data": {
+        "devices": [
+            {
+                "area_id": null,
+                "config_entries": [
+                    "91e9022209284274b556ed7642415b52"
+                ],
+                "connections": [],
+                "id": "69c55c8be30d471dbe772de8ad8e27dc",
+                "identifiers": [
+                    [
+                        "device_id",
+                        "3acf96009c3a482998c619fc5e04a7bc"
+                    ],
+                    [
+                        "webhook_id",
+                        "69c90f1b65ab14577757c58798c4058eba1b70ba6fb869a6139350e879ba2ec6"
+                    ]
+                ],
+                "manufacturer": "OnePlus",
+                "model": "ONEPLUS A6003",
+                "name": "Adam's ONEPLUS A6003",
+                "name_by_user": null,
+                "sw_version": "9",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "91e9022209284274b556ed7642415b52"
+                ],
+                "connections": [],
+                "id": "890bd440e9bf4b3f871bcc20e059ad70",
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "3acf96009c3a482998c619fc5e04a7bc"
+                    ]
+                ],
+                "manufacturer": "OnePlus",
+                "model": "ONEPLUS A6003",
+                "name": null,
+                "name_by_user": null,
+                "sw_version": "9",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "760e39f05d184d4db3bd9db6c0b7560b"
+                ],
+                "connections": [],
+                "id": "14c68e79f3244d1eb7e7756dee79f6d4",
+                "identifiers": [
+                    [
+                        "webhook_id",
+                        "21fec08cc6b36188d803a88c5700e54dddd82504a918a504f96532a96dcf75e8"
+                    ],
+                    [
+                        "device_id",
+                        "a0133cf40f8242298b488877d599127c"
+                    ]
+                ],
+                "manufacturer": "OnePlus",
+                "model": "OnePlus6",
+                "name": "OnePlus_6",
+                "name_by_user": null,
+                "sw_version": "9",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "760e39f05d184d4db3bd9db6c0b7560b"
+                ],
+                "connections": [],
+                "id": "da28d5524140437f9ffb3cc82f946077",
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "a0133cf40f8242298b488877d599127c"
+                    ]
+                ],
+                "manufacturer": "OnePlus",
+                "model": "OnePlus6",
+                "name": null,
+                "name_by_user": null,
+                "sw_version": "9",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "482999ac18064a8795941d276254bd20"
+                ],
+                "connections": [],
+                "id": "a851cdc8ad394d7d8d37e4b590900935",
+                "identifiers": [
+                    [
+                        "sonos",
+                        "RINCON_7828CA2579F401400"
+                    ]
+                ],
+                "manufacturer": "Sonos",
+                "model": "Play:1",
+                "name": "Storarum",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "febe0a7ce56845a8b76812fefbcc04be"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:17:88:a1:45:b9"
+                    ]
+                ],
+                "id": "b8722d6e461240c9862cdf12681f167b",
+                "identifiers": [
+                    [
+                        "hue",
+                        "001788FFFEA145B9"
+                    ]
+                ],
+                "manufacturer": "Signify",
+                "model": "BSB002",
+                "name": "Philips hue",
+                "name_by_user": null,
+                "sw_version": "1934129020",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "febe0a7ce56845a8b76812fefbcc04be"
+                ],
+                "connections": [],
+                "id": "ea50d29e76b2432a9ce423ed1e2065a4",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:06:f5:2d:b2"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue motion sensor",
+                "name": "Hue motion sensor 1",
+                "name_by_user": null,
+                "sw_version": "6.1.1.27575",
+                "via_device_id": "b8722d6e461240c9862cdf12681f167b"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "febe0a7ce56845a8b76812fefbcc04be"
+                ],
+                "connections": [],
+                "id": "dadbe6e8165544d3880b03efc3a20cd9",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:03:79:8a:f0-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue ambiance lamp",
+                "name": "matsal 1",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "b8722d6e461240c9862cdf12681f167b"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "febe0a7ce56845a8b76812fefbcc04be"
+                ],
+                "connections": [],
+                "id": "ec111c649d934c41892648fa6b6475a7",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:04:d3:4f:98-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue ambiance lamp",
+                "name": "K\u00f6k",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "b8722d6e461240c9862cdf12681f167b"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "febe0a7ce56845a8b76812fefbcc04be"
+                ],
+                "connections": [],
+                "id": "c60fba02bed54084a6d35f45e28cfa27",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:03:12:cd:11-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue ambiance lamp",
+                "name": "vardagsrum",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "b8722d6e461240c9862cdf12681f167b"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "febe0a7ce56845a8b76812fefbcc04be"
+                ],
+                "connections": [],
+                "id": "7467f57552414855ac6df8e5c52ec06c",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:04:d3:35:b0-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue ambiance lamp",
+                "name": "Hall",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "b8722d6e461240c9862cdf12681f167b"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "febe0a7ce56845a8b76812fefbcc04be"
+                ],
+                "connections": [],
+                "id": "04335869bdc54407b3603dd832308c9d",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:03:11:b2:9a-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue ambiance lamp",
+                "name": "matsal 2",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "b8722d6e461240c9862cdf12681f167b"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "febe0a7ce56845a8b76812fefbcc04be"
+                ],
+                "connections": [],
+                "id": "d740b12c930f476395e460847352fd21",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:03:7e:1f:e2-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue ambiance candle",
+                "name": "Piano",
+                "name_by_user": null,
+                "sw_version": "1.46.13_r26312",
+                "via_device_id": "b8722d6e461240c9862cdf12681f167b"
+            }
+        ]
+    },
+    "key": "core.device_registry",
+    "version": 1
+}

@@ -1,0 +1,81 @@
+{
+    "data": [
+        {
+            "last_seen": "2019-10-03T20:07:34.007618+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Adam's ONEPLUS A6003",
+                    "source_type": "gps"
+                },
+                "context": {
+                    "id": "15754594b3f64f2db682891f7cb5f75b",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.adam_s_oneplus_a6003",
+                "last_changed": "2019-10-02T20:21:06.757480+00:00",
+                "last_updated": "2019-10-02T20:21:06.757480+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2019-10-03T20:07:34.007618+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "OnePlus_6",
+                    "source_type": "gps"
+                },
+                "context": {
+                    "id": "d2fd50208c0e421999967b7937ebb77b",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.oneplus_6",
+                "last_changed": "2019-10-02T20:21:06.758527+00:00",
+                "last_updated": "2019-10-02T20:21:06.758527+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2019-10-03T19:17:42.374769+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Motion in the morning",
+                    "id": "morgon_motion_detection",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "c9a1b808988548a8a6f75544d83eee45",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.motion_in_the_morning",
+                "last_changed": "2019-10-02T20:21:06.507701+00:00",
+                "last_updated": "2019-10-02T20:21:06.507701+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-10-01T21:12:40.465372+00:00",
+            "state": {
+                "attributes": {
+                    "editable": true,
+                    "friendly_name": "Adam",
+                    "id": "7bd4385ffe554c96aa40dec61638b596",
+                    "user_id": "0c08d605bf7842d78f15caf863e8c372"
+                },
+                "context": {
+                    "id": "c1f6f8ac61d749b188cd1c3d513270c6",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "person.adam",
+                "last_changed": "2019-10-01T20:03:00.655282+00:00",
+                "last_updated": "2019-10-01T20:03:04.947568+00:00",
+                "state": "unknown"
+            }
+        }
+    ],
+    "key": "core.restore_state",
+    "version": 1
+}

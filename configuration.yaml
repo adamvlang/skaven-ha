@@ -1,0 +1,45 @@
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+#http:
+#  base_url: skaven133.duckdns.org
+#  ssl_certificate: /ssl/fullchain.pem
+#  ssl_key: /ssl/privkey.pem
+
+frontend:
+
+hassio:
+
+config:
+
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+
+homeassistant:
+  latitude: 12.157473
+  longitude: 58.033171
+  elevation: 30
+  unit_system: metric
+  time_zone: Europe/Stockholm
+
+# Set up devices
+hue:
+  bridges:
+    - host: 192.168.1.147
+      allow_hue_groups: false
+      allow_unreachable: true
+
+sonos:
+  media_player:
+    hosts: 192.168.1.179
+    
+group:
+  livingroom:
+    name: Livingroom lights
+    entities:
+      - light.vardagsrum
+      - light.piano
+  diningroom:
+    name: Diningroom lights
+    entities:
+      - light.matsal_1
+      - light.matsal_2

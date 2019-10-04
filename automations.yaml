@@ -4,9 +4,13 @@
     entity_id: sensor_binary.hue_motion_sensor_1_motion
     to: 'on'
   condition:
-    - condition: state
-      entity_id: sun.sun
-      state: 'below_horizon'
+    condition: and
+    conditions:
+      - condition: sun
+        before: sunrise
+      - condition: time
+        before: '07:30:00'
+        after: '05:30:00'
   action:
     service: light.turn_on
     entity_id:
@@ -21,7 +25,7 @@
   action:
     - service: homeassistant.turn_on
       data:
-        entity_id: group.livingroom
+        entity_id: group.nightlights
         brightness: 130
 - alias: light
   trigger:
@@ -29,5 +33,5 @@
     entity_id: sun.sun
     to: "sunrise"
   action:
-  - service: light.turn_off
-    entity_id: light.all
+    - service: light.turn_off
+      entity_id: light.all

@@ -43,3 +43,22 @@ group:
     entities:
       - light.matsal_1
       - light.matsal_2
+  nightlights:
+    name: Night lights
+    entities:
+      - light.piano
+
+input_boolean:
+  adam_home:
+    name: Adam is home
+    initial: off
+    icon: "if (state === 'on') return mdi:account-check; else return mdi:account-remove;"
+  hanna_home:
+    name: Hanna is home
+    initial: off
+    icon: "if (state === 'on') return mdi:account-check; else return mdi:account-remove;"
+  night_time:
+    name: Awake or asleep.
+    initial: off
+    icon: "if (state === 'on') return mdi:sleep; else return mdi:white-balance-sunny;"
+

@@ -16,7 +16,6 @@
     entity_id:
       - light.hall
       - light.kok
-
 - alias: darkness
   trigger:
     platform: state
@@ -35,3 +34,14 @@
   action:
     - service: light.turn_off
       entity_id: light.all
+- alias: nighty_night
+  trigger:
+    platform: state
+    entity_id: input_boolean.night_time
+    to: "on"
+  action:
+    - service: homeassistant.turn_off
+      entity_id: group.good_night_group_off
+    - service: homeassistant.turn_on
+      entry_id: light.piano
+  

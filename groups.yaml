@@ -1,1 +1,31 @@
+livingroom:
+  name: Livingroom lights
+  entities:
+    - light.vardagsrum
+    - light.piano
+diningroom:
+  name: Diningroom lights
+  entities:
+    - light.matsal_1
+    - light.matsal_2
+nightlights:
+  name: Night lights
+  entities:
+    - light.piano
+is_home:
+  name: Someone is home
+  entities:
+    - input_boolean.adam_home
+    - input_boolean.hanna_home
+ground_floor:
+  name: Ground floor
+  entities:
+    - group.livingroom
+    - group.diningroom
+    - light.hall
+    - light.kok
+good_night_group_off:
+  name: Good night lights off
+  entities:
+    - group.ground_floor
 

@@ -13,10 +13,11 @@ config:
 
 automation: !include automations.yaml
 script: !include scripts.yaml
+group: !include groups.yaml
 
 homeassistant:
-  latitude: 12.157473
-  longitude: 58.033171
+  latitude: !secret latitude
+  longitude: !secret longitude
   elevation: 30
   unit_system: metric
   time_zone: Europe/Stockholm
@@ -32,21 +33,6 @@ sonos:
   media_player:
     hosts: 192.168.1.179
     
-group:
-  livingroom:
-    name: Livingroom lights
-    entities:
-      - light.vardagsrum
-      - light.piano
-  diningroom:
-    name: Diningroom lights
-    entities:
-      - light.matsal_1
-      - light.matsal_2
-  nightlights:
-    name: Night lights
-    entities:
-      - light.piano
 
 input_boolean:
   adam_home:

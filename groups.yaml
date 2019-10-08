@@ -3,15 +3,22 @@ livingroom:
   entities:
     - light.vardagsrum
     - light.piano
+    - light.piano_2
 diningroom:
   name: Diningroom lights
   entities:
     - light.matsal_1
     - light.matsal_2
+bedroom:
+  name: Bedroom lights
+  entities:
+    - light.sovrum.tak
+    - light.nattduk_adam
+    - light.driver_halet
 nightlights:
   name: Night lights
   entities:
-    - light.piano
+    - light.piano_2
 is_home:
   name: Someone is home
   entities:
@@ -24,8 +31,19 @@ ground_floor:
     - group.diningroom
     - light.hall
     - light.kok
+    - light.lill_hall
+top_floor:
+  name: Top floor
+  entities:
+    - group.bedroom
 good_night_group_off:
   name: Good night lights off
   entities:
     - group.ground_floor
+    - group.top_floor
+good_noght_group_on:
+  name: Night lights on
+  entities:
+    - light.piano_2
+    - light.nattduk_adam
 

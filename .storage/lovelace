@@ -28,6 +28,15 @@
                                     "entity": "group.diningroom"
                                 },
                                 {
+                                    "entity": "group.sovrum"
+                                },
+                                {
+                                    "entity": "group.ground_floor"
+                                },
+                                {
+                                    "entity": "group.top_floor"
+                                },
+                                {
                                     "entity": "light.matsal_2"
                                 },
                                 {

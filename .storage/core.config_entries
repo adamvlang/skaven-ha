@@ -105,6 +105,25 @@
                 },
                 "title": "Philips hue",
                 "version": 1
+            },
+            {
+                "connection_class": "unknown",
+                "data": {
+                    "gateway_id": "7e36515204400075",
+                    "host": "192.168.1.229",
+                    "identity": "fa7fccd08f5f4f509e0912eb7eab06ac",
+                    "import_groups": false,
+                    "key": "1BtyzLQPv7gEuAsh"
+                },
+                "domain": "tradfri",
+                "entry_id": "435182716f7648dba7c227daf29d7734",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "192.168.1.229",
+                "version": 1
             }
         ]
     },

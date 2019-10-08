@@ -16,6 +16,7 @@
     entity_id:
       - light.hall
       - light.kok
+        
 - alias: darkness
   trigger:
     platform: state
@@ -26,6 +27,7 @@
       data:
         entity_id: group.nightlights
         brightness: 130
+
 - alias: light
   trigger:
     platform: state
@@ -34,6 +36,7 @@
   action:
     - service: homeassistant.turn_off
       entity_id: light.all
+
 - alias: nighty_night
   trigger:
     platform: state
@@ -43,5 +46,25 @@
     - service: homeassistant.turn_off
       entity_id: group.good_night_group_off
     - service: homeassistant.turn_on
-      entity_id: light.piano
+      entity_id: group.good_night_group_on
+- alias: good_morning
+  trigger: 
+    platform: time
+    at: "06:10:00"
+  condition:
+    - condition: time
+      weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+  action:
+    - service: homeassistant.turn_on  
+      entity_id: 
+        - light.adam_nattduk
+        - light.sovrum_tak
+      data:
+        transition: 600
+        brightness: 255
   

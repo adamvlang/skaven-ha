@@ -135,6 +135,51 @@
                 "name": null,
                 "platform": "hue",
                 "unique_id": "00:17:88:01:03:7e:1f:e2-0b"
+            },
+            {
+                "config_entry_id": "435182716f7648dba7c227daf29d7734",
+                "device_id": "a8bbd5f3457a44c3b4a0eacb0b02d0f1",
+                "disabled_by": null,
+                "entity_id": "light.lill_hall",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65538"
+            },
+            {
+                "config_entry_id": "435182716f7648dba7c227daf29d7734",
+                "device_id": "c2c71ec664f840e781bf1fcec75c10d2",
+                "disabled_by": null,
+                "entity_id": "light.piano_2",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65537"
+            },
+            {
+                "config_entry_id": "435182716f7648dba7c227daf29d7734",
+                "device_id": "4df402b1cad0461fa48cf4877d149191",
+                "disabled_by": null,
+                "entity_id": "light.nattduk_adam",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65541"
+            },
+            {
+                "config_entry_id": "435182716f7648dba7c227daf29d7734",
+                "device_id": "2c49ff53139c4a4fbbc95dcb0445722e",
+                "disabled_by": null,
+                "entity_id": "light.driver_halet",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65540"
+            },
+            {
+                "config_entry_id": "435182716f7648dba7c227daf29d7734",
+                "device_id": "52e248045dad40358f4a4c0a8f33636f",
+                "disabled_by": null,
+                "entity_id": "light.sovrum_tak",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65542"
             }
         ]
     },

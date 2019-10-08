@@ -54,12 +54,12 @@
                 "id": "14c68e79f3244d1eb7e7756dee79f6d4",
                 "identifiers": [
                     [
-                        "webhook_id",
-                        "21fec08cc6b36188d803a88c5700e54dddd82504a918a504f96532a96dcf75e8"
-                    ],
-                    [
                         "device_id",
                         "a0133cf40f8242298b488877d599127c"
+                    ],
+                    [
+                        "webhook_id",
+                        "21fec08cc6b36188d803a88c5700e54dddd82504a918a504f96532a96dcf75e8"
                     ]
                 ],
                 "manufacturer": "OnePlus",
@@ -273,6 +273,126 @@
                 "name_by_user": null,
                 "sw_version": "1.46.13_r26312",
                 "via_device_id": "b8722d6e461240c9862cdf12681f167b"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "435182716f7648dba7c227daf29d7734"
+                ],
+                "connections": [],
+                "id": "ec71a04b2aa6467990385e24540f23bc",
+                "identifiers": [
+                    [
+                        "tradfri",
+                        "7e36515204400075"
+                    ]
+                ],
+                "manufacturer": "IKEA",
+                "model": "E1526",
+                "name": "Gateway",
+                "name_by_user": null,
+                "sw_version": "1.9.27",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "435182716f7648dba7c227daf29d7734"
+                ],
+                "connections": [],
+                "id": "a8bbd5f3457a44c3b4a0eacb0b02d0f1",
+                "identifiers": [
+                    [
+                        "tradfri",
+                        65538
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E27 WS opal 1000lm",
+                "name": "lill_hall",
+                "name_by_user": null,
+                "sw_version": "2.0.022",
+                "via_device_id": "ec71a04b2aa6467990385e24540f23bc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "435182716f7648dba7c227daf29d7734"
+                ],
+                "connections": [],
+                "id": "c2c71ec664f840e781bf1fcec75c10d2",
+                "identifiers": [
+                    [
+                        "tradfri",
+                        65537
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E27 WS opal 1000lm",
+                "name": "piano",
+                "name_by_user": null,
+                "sw_version": "2.0.022",
+                "via_device_id": "ec71a04b2aa6467990385e24540f23bc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "435182716f7648dba7c227daf29d7734"
+                ],
+                "connections": [],
+                "id": "4df402b1cad0461fa48cf4877d149191",
+                "identifiers": [
+                    [
+                        "tradfri",
+                        65541
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E27 WW clear 250lm",
+                "name": "nattduk_adam",
+                "name_by_user": null,
+                "sw_version": "2.1.022",
+                "via_device_id": "ec71a04b2aa6467990385e24540f23bc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "435182716f7648dba7c227daf29d7734"
+                ],
+                "connections": [],
+                "id": "2c49ff53139c4a4fbbc95dcb0445722e",
+                "identifiers": [
+                    [
+                        "tradfri",
+                        65540
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI transformer 10W",
+                "name": "driver_halet",
+                "name_by_user": null,
+                "sw_version": "1.2.245",
+                "via_device_id": "ec71a04b2aa6467990385e24540f23bc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "435182716f7648dba7c227daf29d7734"
+                ],
+                "connections": [],
+                "id": "52e248045dad40358f4a4c0a8f33636f",
+                "identifiers": [
+                    [
+                        "tradfri",
+                        65542
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E27 WS opal 1000lm",
+                "name": "sovrum_tak",
+                "name_by_user": null,
+                "sw_version": "2.0.022",
+                "via_device_id": "ec71a04b2aa6467990385e24540f23bc"
             }
         ]
     },

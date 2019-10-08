@@ -32,7 +32,7 @@
     entity_id: sun.sun
     to: "sunrise"
   action:
-    - service: light.turn_off
+    - service: homeassistant.turn_off
       entity_id: light.all
 - alias: nighty_night
   trigger:

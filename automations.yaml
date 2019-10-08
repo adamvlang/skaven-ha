@@ -43,5 +43,5 @@
     - service: homeassistant.turn_off
       entity_id: group.good_night_group_off
     - service: homeassistant.turn_on
-      entry_id: light.piano
+      entity_id: light.piano
   

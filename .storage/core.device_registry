@@ -269,7 +269,7 @@
                 ],
                 "manufacturer": "Philips",
                 "model": "Hue ambiance candle",
-                "name": "Piano",
+                "name": "gastrum",
                 "name_by_user": null,
                 "sw_version": "1.46.13_r26312",
                 "via_device_id": "b8722d6e461240c9862cdf12681f167b"
@@ -369,7 +369,7 @@
                 ],
                 "manufacturer": "IKEA of Sweden",
                 "model": "TRADFRI transformer 10W",
-                "name": "driver_halet",
+                "name": "sovrum_hal",
                 "name_by_user": null,
                 "sw_version": "1.2.245",
                 "via_device_id": "ec71a04b2aa6467990385e24540f23bc"
@@ -392,6 +392,166 @@
                 "name": "sovrum_tak",
                 "name_by_user": null,
                 "sw_version": "2.0.022",
+                "via_device_id": "ec71a04b2aa6467990385e24540f23bc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "435182716f7648dba7c227daf29d7734"
+                ],
+                "connections": [],
+                "id": "25ef9a9ee0704958abaa05162dd263f0",
+                "identifiers": [
+                    [
+                        "tradfri",
+                        65544
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E27 WW 806lm",
+                "name": "tvattstuga",
+                "name_by_user": null,
+                "sw_version": "2.1.022",
+                "via_device_id": "ec71a04b2aa6467990385e24540f23bc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "435182716f7648dba7c227daf29d7734"
+                ],
+                "connections": [],
+                "id": "cb0a5bd237d44204a5de5c0a954435bd",
+                "identifiers": [
+                    [
+                        "tradfri",
+                        65545
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E27 WW 806lm",
+                "name": "groventre",
+                "name_by_user": null,
+                "sw_version": "2.1.022",
+                "via_device_id": "ec71a04b2aa6467990385e24540f23bc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "435182716f7648dba7c227daf29d7734"
+                ],
+                "connections": [],
+                "id": "d01cd22574674cb49bab617d142a7bed",
+                "identifiers": [
+                    [
+                        "tradfri",
+                        65546
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E27 WW 806lm",
+                "name": "svartvitt",
+                "name_by_user": null,
+                "sw_version": "2.1.022",
+                "via_device_id": "ec71a04b2aa6467990385e24540f23bc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "435182716f7648dba7c227daf29d7734"
+                ],
+                "connections": [],
+                "id": "5f6a6c4eba084b83813c69fbd988f7e1",
+                "identifiers": [
+                    [
+                        "tradfri",
+                        65549
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E27 WW 806lm",
+                "name": "kallarhall",
+                "name_by_user": null,
+                "sw_version": "2.1.022",
+                "via_device_id": "ec71a04b2aa6467990385e24540f23bc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "435182716f7648dba7c227daf29d7734"
+                ],
+                "connections": [],
+                "id": "794ec1b8595f4091962743675bd7f405",
+                "identifiers": [
+                    [
+                        "tradfri",
+                        65548
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E27 WW 806lm",
+                "name": "kallartrapp",
+                "name_by_user": null,
+                "sw_version": "2.1.022",
+                "via_device_id": "ec71a04b2aa6467990385e24540f23bc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "435182716f7648dba7c227daf29d7734"
+                ],
+                "connections": [],
+                "id": "a628cab0dead4ea999c0b122235702fe",
+                "identifiers": [
+                    [
+                        "tradfri",
+                        65547
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E27 WW 806lm",
+                "name": "pannrum",
+                "name_by_user": null,
+                "sw_version": "2.1.022",
+                "via_device_id": "ec71a04b2aa6467990385e24540f23bc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "435182716f7648dba7c227daf29d7734"
+                ],
+                "connections": [],
+                "id": "c30b2424c300456796e9c99bcfb94071",
+                "identifiers": [
+                    [
+                        "tradfri",
+                        65550
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E27 WW 806lm",
+                "name": "svartvitt_2",
+                "name_by_user": null,
+                "sw_version": "2.1.022",
+                "via_device_id": "ec71a04b2aa6467990385e24540f23bc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "435182716f7648dba7c227daf29d7734"
+                ],
+                "connections": [],
+                "id": "064261c80c5d46e79c9c92b8bd7c4b0d",
+                "identifiers": [
+                    [
+                        "tradfri",
+                        65551
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI Driver 30W",
+                "name": "kokbank",
+                "name_by_user": null,
+                "sw_version": "1.2.245",
                 "via_device_id": "ec71a04b2aa6467990385e24540f23bc"
             }
         ]

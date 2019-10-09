@@ -1,7 +1,223 @@
 {
     "data": [
         {
-            "last_seen": "2019-10-08T20:21:46.157206+00:00",
+            "last_seen": "2019-10-09T20:37:03.227294+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Good night",
+                    "icon": "if (state === 'on') return mdi:sleep; else return mdi:white-balance-sunny;"
+                },
+                "context": {
+                    "id": "e4af3d2cf18f49e1933f6a61d9a25d2c",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.night_time",
+                "last_changed": "2019-10-09T20:37:00.812605+00:00",
+                "last_updated": "2019-10-09T20:37:00.812605+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-10-09T20:37:03.227294+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Someone is at home",
+                    "icon": "if (state === 'on') return mdi:account-check; else return mdi:account-remove;"
+                },
+                "context": {
+                    "id": "c05f5a25bb5740ca85e3cb8ea8b05b49",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.at_home",
+                "last_changed": "2019-10-09T20:37:00.813503+00:00",
+                "last_updated": "2019-10-09T20:37:00.813503+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-10-09T20:37:03.227294+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "morgonrutin",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "22cd38c4fcaf4f9298622d1a94c9d268",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.morgonrutin",
+                "last_changed": "2019-10-09T20:37:02.787662+00:00",
+                "last_updated": "2019-10-09T20:37:02.787662+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-10-09T20:37:03.227294+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "darkness_lights_inside",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "a5fac318e6a5464fbd4a689903959e54",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.darkness_lights_inside",
+                "last_changed": "2019-10-09T20:37:02.789013+00:00",
+                "last_updated": "2019-10-09T20:37:02.789013+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-10-09T20:37:03.227294+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "light",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "d2ab5861d18d48378fb827adb9a7120b",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.light",
+                "last_changed": "2019-10-09T20:37:02.790331+00:00",
+                "last_updated": "2019-10-09T20:37:02.790331+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-10-09T20:37:03.227294+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "nighty_night",
+                    "last_triggered": "2019-10-09T16:47:21.532210+00:00"
+                },
+                "context": {
+                    "id": "47d2f9e6b9a24a119640289959d56a17",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.nighty_night",
+                "last_changed": "2019-10-09T20:37:02.791739+00:00",
+                "last_updated": "2019-10-09T20:37:02.791739+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-10-09T20:37:03.227294+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "darkness_lights_outside",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "e25e160f41954f148f58e86de7eb9ace",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.darkness_lights_outside",
+                "last_changed": "2019-10-09T20:37:02.793007+00:00",
+                "last_updated": "2019-10-09T20:37:02.793007+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-10-09T20:37:03.227294+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "welcome_home",
+                    "last_triggered": "2019-10-09T16:47:52.048802+00:00"
+                },
+                "context": {
+                    "id": "fbf407658d53439c8958a01b1cb4f3fe",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.welcome_home",
+                "last_changed": "2019-10-09T20:37:02.794414+00:00",
+                "last_updated": "2019-10-09T20:37:02.794414+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-10-09T20:37:03.227294+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "sunrise",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "8bf09aec44b049bf826e807e545c6da7",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.sunrise",
+                "last_changed": "2019-10-09T20:37:02.795629+00:00",
+                "last_updated": "2019-10-09T20:37:02.795629+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-10-09T20:37:03.227294+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "sunrise",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "c2fd5dcb1f9b471cbace2e7a9d606d29",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.sunrise_2",
+                "last_changed": "2019-10-09T20:37:02.796844+00:00",
+                "last_updated": "2019-10-09T20:37:02.796844+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-10-09T20:37:03.227294+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Adam's ONEPLUS A6003",
+                    "source_type": "gps"
+                },
+                "context": {
+                    "id": "e7173ce061324931a95fc369be756f89",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.adam_s_oneplus_a6003",
+                "last_changed": "2019-10-09T20:37:02.844170+00:00",
+                "last_updated": "2019-10-09T20:37:02.844170+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2019-10-09T20:37:03.227294+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "OnePlus_6",
+                    "source_type": "gps"
+                },
+                "context": {
+                    "id": "886b4541fdfa49159ded6162ac500e85",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.oneplus_6",
+                "last_changed": "2019-10-09T20:37:02.845553+00:00",
+                "last_updated": "2019-10-09T20:37:02.845553+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2019-10-09T16:45:55.183609+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Hanna is home",
@@ -19,7 +235,7 @@
             }
         },
         {
-            "last_seen": "2019-10-08T20:21:46.157206+00:00",
+            "last_seen": "2019-10-09T16:45:55.183609+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Adam is home",
@@ -37,129 +253,21 @@
             }
         },
         {
-            "last_seen": "2019-10-08T20:21:46.157206+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Awake or asleep.",
-                    "icon": "if (state === 'on') return mdi:sleep; else return mdi:white-balance-sunny;"
-                },
-                "context": {
-                    "id": "6ea54a9532c34666995b9d76eda20dad",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.night_time",
-                "last_changed": "2019-10-08T20:21:44.187982+00:00",
-                "last_updated": "2019-10-08T20:21:44.187982+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-10-08T20:21:46.157206+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "morgonrutin",
-                    "last_triggered": null
-                },
-                "context": {
-                    "id": "e85bec7678954a219176f7eaf76439eb",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.morgonrutin",
-                "last_changed": "2019-10-08T20:21:44.547510+00:00",
-                "last_updated": "2019-10-08T20:21:44.547510+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-10-08T20:21:46.157206+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "light",
-                    "last_triggered": null
-                },
-                "context": {
-                    "id": "37970a5a1f60413189a1efc78775a206",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.light",
-                "last_changed": "2019-10-08T20:21:44.548640+00:00",
-                "last_updated": "2019-10-08T20:21:44.548640+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-10-08T20:21:46.157206+00:00",
+            "last_seen": "2019-10-09T16:43:16.275898+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "darkness",
                     "last_triggered": "2019-10-06T20:25:00.103681+00:00"
                 },
                 "context": {
-                    "id": "965710c8e9624ccfb78ddb47f0b5d402",
+                    "id": "bfc20a11e34d49a9b8f8406c0ee5b1c2",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.darkness",
-                "last_changed": "2019-10-08T20:21:44.550120+00:00",
-                "last_updated": "2019-10-08T20:21:44.550120+00:00",
+                "last_changed": "2019-10-08T20:40:11.814418+00:00",
+                "last_updated": "2019-10-08T20:40:11.814418+00:00",
                 "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-10-08T20:21:46.157206+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "nighty_night",
-                    "last_triggered": "2019-10-07T19:55:35.606447+00:00"
-                },
-                "context": {
-                    "id": "0fdc433b632e41978d04ea345086e498",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.nighty_night",
-                "last_changed": "2019-10-08T20:21:44.551997+00:00",
-                "last_updated": "2019-10-08T20:21:44.551997+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-10-08T20:21:46.157206+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Adam's ONEPLUS A6003",
-                    "source_type": "gps"
-                },
-                "context": {
-                    "id": "24f32e2917c3404296637b61b9a620e5",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.adam_s_oneplus_a6003",
-                "last_changed": "2019-10-08T20:21:45.900609+00:00",
-                "last_updated": "2019-10-08T20:21:45.900609+00:00",
-                "state": "unknown"
-            }
-        },
-        {
-            "last_seen": "2019-10-08T20:21:46.157206+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "OnePlus_6",
-                    "source_type": "gps"
-                },
-                "context": {
-                    "id": "fa849a3cab3c45c4b669014ec63b6213",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.oneplus_6",
-                "last_changed": "2019-10-08T20:21:45.901873+00:00",
-                "last_updated": "2019-10-08T20:21:45.901873+00:00",
-                "state": "unknown"
             }
         },
         {
@@ -182,23 +290,21 @@
             }
         },
         {
-            "last_seen": "2019-10-01T21:12:40.465372+00:00",
+            "last_seen": "2019-10-09T16:43:16.271897+00:00",
             "state": {
                 "attributes": {
-                    "editable": true,
-                    "friendly_name": "Adam",
-                    "id": "7bd4385ffe554c96aa40dec61638b596",
-                    "user_id": "0c08d605bf7842d78f15caf863e8c372"
+                    "friendly_name": "good_morning",
+                    "last_triggered": "2019-10-09T04:10:00.037881+00:00"
                 },
                 "context": {
-                    "id": "c1f6f8ac61d749b188cd1c3d513270c6",
+                    "id": "20e26587e3d64f6683bb9aa5f3c51091",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "person.adam",
-                "last_changed": "2019-10-01T20:03:00.655282+00:00",
-                "last_updated": "2019-10-01T20:03:04.947568+00:00",
-                "state": "unknown"
+                "entity_id": "automation.good_morning",
+                "last_changed": "2019-10-08T20:40:11.818209+00:00",
+                "last_updated": "2019-10-09T04:10:00.038468+00:00",
+                "state": "on"
             }
         }
     ],

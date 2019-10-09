@@ -52,7 +52,7 @@
   action:
     - service: light.turn_off
       entity_id: light.all
-    - service: homeassistant.turn.on
+    - service: homeassistant.turn_on
       entity_id:
         - light.hall
         - light.lill_hall

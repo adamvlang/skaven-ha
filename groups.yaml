@@ -13,9 +13,14 @@ diningroom:
 bedroom:
   name: Bedroom lights
   entities:
-    - light.sovrum.tak
+    - light.sovrum_tak
     - light.nattduk_adam
     - light.driver_halet
+kitchen:
+  name: Kitchen lights
+  entities:
+    - light.kok
+    - light.kokbank
 
 # Floor groups
 ground_floor:
@@ -31,21 +36,21 @@ top_floor:
   entities:
     - group.bedroom
     - light.gastrum
-# basement:
-#   name: Basement
-#   entities:
-#     - light.kallartrapp
-#     - light.kallarhall
-#     - light.pannrum
-#     - light.svartvitt
-#     - light.tvattstuga
+basement:
+  name: Basement
+  entities:
+    - light.kallartrapp
+    - light.kallarhall
+    - light.pannrum
+    - light.svartvitt
+    - light.svartvitt_2
+    - light.tvattstuga
 
-# outdoor:
-#   name: Outdoor lights
-#   entities:
-#     - light.garage
-#     - light.groventre
-#     - light.veranda
+outdoor:
+  name: Outdoor lights
+  entities:
+    - light.groventre
+    - light.veranda
 
 # Occational light groups
 good_night_group_off:
@@ -68,5 +73,4 @@ darkness_inside:
 darkness_outside:
   name: Darkness lights outside
   entities: 
-    - light.garage
     - light.groventre

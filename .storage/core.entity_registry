@@ -128,15 +128,6 @@
                 "unique_id": "00:17:88:01:03:11:b2:9a-0b"
             },
             {
-                "config_entry_id": "febe0a7ce56845a8b76812fefbcc04be",
-                "device_id": "d740b12c930f476395e460847352fd21",
-                "disabled_by": null,
-                "entity_id": "light.piano",
-                "name": null,
-                "platform": "hue",
-                "unique_id": "00:17:88:01:03:7e:1f:e2-0b"
-            },
-            {
                 "config_entry_id": "435182716f7648dba7c227daf29d7734",
                 "device_id": "a8bbd5f3457a44c3b4a0eacb0b02d0f1",
                 "disabled_by": null,
@@ -144,15 +135,6 @@
                 "name": null,
                 "platform": "tradfri",
                 "unique_id": "light-7e36515204400075-65538"
-            },
-            {
-                "config_entry_id": "435182716f7648dba7c227daf29d7734",
-                "device_id": "c2c71ec664f840e781bf1fcec75c10d2",
-                "disabled_by": null,
-                "entity_id": "light.piano_2",
-                "name": null,
-                "platform": "tradfri",
-                "unique_id": "light-7e36515204400075-65537"
             },
             {
                 "config_entry_id": "435182716f7648dba7c227daf29d7734",
@@ -180,6 +162,96 @@
                 "name": null,
                 "platform": "tradfri",
                 "unique_id": "light-7e36515204400075-65542"
+            },
+            {
+                "config_entry_id": "435182716f7648dba7c227daf29d7734",
+                "device_id": "cb0a5bd237d44204a5de5c0a954435bd",
+                "disabled_by": null,
+                "entity_id": "light.groventre",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65545"
+            },
+            {
+                "config_entry_id": "435182716f7648dba7c227daf29d7734",
+                "device_id": "d01cd22574674cb49bab617d142a7bed",
+                "disabled_by": null,
+                "entity_id": "light.svartvitt",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65546"
+            },
+            {
+                "config_entry_id": "435182716f7648dba7c227daf29d7734",
+                "device_id": "5f6a6c4eba084b83813c69fbd988f7e1",
+                "disabled_by": null,
+                "entity_id": "light.kallarhall",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65549"
+            },
+            {
+                "config_entry_id": "435182716f7648dba7c227daf29d7734",
+                "device_id": "794ec1b8595f4091962743675bd7f405",
+                "disabled_by": null,
+                "entity_id": "light.kallartrapp",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65548"
+            },
+            {
+                "config_entry_id": "435182716f7648dba7c227daf29d7734",
+                "device_id": "a628cab0dead4ea999c0b122235702fe",
+                "disabled_by": null,
+                "entity_id": "light.pannrum",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65547"
+            },
+            {
+                "config_entry_id": "435182716f7648dba7c227daf29d7734",
+                "device_id": "c30b2424c300456796e9c99bcfb94071",
+                "disabled_by": null,
+                "entity_id": "light.svartvitt_2",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65550"
+            },
+            {
+                "config_entry_id": "435182716f7648dba7c227daf29d7734",
+                "device_id": "064261c80c5d46e79c9c92b8bd7c4b0d",
+                "disabled_by": null,
+                "entity_id": "light.kokbank",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65551"
+            },
+            {
+                "config_entry_id": "435182716f7648dba7c227daf29d7734",
+                "device_id": "25ef9a9ee0704958abaa05162dd263f0",
+                "disabled_by": null,
+                "entity_id": "light.tvattstuga",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65544"
+            },
+            {
+                "config_entry_id": "febe0a7ce56845a8b76812fefbcc04be",
+                "device_id": "d740b12c930f476395e460847352fd21",
+                "disabled_by": null,
+                "entity_id": "light.gastrum",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:03:7e:1f:e2-0b"
+            },
+            {
+                "config_entry_id": "435182716f7648dba7c227daf29d7734",
+                "device_id": "c2c71ec664f840e781bf1fcec75c10d2",
+                "disabled_by": null,
+                "entity_id": "light.piano",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65537"
             }
         ]
     },

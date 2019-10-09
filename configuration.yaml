@@ -10,7 +10,6 @@ hassio:
 
 config:
 
-
 automation: !include automations.yaml
 script: !include scripts.yaml
 group: !include groups.yaml
@@ -42,10 +41,6 @@ input_boolean:
     name: Someone is at home
     initial: off
     icon: "if (state === 'on') return mdi:account-check; else return mdi:account-remove;"
-  # hanna_home:
-  #   name: Hanna is home
-  #   initial: off
-  #   icon: "if (state === 'on') return mdi:account-check; else return mdi:account-remove;"
   night_time:
     name: Good night
     initial: off

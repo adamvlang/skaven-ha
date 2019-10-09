@@ -38,16 +38,16 @@ tradfri:
   allow_tradfri_groups: false
 
 input_boolean:
-  adam_home:
-    name: Adam is home
+  at_home:
+    name: Someone is at home
     initial: off
     icon: "if (state === 'on') return mdi:account-check; else return mdi:account-remove;"
-  hanna_home:
-    name: Hanna is home
-    initial: off
-    icon: "if (state === 'on') return mdi:account-check; else return mdi:account-remove;"
+  # hanna_home:
+  #   name: Hanna is home
+  #   initial: off
+  #   icon: "if (state === 'on') return mdi:account-check; else return mdi:account-remove;"
   night_time:
-    name: Awake or asleep.
+    name: Good night
     initial: off
     icon: "if (state === 'on') return mdi:sleep; else return mdi:white-balance-sunny;"
 

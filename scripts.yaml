@@ -1,0 +1,98 @@
+sunset_inside:
+  sequence:
+    - service: homeassistant.turn_on
+      data:
+        entity_id: group.darkness_inside
+        brightness: 1
+    - delay: 
+        seconds: 1
+    - service: homeassistant.turn_on
+      data:
+        entity_id: group.darkness_inside
+        brightness: 170
+        transition: 1800
+    - delay:
+        seconds: 1800
+    - service: light.turn_on
+      data:
+        entity_id: group.darkness_inside
+        brightness: 255
+        transition: 1800
+sunset_outside:
+  sequence:
+    - service: homeassistant.turn_on
+      data:
+        entity_id: group.darkness_outside
+        brightness: 1
+    - delay: 
+        seconds: 1
+    - service: homeassistant.turn_on
+      data:
+        entity_id: group.darkness_outside
+        brightness: 170
+        transition: 1800
+    - delay:
+        seconds: 1800
+    - service: homeassistant.turn_on
+      data:
+        entity_id: group.darkness_outside
+        brightness: 255
+        transition: 1800
+sunrise_tak:
+  sequence:
+    - service: light.turn_on
+      data:
+        entity_id: light.sovrum_tak
+        xy_color: [0.67,0.39]
+        brightness: 1
+    - delay: 
+        seconds: 1
+    - service: light.turn_on
+      data:
+        entity_id: light.sovrum_tak
+        xy_color: [0.65,0.41]
+        brightness: 85
+        transition: 200
+    - delay:
+        seconds: 200
+    - service: light.turn_on
+      data:
+        entity_id: light.sovrum_tak
+        xy_color: [0.60,0.40]
+        brightness: 170
+        transition: 200
+    - delay:
+        seconds: 200
+    - service: light.turn_on
+      data:
+        entity_id: light.sovrum_tak
+        xy_color: [0.48,0.40]
+        brightness: 255
+        transition: 200
+sunrise_nattduk:
+  sequence:
+    - service: light.turn_on
+      data:
+        entity_id: light.nattduk_adam
+        brightness: 1
+    - delay: 
+        seconds: 1
+    - service: light.turn_on
+      data:
+        entity_id: light.nattduk_adam
+        brightness: 85
+        transition: 100
+    - delay:
+        seconds: 100
+    - service: light.turn_on
+      data:
+        entity_id: light.nattduk_adam
+        brightness: 170
+        transition: 100
+    - delay:
+        seconds: 100
+    - service: light.turn_on
+      data:
+        entity_id: light.nattduk_adam
+        brightness: 255
+        transition: 100

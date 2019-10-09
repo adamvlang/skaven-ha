@@ -1,3 +1,99 @@
+# Day/Night rutines
+- alias: darkness_lights_outside
+  trigger:
+    platform: state
+    entity_id: sun.sun
+    to: "sunset"
+  action:
+    - service: homeassistant.turn_on
+      data:
+        entity_id: group.darkness_outside
+        brightness: 220
+
+- alias: darkness_lights_inside
+  trigger:
+    platform: state
+    entity_id: sun.sun
+    to: "sunset"
+  action:
+    - service: homeassistant.turn_on
+      data:
+        entity_id: group.darkness_inside
+        transition: 
+        brightness: 255
+
+- alias: light
+  trigger:
+    platform: state
+    entity_id: sun.sun
+    to: "sunrise"
+  action:
+    - service: light.turn_off
+      entity_id: light.all
+
+# Bedtime rutines
+- alias: nighty_night
+  trigger:
+    platform: state
+    entity_id: input_boolean.night_time
+    to: "on"
+  action:
+    - service: homeassistant.turn_off
+      entity_id: group.good_night_group_off
+    - service: homeassistant.turn_on
+      entity_id: group.good_night_group_on
+
+# Home/Away rutines
+- alias: welcome_home
+  trigger:
+    platform: state
+    entity_id: input_boolean.at_home
+    to: "on"
+  action:
+    - service: light.turn_off
+      entity_id: light.all
+    - service: homeassistant.turn.on
+      entity_id:
+        - light.hall
+        - light.lill_hall
+        - light.kok
+  condition:
+    - condition: sun
+      after: sunset
+
+# Morning ruitines
+- alias: sunrise
+  trigger: 
+    platform: time
+    at: "06:05:00"
+  condition:
+    - condition: time
+      weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+  action:
+    - service: script.turn_on
+      entity_id: script.sunrise_tak
+
+- alias: sunrise
+  trigger: 
+    platform: time
+    at: "06:10:00"
+  condition:
+    - condition: time
+      weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+  action:
+    - service: script.turn_on
+      entity_id: script.sunrise_nattduk
+
 - alias: morgonrutin
   trigger: 
     platform: state
@@ -17,54 +113,3 @@
       - light.hall
       - light.kok
         
-- alias: darkness
-  trigger:
-    platform: state
-    entity_id: sun.sun
-    to: "sunset"
-  action:
-    - service: homeassistant.turn_on
-      data:
-        entity_id: group.nightlights
-        brightness: 130
-
-- alias: light
-  trigger:
-    platform: state
-    entity_id: sun.sun
-    to: "sunrise"
-  action:
-    - service: homeassistant.turn_off
-      entity_id: light.all
-
-- alias: nighty_night
-  trigger:
-    platform: state
-    entity_id: input_boolean.night_time
-    to: "on"
-  action:
-    - service: homeassistant.turn_off
-      entity_id: group.good_night_group_off
-    - service: homeassistant.turn_on
-      entity_id: group.good_night_group_on
-- alias: good_morning
-  trigger: 
-    platform: time
-    at: "06:10:00"
-  condition:
-    - condition: time
-      weekday:
-        - mon
-        - tue
-        - wed
-        - thu
-        - fri
-  action:
-    - service: homeassistant.turn_on  
-      entity_id: 
-        - light.adam_nattduk
-        - light.sovrum_tak
-      data:
-        transition: 600
-        brightness: 255
-  

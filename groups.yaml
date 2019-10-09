@@ -1,3 +1,4 @@
+# Room groups
 livingroom:
   name: Livingroom lights
   entities:
@@ -15,15 +16,8 @@ bedroom:
     - light.sovrum.tak
     - light.nattduk_adam
     - light.driver_halet
-nightlights:
-  name: Night lights
-  entities:
-    - light.piano_2
-is_home:
-  name: Someone is home
-  entities:
-    - input_boolean.adam_home
-    - input_boolean.hanna_home
+
+# Floor groups
 ground_floor:
   name: Ground floor
   entities:
@@ -36,14 +30,43 @@ top_floor:
   name: Top floor
   entities:
     - group.bedroom
+    - light.gastrum
+# basement:
+#   name: Basement
+#   entities:
+#     - light.kallartrapp
+#     - light.kallarhall
+#     - light.pannrum
+#     - light.svartvitt
+#     - light.tvattstuga
+
+# outdoor:
+#   name: Outdoor lights
+#   entities:
+#     - light.garage
+#     - light.groventre
+#     - light.veranda
+
+# Occational light groups
 good_night_group_off:
-  name: Good night lights off
+  name: Night lights off
   entities:
     - group.ground_floor
     - group.top_floor
-good_noght_group_on:
+    - group.basement
+good_night_group_on:
   name: Night lights on
   entities:
-    - light.piano_2
+    - light.piano
     - light.nattduk_adam
-
+darkness_inside:
+  name: Darkness lights inside
+  entities: 
+    - light.nattduk_adam
+    - light.piano
+    - light.gastrum
+darkness_outside:
+  name: Darkness lights outside
+  entities: 
+    - light.garage
+    - light.groventre

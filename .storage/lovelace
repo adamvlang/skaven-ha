@@ -19,6 +19,9 @@
                                     "entity": "input_boolean.at_home"
                                 },
                                 {
+                                    "entity": "input_boolean.tv_time"
+                                },
+                                {
                                     "entity": "group.livingroom"
                                 },
                                 {
@@ -31,9 +34,6 @@
                                     "entity": "group.bedroom"
                                 },
                                 {
-                                    "entity": "group.ground_floor"
-                                },
-                                {
                                     "entity": "group.top_floor"
                                 },
                                 {
@@ -43,29 +43,11 @@
                                     "entity": "group.outdoor"
                                 },
                                 {
-                                    "entity": "light.matsal_2"
-                                },
-                                {
-                                    "entity": "light.matsal_1"
-                                },
-                                {
                                     "entity": "light.hall"
                                 },
                                 {
-                                    "entity": "light.kok"
+                                    "entity": "light.lill_hall"
                                 },
-                                {
-                                    "entity": "light.vardagsrum"
-                                },
-                                {
-                                    "entity": "light.piano"
-                                },
-                                {
-                                    "entity": "light.nattduk_adam"
-                                },
-                                {
-                                    "entity": "light.piano_2"
-                                }
                             ],
                             "title": "Lampor",
                             "type": "entities"

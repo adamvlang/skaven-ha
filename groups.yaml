@@ -74,7 +74,8 @@ darkness_outside:
     - group.outdoor
 
 inside:
-  name: All lights
+  name: All lights inside
+  entities:
     - group.top_floor
     - group.ground_floor
     - group.basement

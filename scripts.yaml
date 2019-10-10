@@ -1,3 +1,4 @@
+# Sunset rutime
 sunset_inside:
   sequence:
     - service: homeassistant.turn_on
@@ -38,6 +39,8 @@ sunset_outside:
         entity_id: group.darkness_outside
         brightness: 255
         transition: 1800
+
+# Wake up rutine
 sunrise_tak:
   sequence:
     - service: light.turn_on
@@ -96,3 +99,5 @@ sunrise_nattduk:
         entity_id: light.nattduk_adam
         brightness: 255
         transition: 100
+
+

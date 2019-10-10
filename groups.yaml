@@ -4,7 +4,6 @@ livingroom:
   entities:
     - light.vardagsrum
     - light.piano
-    - light.piano_2
 diningroom:
   name: Diningroom lights
   entities:
@@ -45,12 +44,11 @@ basement:
     - light.svartvitt
     - light.svartvitt_2
     - light.tvattstuga
-
 outdoor:
   name: Outdoor lights
   entities:
     - light.groventre
-    - light.veranda
+    # - light.veranda
 
 # Occational light groups
 good_night_group_off:
@@ -73,4 +71,10 @@ darkness_inside:
 darkness_outside:
   name: Darkness lights outside
   entities: 
-    - light.groventre
+    - group.outdoor
+
+inside:
+  name: All lights
+    - group.top_floor
+    - group.ground_floor
+    - group.basement

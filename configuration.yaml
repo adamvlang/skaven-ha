@@ -45,4 +45,6 @@ input_boolean:
     name: Good night
     initial: off
     icon: "if (state === 'on') return mdi:sleep; else return mdi:white-balance-sunny;"
-
+  tv_time:
+    name: Tv time
+    initial: off

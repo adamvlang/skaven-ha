@@ -27,8 +27,8 @@ ground_floor:
   entities:
     - group.livingroom
     - group.diningroom
+    - group.kitchen
     - light.hall
-    - light.kok
     - light.lill_hall
 top_floor:
   name: Top floor

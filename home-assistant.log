@@ -1,1 +1,466 @@
-2019-10-09 22:36:41 ERROR (MainThread) [coap] Exception CancelledError() can not be represented as errno, setting -1.
+2019-10-17 22:30:19 ERROR (MainThread) [homeassistant.components.automation] Error while executing automation automation.good_morning. Unknown error for call_service at pos 1: 
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/automation/__init__.py", line 434, in action
+    await script_obj.async_run(variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 162, in async_run
+    await self._handle_action(action, variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 246, in _handle_action
+    await self._actions[_determine_action(action)](action, variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 329, in _async_call_service
+    context=context,
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 98, in async_call_from_config
+    domain, service_name, service_data, blocking=blocking, context=context
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
+    await handler.func(service_call)
+  File "/usr/src/homeassistant/homeassistant/components/homeassistant/__init__.py", line 41, in async_handle_turn_service
+    entity_ids = await async_extract_entity_ids(hass, service)
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 135, in async_extract_entity_ids
+    entity_ids = hass.components.group.expand_entity_ids(entity_ids)
+  File "/usr/src/homeassistant/homeassistant/components/group/__init__.py", line 160, in expand_entity_ids
+    domain, _ = ha.split_entity_id(entity_id)
+ValueError: not enough values to unpack (expected 2, got 1)
+2019-10-17 22:30:20 ERROR (MainThread) [homeassistant.components.automation] Error while executing automation automation.good_morning. Unknown error for call_service at pos 1: 
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/automation/__init__.py", line 434, in action
+    await script_obj.async_run(variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 162, in async_run
+    await self._handle_action(action, variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 246, in _handle_action
+    await self._actions[_determine_action(action)](action, variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 329, in _async_call_service
+    context=context,
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 98, in async_call_from_config
+    domain, service_name, service_data, blocking=blocking, context=context
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
+    await handler.func(service_call)
+  File "/usr/src/homeassistant/homeassistant/components/homeassistant/__init__.py", line 41, in async_handle_turn_service
+    entity_ids = await async_extract_entity_ids(hass, service)
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 135, in async_extract_entity_ids
+    entity_ids = hass.components.group.expand_entity_ids(entity_ids)
+  File "/usr/src/homeassistant/homeassistant/components/group/__init__.py", line 160, in expand_entity_ids
+    domain, _ = ha.split_entity_id(entity_id)
+ValueError: not enough values to unpack (expected 2, got 1)
+2019-10-17 23:54:31 ERROR (MainThread) [homeassistant.components.hue.sensor_base] Unable to reach bridge 192.168.1.147 (Error requesting data from 192.168.1.147: None)
+2019-10-18 07:41:17 ERROR (MainThread) [homeassistant.components.automation] Error while executing automation automation.good_morning. Unknown error for call_service at pos 1: 
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/automation/__init__.py", line 434, in action
+    await script_obj.async_run(variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 162, in async_run
+    await self._handle_action(action, variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 246, in _handle_action
+    await self._actions[_determine_action(action)](action, variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 329, in _async_call_service
+    context=context,
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 98, in async_call_from_config
+    domain, service_name, service_data, blocking=blocking, context=context
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
+    await handler.func(service_call)
+  File "/usr/src/homeassistant/homeassistant/components/homeassistant/__init__.py", line 41, in async_handle_turn_service
+    entity_ids = await async_extract_entity_ids(hass, service)
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 135, in async_extract_entity_ids
+    entity_ids = hass.components.group.expand_entity_ids(entity_ids)
+  File "/usr/src/homeassistant/homeassistant/components/group/__init__.py", line 160, in expand_entity_ids
+    domain, _ = ha.split_entity_id(entity_id)
+ValueError: not enough values to unpack (expected 2, got 1)
+2019-10-18 07:51:05 ERROR (MainThread) [homeassistant.components.homeassistant] homeassistant/turn_off cannot be called without entity_id
+2019-10-19 07:53:21 ERROR (MainThread) [homeassistant.components.homeassistant] homeassistant/turn_off cannot be called without entity_id
+2019-10-19 19:27:44 ERROR (MainThread) [homeassistant.components.automation] Error while executing automation automation.good_morning. Unknown error for call_service at pos 1: 
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/automation/__init__.py", line 434, in action
+    await script_obj.async_run(variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 162, in async_run
+    await self._handle_action(action, variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 246, in _handle_action
+    await self._actions[_determine_action(action)](action, variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 329, in _async_call_service
+    context=context,
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 98, in async_call_from_config
+    domain, service_name, service_data, blocking=blocking, context=context
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
+    await handler.func(service_call)
+  File "/usr/src/homeassistant/homeassistant/components/homeassistant/__init__.py", line 41, in async_handle_turn_service
+    entity_ids = await async_extract_entity_ids(hass, service)
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 135, in async_extract_entity_ids
+    entity_ids = hass.components.group.expand_entity_ids(entity_ids)
+  File "/usr/src/homeassistant/homeassistant/components/group/__init__.py", line 160, in expand_entity_ids
+    domain, _ = ha.split_entity_id(entity_id)
+ValueError: not enough values to unpack (expected 2, got 1)
+2019-10-19 19:27:45 ERROR (MainThread) [homeassistant.components.automation] Error while executing automation automation.good_morning. Unknown error for call_service at pos 1: 
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/automation/__init__.py", line 434, in action
+    await script_obj.async_run(variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 162, in async_run
+    await self._handle_action(action, variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 246, in _handle_action
+    await self._actions[_determine_action(action)](action, variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 329, in _async_call_service
+    context=context,
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 98, in async_call_from_config
+    domain, service_name, service_data, blocking=blocking, context=context
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
+    await handler.func(service_call)
+  File "/usr/src/homeassistant/homeassistant/components/homeassistant/__init__.py", line 41, in async_handle_turn_service
+    entity_ids = await async_extract_entity_ids(hass, service)
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 135, in async_extract_entity_ids
+    entity_ids = hass.components.group.expand_entity_ids(entity_ids)
+  File "/usr/src/homeassistant/homeassistant/components/group/__init__.py", line 160, in expand_entity_ids
+    domain, _ = ha.split_entity_id(entity_id)
+ValueError: not enough values to unpack (expected 2, got 1)
+2019-10-20 07:55:37 ERROR (MainThread) [homeassistant.components.homeassistant] homeassistant/turn_off cannot be called without entity_id
+2019-10-21 01:11:13 ERROR (MainThread) [metno] https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/1.9/ returned Cannot connect to host aa015h6buqvih86i1.api.met.no:443 ssl:None [Try again]
+2019-10-21 01:11:13 ERROR (MainThread) [homeassistant.components.met.weather] Retrying in 16 minutes
+2019-10-21 07:14:36 ERROR (MainThread) [homeassistant.components.automation] Error while executing automation automation.good_morning. Unknown error for call_service at pos 1: 
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/automation/__init__.py", line 434, in action
+    await script_obj.async_run(variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 162, in async_run
+    await self._handle_action(action, variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 246, in _handle_action
+    await self._actions[_determine_action(action)](action, variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 329, in _async_call_service
+    context=context,
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 98, in async_call_from_config
+    domain, service_name, service_data, blocking=blocking, context=context
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
+    await handler.func(service_call)
+  File "/usr/src/homeassistant/homeassistant/components/homeassistant/__init__.py", line 41, in async_handle_turn_service
+    entity_ids = await async_extract_entity_ids(hass, service)
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 135, in async_extract_entity_ids
+    entity_ids = hass.components.group.expand_entity_ids(entity_ids)
+  File "/usr/src/homeassistant/homeassistant/components/group/__init__.py", line 160, in expand_entity_ids
+    domain, _ = ha.split_entity_id(entity_id)
+ValueError: not enough values to unpack (expected 2, got 1)
+2019-10-21 07:57:54 ERROR (MainThread) [homeassistant.components.homeassistant] homeassistant/turn_off cannot be called without entity_id
+2019-10-22 07:56:08 ERROR (MainThread) [homeassistant.components.automation] Error while executing automation automation.good_morning. Unknown error for call_service at pos 1: 
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/automation/__init__.py", line 434, in action
+    await script_obj.async_run(variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 162, in async_run
+    await self._handle_action(action, variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 246, in _handle_action
+    await self._actions[_determine_action(action)](action, variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 329, in _async_call_service
+    context=context,
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 98, in async_call_from_config
+    domain, service_name, service_data, blocking=blocking, context=context
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
+    await handler.func(service_call)
+  File "/usr/src/homeassistant/homeassistant/components/homeassistant/__init__.py", line 41, in async_handle_turn_service
+    entity_ids = await async_extract_entity_ids(hass, service)
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 135, in async_extract_entity_ids
+    entity_ids = hass.components.group.expand_entity_ids(entity_ids)
+  File "/usr/src/homeassistant/homeassistant/components/group/__init__.py", line 160, in expand_entity_ids
+    domain, _ = ha.split_entity_id(entity_id)
+ValueError: not enough values to unpack (expected 2, got 1)
+2019-10-22 08:00:10 ERROR (MainThread) [homeassistant.components.homeassistant] homeassistant/turn_off cannot be called without entity_id
+2019-10-22 14:30:03 ERROR (MainThread) [metno] https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/1.9/ returned 
+2019-10-22 14:30:03 ERROR (MainThread) [homeassistant.components.met.weather] Retrying in 17 minutes
+2019-10-22 14:40:42 ERROR (MainThread) [homeassistant.components.hue.light] Unable to reach bridge 192.168.1.147 (Error requesting data from 192.168.1.147: Cannot connect to host 192.168.1.147:80 ssl:None [Connect call failed ('192.168.1.147', 80)])
+2019-10-23 08:02:28 ERROR (MainThread) [homeassistant.components.homeassistant] homeassistant/turn_off cannot be called without entity_id
+2019-10-24 07:55:02 ERROR (MainThread) [homeassistant.components.automation] Error while executing automation automation.good_morning. Unknown error for call_service at pos 1: 
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/automation/__init__.py", line 434, in action
+    await script_obj.async_run(variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 162, in async_run
+    await self._handle_action(action, variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 246, in _handle_action
+    await self._actions[_determine_action(action)](action, variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 329, in _async_call_service
+    context=context,
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 98, in async_call_from_config
+    domain, service_name, service_data, blocking=blocking, context=context
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
+    await handler.func(service_call)
+  File "/usr/src/homeassistant/homeassistant/components/homeassistant/__init__.py", line 41, in async_handle_turn_service
+    entity_ids = await async_extract_entity_ids(hass, service)
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 135, in async_extract_entity_ids
+    entity_ids = hass.components.group.expand_entity_ids(entity_ids)
+  File "/usr/src/homeassistant/homeassistant/components/group/__init__.py", line 160, in expand_entity_ids
+    domain, _ = ha.split_entity_id(entity_id)
+ValueError: not enough values to unpack (expected 2, got 1)
+2019-10-24 08:04:45 ERROR (MainThread) [homeassistant.components.homeassistant] homeassistant/turn_off cannot be called without entity_id
+2019-10-25 07:16:37 ERROR (MainThread) [homeassistant.components.automation] Error while executing automation automation.good_morning. Unknown error for call_service at pos 1: 
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/automation/__init__.py", line 434, in action
+    await script_obj.async_run(variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 162, in async_run
+    await self._handle_action(action, variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 246, in _handle_action
+    await self._actions[_determine_action(action)](action, variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 329, in _async_call_service
+    context=context,
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 98, in async_call_from_config
+    domain, service_name, service_data, blocking=blocking, context=context
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
+    await handler.func(service_call)
+  File "/usr/src/homeassistant/homeassistant/components/homeassistant/__init__.py", line 41, in async_handle_turn_service
+    entity_ids = await async_extract_entity_ids(hass, service)
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 135, in async_extract_entity_ids
+    entity_ids = hass.components.group.expand_entity_ids(entity_ids)
+  File "/usr/src/homeassistant/homeassistant/components/group/__init__.py", line 160, in expand_entity_ids
+    domain, _ = ha.split_entity_id(entity_id)
+ValueError: not enough values to unpack (expected 2, got 1)
+2019-10-25 08:07:03 ERROR (MainThread) [homeassistant.components.homeassistant] homeassistant/turn_off cannot be called without entity_id
+2019-10-25 18:50:27 ERROR (MainThread) [coap] Exception CancelledError() can not be represented as errno, setting -1.
+2019-10-25 18:50:27 WARNING (MainThread) [homeassistant.components.tradfri.sensor] Observation failed for pannrum_motion
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
+    r = await pr.response
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
+    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
+    blockresponse = yield from blockrequest.response
+aiocoap.error.RequestTimedOut
+2019-10-25 18:50:27 WARNING (MainThread) [homeassistant.components.tradfri.sensor] Observation failed for TRADFRI motion sensor 3
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
+    r = await pr.response
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
+    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
+    blockresponse = yield from blockrequest.response
+aiocoap.error.RequestTimedOut
+2019-10-25 18:50:27 WARNING (MainThread) [homeassistant.components.tradfri.sensor] Observation failed for TRADFRI remote control
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
+    r = await pr.response
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
+    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
+    blockresponse = yield from blockrequest.response
+aiocoap.error.RequestTimedOut
+2019-10-25 18:50:27 WARNING (MainThread) [homeassistant.components.tradfri.sensor] Observation failed for kallartrapp_motion
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
+    r = await pr.response
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
+    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
+    blockresponse = yield from blockrequest.response
+aiocoap.error.RequestTimedOut
+2019-10-25 18:50:27 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for sovrum_hal
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
+    r = await pr.response
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
+    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
+    blockresponse = yield from blockrequest.response
+aiocoap.error.RequestTimedOut
+2019-10-25 18:50:27 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for pannrum
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
+    r = await pr.response
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
+    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
+    blockresponse = yield from blockrequest.response
+aiocoap.error.RequestTimedOut
+2019-10-25 18:50:27 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for kallarhall
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
+    r = await pr.response
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
+    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
+    blockresponse = yield from blockrequest.response
+aiocoap.error.RequestTimedOut
+2019-10-25 18:50:27 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for kallartrapp
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
+    r = await pr.response
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
+    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
+    blockresponse = yield from blockrequest.response
+aiocoap.error.RequestTimedOut
+2019-10-25 18:50:27 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for piano
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
+    r = await pr.response
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
+    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
+    blockresponse = yield from blockrequest.response
+aiocoap.error.RequestTimedOut
+2019-10-25 18:50:27 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for groventre
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
+    r = await pr.response
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
+    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
+    blockresponse = yield from blockrequest.response
+aiocoap.error.RequestTimedOut
+2019-10-25 18:50:27 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for sovrum_tak
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
+    r = await pr.response
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
+    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
+    blockresponse = yield from blockrequest.response
+aiocoap.error.RequestTimedOut
+2019-10-25 18:50:27 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for svartvitt_2
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
+    r = await pr.response
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
+    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
+    blockresponse = yield from blockrequest.response
+aiocoap.error.RequestTimedOut
+2019-10-25 18:50:27 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for nattduk_adam
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
+    r = await pr.response
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
+    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
+    blockresponse = yield from blockrequest.response
+aiocoap.error.RequestTimedOut
+2019-10-25 18:50:27 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for lill_hall
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
+    r = await pr.response
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
+    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
+    blockresponse = yield from blockrequest.response
+aiocoap.error.RequestTimedOut
+2019-10-25 18:50:27 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for svartvitt
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
+    r = await pr.response
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
+    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
+    blockresponse = yield from blockrequest.response
+aiocoap.error.RequestTimedOut
+2019-10-25 18:50:27 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for kokbank
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
+    r = await pr.response
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
+    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
+    blockresponse = yield from blockrequest.response
+aiocoap.error.RequestTimedOut
+2019-10-25 18:50:27 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for tvattstuga
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
+    r = await pr.response
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
+    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
+    blockresponse = yield from blockrequest.response
+aiocoap.error.RequestTimedOut
+2019-10-25 18:50:27 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
+    r = await pr.response
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
+    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
+    blockresponse = yield from blockrequest.response
+aiocoap.error.RequestTimedOut
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
+    await handler.func(service_call)
+  File "/usr/src/homeassistant/homeassistant/components/light/__init__.py", line 310, in async_handle_light_on_service
+    await light.async_turn_on(**pars)
+  File "/usr/src/homeassistant/homeassistant/components/tradfri/light.py", line 337, in async_turn_on
+    await self._api(command)
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 155, in request
+    result = await self._execute(api_commands)
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 146, in _execute
+    _, res = await self._get_response(msg)
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 101, in _get_response
+    raise RequestTimeout('Request timed out.', e)
+pytradfri.error.RequestTimeout: ('Request timed out.', RequestTimedOut())
+2019-10-25 19:41:19 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2019-10-25 19:41:19 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2019-10-25 19:41:19 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2019-10-25 19:41:19 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2019-10-25 19:41:19 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2019-10-25 19:41:19 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2019-10-25 19:41:19 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2019-10-25 19:41:19 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2019-10-25 19:41:19 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2019-10-25 19:41:19 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2019-10-25 19:41:19 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2019-10-25 19:41:19 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2019-10-25 19:41:19 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2019-10-25 19:41:19 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2019-10-25 19:41:19 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2019-10-25 19:41:19 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2019-10-25 19:41:19 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2019-10-25 19:41:19 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/transports/tinydtls.py", line 160, in _run
+    message = yield from self._queue.get()
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/util/asyncio.py", line 40, in get
+    priority, first = yield from self._inner.get()
+  File "/usr/local/lib/python3.7/asyncio/queues.py", line 159, in get
+    await getter
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/transports/tinydtls.py", line 169, in _run
+    self.coaptransport.new_error_callback(-1, self)
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 203, in _dispatch_error
+    for key, (monitor, cancellable_timeout) in self._active_exchanges.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+2019-10-26 08:09:21 ERROR (MainThread) [homeassistant.components.homeassistant] homeassistant/turn_off cannot be called without entity_id
+2019-10-27 07:11:40 ERROR (MainThread) [homeassistant.components.homeassistant] homeassistant/turn_off cannot be called without entity_id
+2019-10-27 12:11:41 ERROR (MainThread) [homeassistant.components.automation] Error while executing automation automation.good_morning. Unknown error for call_service at pos 1: 
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/automation/__init__.py", line 434, in action
+    await script_obj.async_run(variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 162, in async_run
+    await self._handle_action(action, variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 246, in _handle_action
+    await self._actions[_determine_action(action)](action, variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 329, in _async_call_service
+    context=context,
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 98, in async_call_from_config
+    domain, service_name, service_data, blocking=blocking, context=context
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
+    await handler.func(service_call)
+  File "/usr/src/homeassistant/homeassistant/components/homeassistant/__init__.py", line 41, in async_handle_turn_service
+    entity_ids = await async_extract_entity_ids(hass, service)
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 135, in async_extract_entity_ids
+    entity_ids = hass.components.group.expand_entity_ids(entity_ids)
+  File "/usr/src/homeassistant/homeassistant/components/group/__init__.py", line 160, in expand_entity_ids
+    domain, _ = ha.split_entity_id(entity_id)
+ValueError: not enough values to unpack (expected 2, got 1)
+2019-10-28 04:59:35 ERROR (MainThread) [homeassistant.components.hue.sensor_base] Unable to reach bridge 192.168.1.147 (Error requesting data from 192.168.1.147: None)
+2019-10-28 07:13:58 ERROR (MainThread) [homeassistant.components.homeassistant] homeassistant/turn_off cannot be called without entity_id
+2019-10-29 06:50:31 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.philips_tv is taking over 10 seconds
+2019-10-29 06:51:33 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.philips_tv is taking over 10 seconds
+2019-10-29 07:16:17 ERROR (MainThread) [homeassistant.components.homeassistant] homeassistant/turn_off cannot be called without entity_id

@@ -1,29 +1,30 @@
 # Day/Night rutines
 - alias: darkness_lights_outside
   trigger:
-    platform: state
-    entity_id: sun.sun
-    to: "sunset"
+    platform: sun
+    event: sunset
   action:
     - service: script.turn_on
       entity_id: script.sunset_outside
 
 - alias: darkness_lights_inside
   trigger:
-    platform: state
-    entity_id: sun.sun
-    to: "sunset"
+    platform: sun
+    event: sunset
+  condition:
+    - condition: state
+      entity_id: input_boolean.at_home
+      state: "off"
   action:
     - service: script.turn_on
-      antity_id: script.sunset_inside
-
+      entity_id: script.sunset_inside
+              
 - alias: light
   trigger:
-    platform: state
-    entity_id: sun.sun
-    to: "sunrise"
+    platform: sun
+    event: sunrise
   action:
-    - service: light.turn_off
+    - service: homeassistant.turn_off
       data:
         entity_id:
           - group.darkness_lights_outside
@@ -40,6 +41,30 @@
       entity_id: group.good_night_group_off
     - service: homeassistant.turn_on
       entity_id: group.good_night_group_on
+- alias: good_morning
+  trigger:
+    platform: state
+    entity_id: input_boolean.night_time
+    to: "off"
+  action:
+    - service: homeassistant.turn_off
+      data_template:
+        entity_id: >
+          {% if is_state('sun.sun', 'above_horizon') %}
+            group.bedroom
+          {% else %}
+            none
+          {% endif %}
+    - service: homeassistant.turn_on
+      data_template:
+        entity_id: >
+          {% if is_state('sun.sun', 'below_horizon') %}
+            - group.kitchen
+            - light.hall
+            - light.lill_hall
+          {% else %}
+            none
+          {% endif %}
 
 # Home/Away rutines
 - alias: welcome_home
@@ -71,7 +96,7 @@
         entity_id: >
           {% if is_state('sun.sun', 'below_horizon') %}
             group.darkness_inside
-          {% else%}
+          {% else %}
             none
           {% endif %}
   condition:
@@ -110,42 +135,13 @@
   action:
     - service: script.turn_on
       entity_id: script.sunrise_nattduk
-
-# - alias: morgonrutin
-#   trigger: 
-#     platform: state
-#     entity_id: sensor_binary.hue_motion_sensor_1_motion
-#     to: 'on'
-#   condition:
-#     condition: and
-#     conditions:
-#       - condition: sun
-#         before: sunrise
-#       - condition: time
-#         before: '07:30:00'
-#         after: '05:30:00'
-#   action:
-#     service: light.turn_on
-#     entity_id:
-#       - light.hall
-#       - light.kok
-
-# Activities
-- alias: watch_tv
-  trigger:
+- alias: tv_time_lights
+  trigger: 
     platform: state
     entity_id: input_boolean.tv_time
     to: "on"
   action:
     - service: homeassistant.turn_off
-      entity_id:
-        - group.diningroom
-        - group.vardagsrum
-        - light.hall
-        - light.lill_hall
+      entity_id: group.indoor
     - service: homeassistant.turn_on
-      data:
-        entity_id:
-          - light.piano
-        brightness: 150
-
+      entity_id: light.piano

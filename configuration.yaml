@@ -31,6 +31,9 @@ hue:
 sonos:
   media_player:
     hosts: 192.168.1.179
+media_player:
+  - platform: philips_js
+    host: 192.168.1.96
     
 tradfri:
   host: 192.168.1.229

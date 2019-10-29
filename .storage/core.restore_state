@@ -1,310 +1,272 @@
 {
     "data": [
         {
-            "last_seen": "2019-10-09T20:37:03.227294+00:00",
+            "last_seen": "2019-10-29T06:19:50.008527+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Tv time"
+                },
+                "context": {
+                    "id": "3db6d1ce5bc34439be32d4b64694254a",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_boolean.tv_time",
+                "last_changed": "2019-10-17T19:46:42.908668+00:00",
+                "last_updated": "2019-10-17T19:46:42.908668+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-10-29T06:19:50.008527+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Good night",
                     "icon": "if (state === 'on') return mdi:sleep; else return mdi:white-balance-sunny;"
                 },
                 "context": {
-                    "id": "e4af3d2cf18f49e1933f6a61d9a25d2c",
+                    "id": "7947808d86cb4bad81aa61a49c6ba32b",
                     "parent_id": null,
-                    "user_id": null
+                    "user_id": "0c08d605bf7842d78f15caf863e8c372"
                 },
                 "entity_id": "input_boolean.night_time",
-                "last_changed": "2019-10-09T20:37:00.812605+00:00",
-                "last_updated": "2019-10-09T20:37:00.812605+00:00",
-                "state": "off"
+                "last_changed": "2019-10-28T21:57:31.384523+00:00",
+                "last_updated": "2019-10-28T21:57:31.384523+00:00",
+                "state": "on"
             }
         },
         {
-            "last_seen": "2019-10-09T20:37:03.227294+00:00",
+            "last_seen": "2019-10-29T06:19:50.008527+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Someone is at home",
                     "icon": "if (state === 'on') return mdi:account-check; else return mdi:account-remove;"
                 },
                 "context": {
-                    "id": "c05f5a25bb5740ca85e3cb8ea8b05b49",
+                    "id": "be8fbd02a9a04afcbb6d8259019ec838",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "input_boolean.at_home",
-                "last_changed": "2019-10-09T20:37:00.813503+00:00",
-                "last_updated": "2019-10-09T20:37:00.813503+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-10-09T20:37:03.227294+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "morgonrutin",
-                    "last_triggered": null
-                },
-                "context": {
-                    "id": "22cd38c4fcaf4f9298622d1a94c9d268",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.morgonrutin",
-                "last_changed": "2019-10-09T20:37:02.787662+00:00",
-                "last_updated": "2019-10-09T20:37:02.787662+00:00",
+                "last_changed": "2019-10-28T16:47:59.814738+00:00",
+                "last_updated": "2019-10-28T16:47:59.814738+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-10-09T20:37:03.227294+00:00",
+            "last_seen": "2019-10-29T06:19:50.008527+00:00",
             "state": {
                 "attributes": {
-                    "friendly_name": "darkness_lights_inside",
-                    "last_triggered": null
+                    "friendly_name": "see_you_soon",
+                    "last_triggered": "2019-10-14T20:31:17.153741+00:00"
                 },
                 "context": {
-                    "id": "a5fac318e6a5464fbd4a689903959e54",
+                    "id": "ab0a7bac8c75434d99f7660a66e82bb7",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "automation.darkness_lights_inside",
-                "last_changed": "2019-10-09T20:37:02.789013+00:00",
-                "last_updated": "2019-10-09T20:37:02.789013+00:00",
+                "entity_id": "automation.see_you_soon",
+                "last_changed": "2019-10-17T19:46:44.637195+00:00",
+                "last_updated": "2019-10-17T19:46:44.637195+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-10-09T20:37:03.227294+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "light",
-                    "last_triggered": null
-                },
-                "context": {
-                    "id": "d2ab5861d18d48378fb827adb9a7120b",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.light",
-                "last_changed": "2019-10-09T20:37:02.790331+00:00",
-                "last_updated": "2019-10-09T20:37:02.790331+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-10-09T20:37:03.227294+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "nighty_night",
-                    "last_triggered": "2019-10-09T16:47:21.532210+00:00"
-                },
-                "context": {
-                    "id": "47d2f9e6b9a24a119640289959d56a17",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.nighty_night",
-                "last_changed": "2019-10-09T20:37:02.791739+00:00",
-                "last_updated": "2019-10-09T20:37:02.791739+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-10-09T20:37:03.227294+00:00",
+            "last_seen": "2019-10-29T06:19:50.008527+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "darkness_lights_outside",
-                    "last_triggered": null
+                    "last_triggered": "2019-10-28T15:36:23.038384+00:00"
                 },
                 "context": {
-                    "id": "e25e160f41954f148f58e86de7eb9ace",
+                    "id": "6b2398dfa67c40a78964f170a45ae4ad",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.darkness_lights_outside",
-                "last_changed": "2019-10-09T20:37:02.793007+00:00",
-                "last_updated": "2019-10-09T20:37:02.793007+00:00",
+                "last_changed": "2019-10-17T19:46:44.639415+00:00",
+                "last_updated": "2019-10-28T15:36:23.039081+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-10-09T20:37:03.227294+00:00",
+            "last_seen": "2019-10-29T06:19:50.008527+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "morning_sunrise_tak",
+                    "last_triggered": "2019-10-29T05:05:00.032196+00:00"
+                },
+                "context": {
+                    "id": "c91fced19a484b519bc5aeaac67ad0ee",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.morning_sunrise_tak",
+                "last_changed": "2019-10-17T19:46:44.641232+00:00",
+                "last_updated": "2019-10-29T05:05:00.032823+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-10-29T06:19:50.008527+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "morning_sunrise_nattduk",
+                    "last_triggered": "2019-10-29T05:10:00.033474+00:00"
+                },
+                "context": {
+                    "id": "b37bfd6ee7174b36af007a85cb414044",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.morning_sunrise_nattduk",
+                "last_changed": "2019-10-17T19:46:44.642767+00:00",
+                "last_updated": "2019-10-29T05:10:00.034139+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-10-29T06:19:50.008527+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "darkness_lights_inside",
+                    "last_triggered": "2019-10-28T15:36:23.040971+00:00"
+                },
+                "context": {
+                    "id": "25084b344c064107b68de8239f61b317",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.darkness_lights_inside",
+                "last_changed": "2019-10-17T19:46:44.644276+00:00",
+                "last_updated": "2019-10-28T15:36:23.041539+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-10-29T06:19:50.008527+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "light",
+                    "last_triggered": "2019-10-29T06:16:17.030715+00:00"
+                },
+                "context": {
+                    "id": "6cff16ab415b4a18a3a8555b863c7901",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.light",
+                "last_changed": "2019-10-17T19:46:44.645823+00:00",
+                "last_updated": "2019-10-29T06:16:17.031319+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-10-29T06:19:50.008527+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "tv_time_lights",
+                    "last_triggered": "2019-10-12T18:30:11.354745+00:00"
+                },
+                "context": {
+                    "id": "30c89980fca04783bcc1419cd7c40482",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.tv_time_lights",
+                "last_changed": "2019-10-17T19:46:44.647359+00:00",
+                "last_updated": "2019-10-17T19:46:44.647359+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-10-29T06:19:50.008527+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "nighty_night",
+                    "last_triggered": "2019-10-28T21:57:31.683712+00:00"
+                },
+                "context": {
+                    "id": "7aca6450f5bd417d9fd2874865750ffc",
+                    "parent_id": "7947808d86cb4bad81aa61a49c6ba32b",
+                    "user_id": null
+                },
+                "entity_id": "automation.nighty_night",
+                "last_changed": "2019-10-17T19:46:44.648851+00:00",
+                "last_updated": "2019-10-28T21:57:31.684286+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-10-29T06:19:50.008527+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "good_morning",
+                    "last_triggered": "2019-10-27T11:11:41.264254+00:00"
+                },
+                "context": {
+                    "id": "b95d81468d4f42d8a47f37003f31860f",
+                    "parent_id": "e61cd6f7ed4b4681b5e5252658515eff",
+                    "user_id": null
+                },
+                "entity_id": "automation.good_morning",
+                "last_changed": "2019-10-17T19:46:44.650316+00:00",
+                "last_updated": "2019-10-27T11:11:41.264853+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-10-29T06:19:50.008527+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "welcome_home",
-                    "last_triggered": "2019-10-09T16:47:52.048802+00:00"
+                    "last_triggered": "2019-10-28T16:47:59.979965+00:00"
                 },
                 "context": {
-                    "id": "fbf407658d53439c8958a01b1cb4f3fe",
-                    "parent_id": null,
+                    "id": "e17f0a9f206248dbb333fdfff048f7d0",
+                    "parent_id": "be8fbd02a9a04afcbb6d8259019ec838",
                     "user_id": null
                 },
                 "entity_id": "automation.welcome_home",
-                "last_changed": "2019-10-09T20:37:02.794414+00:00",
-                "last_updated": "2019-10-09T20:37:02.794414+00:00",
+                "last_changed": "2019-10-17T19:46:44.651770+00:00",
+                "last_updated": "2019-10-28T16:47:59.980588+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2019-10-09T20:37:03.227294+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "sunrise",
-                    "last_triggered": null
-                },
-                "context": {
-                    "id": "8bf09aec44b049bf826e807e545c6da7",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.sunrise",
-                "last_changed": "2019-10-09T20:37:02.795629+00:00",
-                "last_updated": "2019-10-09T20:37:02.795629+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-10-09T20:37:03.227294+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "sunrise",
-                    "last_triggered": null
-                },
-                "context": {
-                    "id": "c2fd5dcb1f9b471cbace2e7a9d606d29",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.sunrise_2",
-                "last_changed": "2019-10-09T20:37:02.796844+00:00",
-                "last_updated": "2019-10-09T20:37:02.796844+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-10-09T20:37:03.227294+00:00",
+            "last_seen": "2019-10-29T06:19:50.008527+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Adam's ONEPLUS A6003",
                     "source_type": "gps"
                 },
                 "context": {
-                    "id": "e7173ce061324931a95fc369be756f89",
+                    "id": "2ecacc45ed5a4702bf89e51cb19ca6fc",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "device_tracker.adam_s_oneplus_a6003",
-                "last_changed": "2019-10-09T20:37:02.844170+00:00",
-                "last_updated": "2019-10-09T20:37:02.844170+00:00",
+                "last_changed": "2019-10-17T19:46:44.741056+00:00",
+                "last_updated": "2019-10-17T19:46:44.741056+00:00",
                 "state": "unknown"
             }
         },
         {
-            "last_seen": "2019-10-09T20:37:03.227294+00:00",
+            "last_seen": "2019-10-29T06:19:50.008527+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "OnePlus_6",
                     "source_type": "gps"
                 },
                 "context": {
-                    "id": "886b4541fdfa49159ded6162ac500e85",
+                    "id": "14c512f9d7e14eb1a45e49fbe7ab1f0f",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "device_tracker.oneplus_6",
-                "last_changed": "2019-10-09T20:37:02.845553+00:00",
-                "last_updated": "2019-10-09T20:37:02.845553+00:00",
+                "last_changed": "2019-10-17T19:46:44.742589+00:00",
+                "last_updated": "2019-10-17T19:46:44.742589+00:00",
                 "state": "unknown"
-            }
-        },
-        {
-            "last_seen": "2019-10-09T16:45:55.183609+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Hanna is home",
-                    "icon": "if (state === 'on') return mdi:account-check; else return mdi:account-remove;"
-                },
-                "context": {
-                    "id": "67652454480c493e8c06b3f9cfafb2ae",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.hanna_home",
-                "last_changed": "2019-10-08T20:21:44.186396+00:00",
-                "last_updated": "2019-10-08T20:21:44.186396+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-10-09T16:45:55.183609+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Adam is home",
-                    "icon": "if (state === 'on') return mdi:account-check; else return mdi:account-remove;"
-                },
-                "context": {
-                    "id": "5571fa9dc4a44dcea0e1ca06a17f4fe5",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "input_boolean.adam_home",
-                "last_changed": "2019-10-08T20:21:44.187224+00:00",
-                "last_updated": "2019-10-08T20:21:44.187224+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2019-10-09T16:43:16.275898+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "darkness",
-                    "last_triggered": "2019-10-06T20:25:00.103681+00:00"
-                },
-                "context": {
-                    "id": "bfc20a11e34d49a9b8f8406c0ee5b1c2",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.darkness",
-                "last_changed": "2019-10-08T20:40:11.814418+00:00",
-                "last_updated": "2019-10-08T20:40:11.814418+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-10-03T19:17:42.374769+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Motion in the morning",
-                    "id": "morgon_motion_detection",
-                    "last_triggered": null
-                },
-                "context": {
-                    "id": "c9a1b808988548a8a6f75544d83eee45",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.motion_in_the_morning",
-                "last_changed": "2019-10-02T20:21:06.507701+00:00",
-                "last_updated": "2019-10-02T20:21:06.507701+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2019-10-09T16:43:16.271897+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "good_morning",
-                    "last_triggered": "2019-10-09T04:10:00.037881+00:00"
-                },
-                "context": {
-                    "id": "20e26587e3d64f6683bb9aa5f3c51091",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.good_morning",
-                "last_changed": "2019-10-08T20:40:11.818209+00:00",
-                "last_updated": "2019-10-09T04:10:00.038468+00:00",
-                "state": "on"
             }
         }
     ],

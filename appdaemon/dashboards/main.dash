@@ -7,13 +7,19 @@ scalable: False
 global_parameters:
     use_comma: 0
     precision: 1
-    use_hass_icon: 1
+    use_hass_icon: 0
     namespace: default
-temp:
+tv_widget:
+    widget_type: input_boolean
+    title: TV light
+    entity: input_boolean.tv_time
+    icon_on: mdi-television
+    icon_off: mdi-television
+temp_hue:
     widget_type: sensor
     title: Temperature
     entity: sensor.hue_motion_sensor_1_temperature
 layout:
-    - clock.clock(2x1), temp
-    - group.livingroom, group.diningroom, light.hall
-    - media_player.storarum(2x1), light.kok
+    - clock.clock(2x1), temp_hue, input_boolean.at_home
+    - group.livingroom, group.diningroom, input_boolean.night_time, tv_widget
+    - group.kitchen, group.bedroom

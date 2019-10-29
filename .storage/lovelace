@@ -47,7 +47,7 @@
                                 },
                                 {
                                     "entity": "light.lill_hall"
-                                },
+                                }
                             ],
                             "title": "Lampor",
                             "type": "entities"

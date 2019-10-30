@@ -27,8 +27,8 @@
     - service: homeassistant.turn_off
       data:
         entity_id:
-          - group.darkness_lights_outside
-          - group.darkness_lights_inside
+          - group.darkness_outside
+          - group.darkness_inside
 
 # Bedtime rutines
 - alias: nighty_night
@@ -59,9 +59,7 @@
       data_template:
         entity_id: >
           {% if is_state('sun.sun', 'below_horizon') %}
-            - group.kitchen
-            - light.hall
-            - light.lill_hall
+            group.darkness_inside
           {% else %}
             none
           {% endif %}

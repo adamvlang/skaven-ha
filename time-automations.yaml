@@ -1,0 +1,43 @@
+# Morning ruitines
+- alias: morning_sunrise_tak
+  trigger: 
+    platform: time
+    at: "06:05:00"
+  condition:
+    - condition: time
+      weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+  action:
+    - service: script.turn_on
+      entity_id: script.sunrise_tak
+
+- alias: morning_sunrise_nattduk
+  trigger: 
+    platform: time
+    at: "06:10:00"
+  condition:
+    - condition: time
+      weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+  action:
+    - service: script.turn_on
+      entity_id: script.sunrise_nattduk
+- alias: tv_time_lights
+  trigger: 
+    platform: state
+    entity_id: input_boolean.tv_time
+    to: "on"
+  action:
+    - service: homeassistant.turn_off
+      entity_id: group.indoor
+    - service: homeassistant.turn_on
+      entity_id: light.piano
+

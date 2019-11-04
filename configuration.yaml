@@ -10,7 +10,9 @@ hassio:
 
 config:
 
-automation: !include automations.yaml
+sun-automations: !include sun-automations.yaml
+boolean-automations: !include boolean-automations.yaml
+time-automations: !include time-automations.yaml
 script: !include scripts.yaml
 group: !include groups.yaml
 
@@ -50,4 +52,7 @@ input_boolean:
     icon: "if (state === 'on') return mdi:sleep; else return mdi:white-balance-sunny;"
   tv_time:
     name: Tv time
+    initial: off
+  kitchen_dinner:
+    name: Kitchen dinner
     initial: off

@@ -1,0 +1,11 @@
+TO DO:
+. at home ska inte släcka lampor inne om det är mörkt
+    Verkar inte skulle släckas
+. Köksmiddag
+    Tillaggd och ska testas.
+. Matsalsmiddag
+. Matsalsarbete
+. TVMiddag
+. Titta TV
+    Tillaggd och ska testas
+. Mysigt i vardagsrum

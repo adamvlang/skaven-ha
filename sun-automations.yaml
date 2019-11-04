@@ -1,0 +1,33 @@
+# Day/Night rutines
+- alias: darkness_lights_outside
+  trigger:
+    platform: sun
+    event: sunset
+  action:
+    - service: script.turn_on
+      entity_id: script.sunset_outside
+
+- alias: darkness_lights_inside
+  trigger:
+    platform: sun
+    event: sunset
+  condition:
+    - condition: state
+      entity_id: input_boolean.at_home
+      state: "off"
+  action:
+    - service: script.turn_on
+      entity_id: script.sunset_inside
+              
+- alias: light
+  trigger:
+    platform: sun
+    event: sunrise
+  action:
+    - service: homeassistant.turn_off
+      data:
+        entity_id:
+          - group.darkness_outside
+          - group.darkness_inside
+
+

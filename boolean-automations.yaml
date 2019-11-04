@@ -1,35 +1,3 @@
-# Day/Night rutines
-- alias: darkness_lights_outside
-  trigger:
-    platform: sun
-    event: sunset
-  action:
-    - service: script.turn_on
-      entity_id: script.sunset_outside
-
-- alias: darkness_lights_inside
-  trigger:
-    platform: sun
-    event: sunset
-  condition:
-    - condition: state
-      entity_id: input_boolean.at_home
-      state: "off"
-  action:
-    - service: script.turn_on
-      entity_id: script.sunset_inside
-              
-- alias: light
-  trigger:
-    platform: sun
-    event: sunrise
-  action:
-    - service: homeassistant.turn_off
-      data:
-        entity_id:
-          - group.darkness_outside
-          - group.darkness_inside
-
 # Bedtime rutines
 - alias: nighty_night
   trigger:
@@ -101,45 +69,34 @@
     - condition: sun
       after: sunset
 
-# Morning ruitines
-- alias: morning_sunrise_tak
-  trigger: 
-    platform: time
-    at: "06:05:00"
-  condition:
-    - condition: time
-      weekday:
-        - mon
-        - tue
-        - wed
-        - thu
-        - fri
-  action:
-    - service: script.turn_on
-      entity_id: script.sunrise_tak
-
-- alias: morning_sunrise_nattduk
-  trigger: 
-    platform: time
-    at: "06:10:00"
-  condition:
-    - condition: time
-      weekday:
-        - mon
-        - tue
-        - wed
-        - thu
-        - fri
-  action:
-    - service: script.turn_on
-      entity_id: script.sunrise_nattduk
-- alias: tv_time_lights
-  trigger: 
+#TV rutines
+- alias: tv_time:
+  trigger:
     platform: state
     entity_id: input_boolean.tv_time
     to: "on"
   action:
     - service: homeassistant.turn_off
-      entity_id: group.indoor
+      entity_id: group.bottom_floor
     - service: homeassistant.turn_on
-      entity_id: light.piano
+      data:
+        entity_id: light_piano
+        brightness: 170
+        xy_color: [0.60, 0.48]
+
+# Dinner rutines
+- alias:  kitchen_dinner
+  trigger:
+    plaform: state
+    entity_id: input_boolean.kitchen_dinner
+    to: "on"
+  action:
+    - service: homeassistant.turn_off
+      entity_id: group.bottom_floor
+    - service: homeassistant.turn_on
+      data:
+        entity_id: group.kitchen
+        brightness: 170
+        xy_color: [0.60,0.48]
+
+

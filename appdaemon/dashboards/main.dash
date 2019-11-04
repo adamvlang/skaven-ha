@@ -20,6 +20,7 @@ temp_hue:
     title: Temperature
     entity: sensor.hue_motion_sensor_1_temperature
 layout:
-    - clock.clock(2x1), temp_hue, input_boolean.at_home
-    - group.livingroom, group.diningroom, input_boolean.night_time, tv_widget
-    - group.kitchen, group.bedroom
+    - clock.clock(2x1), temp_hue,
+    - input_boolean.at_home, input_boolean.night_time
+    - group.livingroom, group.diningroom, tv_widget
+    - group.kitchen, group.bedroom, light.hall, light.lill_hall

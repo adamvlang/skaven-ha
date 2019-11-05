@@ -10,9 +10,7 @@ hassio:
 
 config:
 
-sun-automations: !include sun-automations.yaml
-boolean-automations: !include boolean-automations.yaml
-time-automations: !include time-automations.yaml
+automation: !include_dir_merge_list automation/
 script: !include scripts.yaml
 group: !include groups.yaml
 

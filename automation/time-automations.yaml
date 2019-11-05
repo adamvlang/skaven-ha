@@ -30,14 +30,3 @@
   action:
     - service: script.turn_on
       entity_id: script.sunrise_nattduk
-- alias: tv_time_lights
-  trigger: 
-    platform: state
-    entity_id: input_boolean.tv_time
-    to: "on"
-  action:
-    - service: homeassistant.turn_off
-      entity_id: group.indoor
-    - service: homeassistant.turn_on
-      entity_id: light.piano
-

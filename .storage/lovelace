@@ -13,15 +13,6 @@
                         {
                             "entities": [
                                 {
-                                    "entity": "input_boolean.night_time"
-                                },
-                                {
-                                    "entity": "input_boolean.at_home"
-                                },
-                                {
-                                    "entity": "input_boolean.tv_time"
-                                },
-                                {
                                     "entity": "group.livingroom"
                                 },
                                 {
@@ -50,6 +41,24 @@
                                 }
                             ],
                             "title": "Lampor",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "input_boolean.night_time"
+                                },
+                                {
+                                    "entity": "input_boolean.at_home"
+                                },
+                                {
+                                    "entity": "input_boolean.tv_time"
+                                },
+                                {
+                                    "entity": "input_boolean.kitchen_dinner"
+                                }
+                            ],
+                            "title": "Knappar",
                             "type": "entities"
                         },
                         {

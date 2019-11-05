@@ -10,12 +10,12 @@
                 "id": "69c55c8be30d471dbe772de8ad8e27dc",
                 "identifiers": [
                     [
-                        "device_id",
-                        "3acf96009c3a482998c619fc5e04a7bc"
-                    ],
-                    [
                         "webhook_id",
                         "69c90f1b65ab14577757c58798c4058eba1b70ba6fb869a6139350e879ba2ec6"
+                    ],
+                    [
+                        "device_id",
+                        "3acf96009c3a482998c619fc5e04a7bc"
                     ]
                 ],
                 "manufacturer": "OnePlus",
@@ -131,7 +131,7 @@
                 "model": "BSB002",
                 "name": "Philips hue",
                 "name_by_user": null,
-                "sw_version": "1934129020",
+                "sw_version": "1935074050",
                 "via_device_id": null
             },
             {

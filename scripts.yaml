@@ -55,23 +55,23 @@ sunrise_tak:
         entity_id: light.sovrum_tak
         xy_color: [0.65,0.41]
         brightness: 85
-        transition: 200
+        transition: 100
     - delay:
-        seconds: 200
+        seconds: 100
     - service: light.turn_on
       data:
         entity_id: light.sovrum_tak
         xy_color: [0.60,0.40]
         brightness: 170
-        transition: 200
+        transition: 100
     - delay:
-        seconds: 200
+        seconds: 100
     - service: light.turn_on
       data:
         entity_id: light.sovrum_tak
         xy_color: [0.48,0.40]
         brightness: 255
-        transition: 200
+        transition: 100
 sunrise_nattduk:
   sequence:
     - service: light.turn_on

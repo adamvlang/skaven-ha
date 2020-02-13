@@ -1,18 +1,56 @@
-2019-11-05 20:48:57 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+2020-02-03 13:57:43 ERROR (MainThread) [coap] Exception CancelledError() can not be represented as errno, setting -1.
+2020-02-03 13:57:43 ERROR (MainThread) [homeassistant.components.tradfri] Tradfri setup failed.
+2020-02-03 14:00:21 ERROR (MainThread) [coap] Exception CancelledError() can not be represented as errno, setting -1.
+2020-02-03 14:00:21 ERROR (MainThread) [coap] Exception CancelledError() can not be represented as errno, setting -1.
+2020-02-03 14:24:05 ERROR (SyncWorker_18) [homeassistant.core] Error doing job: Task exception was never retrieved
 Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 406, in _async_add_entity
-    await entity.async_added_to_hass()
-  File "/usr/src/homeassistant/homeassistant/components/met/weather.py", line 82, in async_added_to_hass
-    await self._fetch_data()
-  File "/usr/src/homeassistant/homeassistant/components/met/weather.py", line 146, in _fetch_data
-    self._update()
-  File "/usr/src/homeassistant/homeassistant/components/met/weather.py", line 153, in _update
-    self.async_write_ha_state()
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 279, in async_write_ha_state
-    self._async_write_ha_state()
-  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 307, in _async_write_ha_state
-    attr.update(self.state_attributes or {})
-  File "/usr/src/homeassistant/homeassistant/components/weather/__init__.py", line 168, in state_attributes
-    forecast_entry[ATTR_FORECAST_TEMP],
-KeyError: 'temperature'
-2019-11-05 20:48:59 WARNING (SyncWorker_10) [homeassistant.components.sonos.media_player] Failed to initialize '192.168.1.179'
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/transports/tinydtls.py", line 157, in _run
+    yield from self._connecting
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/transports/tinydtls.py", line 169, in _run
+    self.coaptransport.new_error_callback(-1, self)
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 203, in _dispatch_error
+    for key, (monitor, cancellable_timeout) in self._active_exchanges.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+2020-02-03 14:24:05 ERROR (SyncWorker_18) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/transports/tinydtls.py", line 160, in _run
+    message = yield from self._queue.get()
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/util/asyncio.py", line 40, in get
+    priority, first = yield from self._inner.get()
+  File "/usr/local/lib/python3.7/asyncio/queues.py", line 159, in get
+    await getter
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/transports/tinydtls.py", line 169, in _run
+    self.coaptransport.new_error_callback(-1, self)
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 203, in _dispatch_error
+    for key, (monitor, cancellable_timeout) in self._active_exchanges.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+2020-02-03 14:24:05 ERROR (SyncWorker_18) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/transports/tinydtls.py", line 160, in _run
+    message = yield from self._queue.get()
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/util/asyncio.py", line 40, in get
+    priority, first = yield from self._inner.get()
+  File "/usr/local/lib/python3.7/asyncio/queues.py", line 159, in get
+    await getter
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/transports/tinydtls.py", line 169, in _run
+    self.coaptransport.new_error_callback(-1, self)
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 203, in _dispatch_error
+    for key, (monitor, cancellable_timeout) in self._active_exchanges.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+2020-02-04 20:57:41 WARNING (MainThread) [homeassistant.components.websocket_api.http.connection.1922519024] Disconnected: Did not receive auth message within 10 seconds
+2020-02-09 22:07:15 WARNING (MainThread) [asyncio] socket.send() raised exception.

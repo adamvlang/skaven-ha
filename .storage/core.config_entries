@@ -111,14 +111,14 @@
                 "data": {
                     "gateway_id": "7e36515204400075",
                     "host": "192.168.1.229",
-                    "identity": "fa7fccd08f5f4f509e0912eb7eab06ac",
+                    "identity": "21e12d3ee0564df3b957aa8de4a83128",
                     "import_groups": false,
-                    "key": "1BtyzLQPv7gEuAsh"
+                    "key": "EVLnYihRSmcHNQKG"
                 },
                 "domain": "tradfri",
-                "entry_id": "435182716f7648dba7c227daf29d7734",
+                "entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
                 "options": {},
-                "source": "user",
+                "source": "import",
                 "system_options": {
                     "disable_new_entities": false
                 },

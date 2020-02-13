@@ -2,7 +2,7 @@
 - alias: morning_sunrise_tak
   trigger: 
     platform: time
-    at: "06:05:00"
+    at: "06:50:00"
   condition:
     - condition: time
       weekday:
@@ -18,7 +18,7 @@
 - alias: morning_sunrise_nattduk
   trigger: 
     platform: time
-    at: "06:10:00"
+    at: "06:55:00"
   condition:
     - condition: time
       weekday:

@@ -10,6 +10,8 @@ hassio:
 
 config:
 
+sun:
+
 automation: !include_dir_merge_list automation/
 script: !include scripts.yaml
 group: !include groups.yaml

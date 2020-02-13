@@ -128,114 +128,6 @@
                 "unique_id": "00:17:88:01:03:11:b2:9a-0b"
             },
             {
-                "config_entry_id": "435182716f7648dba7c227daf29d7734",
-                "device_id": "a8bbd5f3457a44c3b4a0eacb0b02d0f1",
-                "disabled_by": null,
-                "entity_id": "light.lill_hall",
-                "name": null,
-                "platform": "tradfri",
-                "unique_id": "light-7e36515204400075-65538"
-            },
-            {
-                "config_entry_id": "435182716f7648dba7c227daf29d7734",
-                "device_id": "4df402b1cad0461fa48cf4877d149191",
-                "disabled_by": null,
-                "entity_id": "light.nattduk_adam",
-                "name": null,
-                "platform": "tradfri",
-                "unique_id": "light-7e36515204400075-65541"
-            },
-            {
-                "config_entry_id": "435182716f7648dba7c227daf29d7734",
-                "device_id": "2c49ff53139c4a4fbbc95dcb0445722e",
-                "disabled_by": null,
-                "entity_id": "light.driver_halet",
-                "name": null,
-                "platform": "tradfri",
-                "unique_id": "light-7e36515204400075-65540"
-            },
-            {
-                "config_entry_id": "435182716f7648dba7c227daf29d7734",
-                "device_id": "52e248045dad40358f4a4c0a8f33636f",
-                "disabled_by": null,
-                "entity_id": "light.sovrum_tak",
-                "name": null,
-                "platform": "tradfri",
-                "unique_id": "light-7e36515204400075-65542"
-            },
-            {
-                "config_entry_id": "435182716f7648dba7c227daf29d7734",
-                "device_id": "cb0a5bd237d44204a5de5c0a954435bd",
-                "disabled_by": null,
-                "entity_id": "light.groventre",
-                "name": null,
-                "platform": "tradfri",
-                "unique_id": "light-7e36515204400075-65545"
-            },
-            {
-                "config_entry_id": "435182716f7648dba7c227daf29d7734",
-                "device_id": "d01cd22574674cb49bab617d142a7bed",
-                "disabled_by": null,
-                "entity_id": "light.svartvitt",
-                "name": null,
-                "platform": "tradfri",
-                "unique_id": "light-7e36515204400075-65546"
-            },
-            {
-                "config_entry_id": "435182716f7648dba7c227daf29d7734",
-                "device_id": "5f6a6c4eba084b83813c69fbd988f7e1",
-                "disabled_by": null,
-                "entity_id": "light.kallarhall",
-                "name": null,
-                "platform": "tradfri",
-                "unique_id": "light-7e36515204400075-65549"
-            },
-            {
-                "config_entry_id": "435182716f7648dba7c227daf29d7734",
-                "device_id": "794ec1b8595f4091962743675bd7f405",
-                "disabled_by": null,
-                "entity_id": "light.kallartrapp",
-                "name": null,
-                "platform": "tradfri",
-                "unique_id": "light-7e36515204400075-65548"
-            },
-            {
-                "config_entry_id": "435182716f7648dba7c227daf29d7734",
-                "device_id": "a628cab0dead4ea999c0b122235702fe",
-                "disabled_by": null,
-                "entity_id": "light.pannrum",
-                "name": null,
-                "platform": "tradfri",
-                "unique_id": "light-7e36515204400075-65547"
-            },
-            {
-                "config_entry_id": "435182716f7648dba7c227daf29d7734",
-                "device_id": "c30b2424c300456796e9c99bcfb94071",
-                "disabled_by": null,
-                "entity_id": "light.svartvitt_2",
-                "name": null,
-                "platform": "tradfri",
-                "unique_id": "light-7e36515204400075-65550"
-            },
-            {
-                "config_entry_id": "435182716f7648dba7c227daf29d7734",
-                "device_id": "064261c80c5d46e79c9c92b8bd7c4b0d",
-                "disabled_by": null,
-                "entity_id": "light.kokbank",
-                "name": null,
-                "platform": "tradfri",
-                "unique_id": "light-7e36515204400075-65551"
-            },
-            {
-                "config_entry_id": "435182716f7648dba7c227daf29d7734",
-                "device_id": "25ef9a9ee0704958abaa05162dd263f0",
-                "disabled_by": null,
-                "entity_id": "light.tvattstuga",
-                "name": null,
-                "platform": "tradfri",
-                "unique_id": "light-7e36515204400075-65544"
-            },
-            {
                 "config_entry_id": "febe0a7ce56845a8b76812fefbcc04be",
                 "device_id": "d740b12c930f476395e460847352fd21",
                 "disabled_by": null,
@@ -245,13 +137,121 @@
                 "unique_id": "00:17:88:01:03:7e:1f:e2-0b"
             },
             {
-                "config_entry_id": "435182716f7648dba7c227daf29d7734",
-                "device_id": "c2c71ec664f840e781bf1fcec75c10d2",
+                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
+                "device_id": "0307bbcbd16e4111a8b43a3fbcb2e4b3",
+                "disabled_by": null,
+                "entity_id": "light.tvattstuga",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65544"
+            },
+            {
+                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
+                "device_id": "6c914b9d95c24078917340f6ce1514aa",
+                "disabled_by": null,
+                "entity_id": "light.sovrum_tak",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65542"
+            },
+            {
+                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
+                "device_id": "170bf27e0b1d4b788db2bb4414569d52",
+                "disabled_by": null,
+                "entity_id": "light.groventre",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65545"
+            },
+            {
+                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
+                "device_id": "06c7840475c042a0a3c46c80bf0933c1",
+                "disabled_by": null,
+                "entity_id": "light.nattduk_adam",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65541"
+            },
+            {
+                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
+                "device_id": "cbd87bba0afe443e9b4e143a923df2e6",
+                "disabled_by": null,
+                "entity_id": "light.kallarhall",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65549"
+            },
+            {
+                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
+                "device_id": "d52b9062da0f434e92c6ef15b19aa5b1",
+                "disabled_by": null,
+                "entity_id": "light.svartvitt_2",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65550"
+            },
+            {
+                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
+                "device_id": "a30926e862754a65a84eeb5ca420f583",
+                "disabled_by": null,
+                "entity_id": "light.kokbank",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65551"
+            },
+            {
+                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
+                "device_id": "2646e86359b74a40a9fb662d7dc36174",
+                "disabled_by": null,
+                "entity_id": "light.pannrum",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65547"
+            },
+            {
+                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
+                "device_id": "6d8ab20bec0e4090a6d98fb33dd12574",
+                "disabled_by": null,
+                "entity_id": "light.kallartrapp",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65548"
+            },
+            {
+                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
+                "device_id": "4a9ca82430ea493db670e53bbc464649",
                 "disabled_by": null,
                 "entity_id": "light.piano",
                 "name": null,
                 "platform": "tradfri",
                 "unique_id": "light-7e36515204400075-65537"
+            },
+            {
+                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
+                "device_id": "04b1aba6d74b4172bea72fcde764e322",
+                "disabled_by": null,
+                "entity_id": "light.svartvitt",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65546"
+            },
+            {
+                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
+                "device_id": "a81e84ad26f5411ebeaffdc30901ddb9",
+                "disabled_by": null,
+                "entity_id": "light.lill_hall",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65538"
+            },
+            {
+                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
+                "device_id": "eb2572ab7ba54a529c752ad0fabc0e53",
+                "disabled_by": null,
+                "entity_id": "light.sovrum_hal",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65540"
             }
         ]
     },

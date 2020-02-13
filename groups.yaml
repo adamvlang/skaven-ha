@@ -72,7 +72,6 @@ darkness_outside:
   name: Darkness lights outside
   entities: 
     - group.outdoor
-
 inside:
   name: All lights inside
   entities:

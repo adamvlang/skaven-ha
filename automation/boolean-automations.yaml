@@ -9,28 +9,6 @@
       entity_id: group.good_night_group_off
     - service: homeassistant.turn_on
       entity_id: group.good_night_group_on
-- alias: good_morning
-  trigger:
-    platform: state
-    entity_id: input_boolean.night_time
-    to: "off"
-  action:
-    - service: homeassistant.turn_off
-      data_template:
-        entity_id: >
-          {% if is_state('sun.sun','above_horizon') %}
-            group.bedroom
-          {% else %}
-            none
-          {% endif %}
-    - service: homeassistant.turn_on
-      data_template:
-        entity_id: >
-          {% if is_state('sun.sun','below_horizon') %}
-            group.darkness_inside
-          {% else %}
-            none
-          {% endif %}
 
 # Home/Away rutines
 - alias: welcome_home

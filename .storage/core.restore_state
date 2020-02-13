@@ -1,7 +1,7 @@
 {
     "data": [
         {
-            "last_seen": "2020-02-13T20:44:11.008341+00:00",
+            "last_seen": "2020-02-13T20:59:12.008102+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Tv time"
@@ -18,7 +18,7 @@
             }
         },
         {
-            "last_seen": "2020-02-13T20:44:11.008341+00:00",
+            "last_seen": "2020-02-13T20:59:12.008102+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Someone is at home",
@@ -36,7 +36,7 @@
             }
         },
         {
-            "last_seen": "2020-02-13T20:44:11.008341+00:00",
+            "last_seen": "2020-02-13T20:59:12.008102+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Kitchen dinner"
@@ -53,25 +53,25 @@
             }
         },
         {
-            "last_seen": "2020-02-13T20:44:11.008341+00:00",
+            "last_seen": "2020-02-13T20:59:12.008102+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Good night",
                     "icon": "if (state === 'on') return mdi:sleep; else return mdi:white-balance-sunny;"
                 },
                 "context": {
-                    "id": "e3a3b43ff88440ef89bbf2a4800b1648",
+                    "id": "666e831cf8174529880ee1a4f964a3ad",
                     "parent_id": null,
                     "user_id": "0c08d605bf7842d78f15caf863e8c372"
                 },
                 "entity_id": "input_boolean.night_time",
-                "last_changed": "2020-02-13T05:41:59.944003+00:00",
-                "last_updated": "2020-02-13T05:41:59.944003+00:00",
-                "state": "off"
+                "last_changed": "2020-02-13T20:53:50.565677+00:00",
+                "last_updated": "2020-02-13T20:53:50.565677+00:00",
+                "state": "on"
             }
         },
         {
-            "last_seen": "2020-02-13T20:44:11.008341+00:00",
+            "last_seen": "2020-02-13T20:59:12.008102+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "dinner_in_kitchen",
@@ -89,7 +89,7 @@
             }
         },
         {
-            "last_seen": "2020-02-13T20:44:11.008341+00:00",
+            "last_seen": "2020-02-13T20:59:12.008102+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "darkness_lights_outside",
@@ -107,7 +107,7 @@
             }
         },
         {
-            "last_seen": "2020-02-13T20:44:11.008341+00:00",
+            "last_seen": "2020-02-13T20:59:12.008102+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "darkness_lights_inside",
@@ -125,7 +125,7 @@
             }
         },
         {
-            "last_seen": "2020-02-13T20:44:11.008341+00:00",
+            "last_seen": "2020-02-13T20:59:12.008102+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "light",
@@ -143,25 +143,25 @@
             }
         },
         {
-            "last_seen": "2020-02-13T20:44:11.008341+00:00",
+            "last_seen": "2020-02-13T20:59:12.008102+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "nighty_night",
-                    "last_triggered": "2020-02-11T22:03:19.904525+00:00"
+                    "last_triggered": "2020-02-13T20:53:50.861000+00:00"
                 },
                 "context": {
-                    "id": "1d0fce6431334c9f82eb3670992d6782",
-                    "parent_id": "d009549b290f4ae691d77ca3e4781927",
+                    "id": "2fd8645b0abf46c9826ddd6081279dfd",
+                    "parent_id": "666e831cf8174529880ee1a4f964a3ad",
                     "user_id": null
                 },
                 "entity_id": "automation.nighty_night",
                 "last_changed": "2020-02-03T12:56:11.198832+00:00",
-                "last_updated": "2020-02-11T22:03:19.905085+00:00",
+                "last_updated": "2020-02-13T20:53:50.861558+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-02-13T20:44:11.008341+00:00",
+            "last_seen": "2020-02-13T20:59:12.008102+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "welcome_home",
@@ -179,7 +179,7 @@
             }
         },
         {
-            "last_seen": "2020-02-13T20:44:11.008341+00:00",
+            "last_seen": "2020-02-13T20:59:12.008102+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "morning_sunrise_tak",
@@ -197,7 +197,7 @@
             }
         },
         {
-            "last_seen": "2020-02-13T20:44:11.008341+00:00",
+            "last_seen": "2020-02-13T20:59:12.008102+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "morning_sunrise_nattduk",
@@ -215,7 +215,7 @@
             }
         },
         {
-            "last_seen": "2020-02-13T20:44:11.008341+00:00",
+            "last_seen": "2020-02-13T20:59:12.008102+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "see_you_soon",
@@ -233,7 +233,7 @@
             }
         },
         {
-            "last_seen": "2020-02-13T20:44:11.008341+00:00",
+            "last_seen": "2020-02-13T20:59:12.008102+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "watch_tv",
@@ -251,7 +251,7 @@
             }
         },
         {
-            "last_seen": "2020-02-13T20:44:11.008341+00:00",
+            "last_seen": "2020-02-13T20:59:12.008102+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Adam's ONEPLUS A6003",
@@ -269,7 +269,7 @@
             }
         },
         {
-            "last_seen": "2020-02-13T20:44:11.008341+00:00",
+            "last_seen": "2020-02-13T20:59:12.008102+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "OnePlus_6",

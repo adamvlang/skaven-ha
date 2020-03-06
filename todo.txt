@@ -1,4 +1,6 @@
 TO DO:
+. Titta TV
+    Justera med nytt TV-rum
 . at home ska inte släcka lampor inne om det är mörkt
     Verkar inte skulle släckas
 . Köksmiddag
@@ -6,6 +8,4 @@ TO DO:
 . Matsalsmiddag
 . Matsalsarbete
 . TVMiddag
-. Titta TV
-    Tillaggd och ska testas
 . Mysigt i vardagsrum

@@ -5,19 +5,21 @@
     event: sunset
   action:
     - service: script.turn_on
-      entity_id: script.sunset_outside
+      entity_id: 
+      - script.sunset_outside
+      - script.sunset_inside
 
-- alias: darkness_lights_inside
-  trigger:
-    platform: sun
-    event: sunset
-  condition:
-    - condition: state
-      entity_id: input_boolean.at_home
-      state: "off"
-  action:
-    - service: script.turn_on
-      entity_id: script.sunset_inside
+# - alias: darkness_lights_inside
+#   trigger:
+#     platform: sun
+#     event: sunset
+#   condition:
+#     - condition: state
+#       entity_id: input_boolean.at_home
+#       state: "off"
+#   action:
+#     - service: script.turn_on
+#       entity_id: script.sunset_inside
               
 - alias: light
   trigger:

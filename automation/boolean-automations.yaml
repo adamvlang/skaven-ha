@@ -43,9 +43,6 @@
           {% else %}
             none
           {% endif %}
-  condition:
-    - condition: sun
-      after: sunset
 
 #TV rutines
 - alias: watch_tv
@@ -55,11 +52,13 @@
     to: "on"
   action:
     - service: homeassistant.turn_off
-      entity_id: group.ground_floor
+      entity_id: 
+      - group.ground_floor
+      - group.bedroom
     - service: homeassistant.turn_on
       data:
         entity_id: light.piano
-        brightness: 170
+        brightness: 140
         xy_color: [0.60,0.48]
 
 # Dinner rutines
@@ -74,5 +73,24 @@
     - service: homeassistant.turn_on
       data:
         entity_id: group.kitchen
-        brightness: 170
+        brightness: 130
+        xy_color: [0.60,0.48]
+
+# Dinner rutines
+- alias: dinner_in_dining_room
+  trigger:
+    platform: state
+    entity_id: input_boolean.dining_dinner
+    to: "on"
+  action:
+    - service: homeassistant.turn_off
+      entity_id: 
+      - group.ground_floor
+      - group.bedroom
+    - service: homeassistant.turn_on
+      data:
+        entity_id: 
+        - group.diningroom
+        - light.piano
+        brightness: 130
         xy_color: [0.60,0.48]

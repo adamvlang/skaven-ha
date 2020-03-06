@@ -491,7 +491,7 @@
                 "model": "TRADFRI bulb E27 WS opal 1000lm",
                 "name": "piano",
                 "name_by_user": null,
-                "sw_version": "2.0.022",
+                "sw_version": "2.0.023",
                 "via_device_id": "66cbd8885a504230983bf9fc583e849d"
             },
             {
@@ -531,7 +531,7 @@
                 "model": "TRADFRI bulb E27 WS opal 1000lm",
                 "name": "lill_hall",
                 "name_by_user": null,
-                "sw_version": "2.0.022",
+                "sw_version": "2.0.023",
                 "via_device_id": "66cbd8885a504230983bf9fc583e849d"
             },
             {

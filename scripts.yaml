@@ -11,14 +11,14 @@ sunset_inside:
       data:
         entity_id: group.darkness_inside
         brightness: 170
-        transition: 1800
+        transition: 100
     - delay:
-        seconds: 1800
+        seconds: 100
     - service: light.turn_on
       data:
         entity_id: group.darkness_inside
         brightness: 255
-        transition: 1800
+        transition: 100
 sunset_outside:
   sequence:
     - service: homeassistant.turn_on
@@ -31,14 +31,14 @@ sunset_outside:
       data:
         entity_id: group.darkness_outside
         brightness: 170
-        transition: 1800
+        transition: 100
     - delay:
-        seconds: 1800
+        seconds: 100
     - service: homeassistant.turn_on
       data:
         entity_id: group.darkness_outside
         brightness: 255
-        transition: 1800
+        transition: 100
 
 # Wake up rutine
 sunrise_tak:

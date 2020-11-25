@@ -2,85 +2,10 @@
     "data": {
         "entries": [
             {
-                "connection_class": "cloud_poll",
-                "data": {
-                    "track_home": true
-                },
-                "domain": "met",
-                "entry_id": "551072e212cc47a99332e38f7cbf5dd8",
-                "options": {},
-                "source": "onboarding",
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "title": "Home",
-                "version": 1
-            },
-            {
-                "connection_class": "cloud_push",
-                "data": {
-                    "app_data": {
-                        "push_token": "e1yswUzx3HU:APA91bGgBZSddEbFYoxUJMJ0oiCfM5ZNC8raWxLo0rmF_Jkmweop5JMoT5_Ik811PoYCcAsCfor9igctcORv57vMEIYgZkeO2Bp_T_SG3X5SaKPm592YsezkKK6JBfLn3DVdAMrdrKRx",
-                        "push_url": "https://us-central1-ha-client-c73c4.cloudfunctions.net/sendPushNotification"
-                    },
-                    "app_id": "ha_client",
-                    "app_name": "HA Client",
-                    "app_version": "0.6.7",
-                    "device_id": "3acf96009c3a482998c619fc5e04a7bc",
-                    "device_name": "Adam's ONEPLUS A6003",
-                    "manufacturer": "OnePlus",
-                    "model": "ONEPLUS A6003",
-                    "os_name": "Android",
-                    "os_version": "9",
-                    "supports_encryption": false,
-                    "user_id": "0c08d605bf7842d78f15caf863e8c372",
-                    "webhook_id": "69c90f1b65ab14577757c58798c4058eba1b70ba6fb869a6139350e879ba2ec6"
-                },
-                "domain": "mobile_app",
-                "entry_id": "91e9022209284274b556ed7642415b52",
-                "options": {},
-                "source": "registration",
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "title": "Adam's ONEPLUS A6003",
-                "version": 1
-            },
-            {
-                "connection_class": "cloud_push",
-                "data": {
-                    "app_data": {
-                        "push_token": "fzvoMiHQRZA:APA91bEFNC-Z_W6EO40n8X70M3EGJqUS63iOnaGsWr3JEzjzUCWeR8yxb3tSlBkmiK_GXHhjQnvAi9AoHfVDXa7_gjX2woaYcDsgoGVXaWLc0YiwFEaEW_XBydWPt94_UGztEbo_jm6s",
-                        "push_url": "https://ariela.surodev.com/notification/"
-                    },
-                    "app_id": "com.surodev.ariela",
-                    "app_name": "Ariela",
-                    "app_version": "1.3.6.5",
-                    "device_id": "a0133cf40f8242298b488877d599127c",
-                    "device_name": "OnePlus_6",
-                    "manufacturer": "OnePlus",
-                    "model": "OnePlus6",
-                    "os_name": "9",
-                    "os_version": "9",
-                    "supports_encryption": false,
-                    "user_id": "0c08d605bf7842d78f15caf863e8c372",
-                    "webhook_id": "21fec08cc6b36188d803a88c5700e54dddd82504a918a504f96532a96dcf75e8"
-                },
-                "domain": "mobile_app",
-                "entry_id": "760e39f05d184d4db3bd9db6c0b7560b",
-                "options": {},
-                "source": "registration",
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "title": "OnePlus_6",
-                "version": 1
-            },
-            {
                 "connection_class": "local_push",
                 "data": {},
                 "domain": "sonos",
-                "entry_id": "482999ac18064a8795941d276254bd20",
+                "entry_id": "97a74cd86b5b45af8c5a26c597a37907",
                 "options": {},
                 "source": "user",
                 "system_options": {
@@ -93,11 +18,11 @@
                 "connection_class": "local_poll",
                 "data": {
                     "bridge_id": "001788FFFEA145B9",
-                    "host": "192.168.1.147",
-                    "username": "Mi5kkbENCwI4Aim08X3cBI6ukpHM2rv62qTxrjwE"
+                    "host": "192.168.1.37",
+                    "username": "v4HFKOvDUDpR2TbdwRgVndSPP1sh4jw3DbBKwJye"
                 },
                 "domain": "hue",
-                "entry_id": "febe0a7ce56845a8b76812fefbcc04be",
+                "entry_id": "72e4c0a344c8499ab3ec2bca43ab0230",
                 "options": {},
                 "source": "import",
                 "system_options": {
@@ -110,19 +35,36 @@
                 "connection_class": "unknown",
                 "data": {
                     "gateway_id": "7e36515204400075",
-                    "host": "192.168.1.229",
-                    "identity": "21e12d3ee0564df3b957aa8de4a83128",
+                    "host": "192.168.1.214",
+                    "identity": "7e2ba9e4ad2b4f26b55ac89c609d0ce3",
                     "import_groups": false,
-                    "key": "EVLnYihRSmcHNQKG"
+                    "key": "Fhnj4ZHsLblH4jvR"
                 },
                 "domain": "tradfri",
-                "entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
+                "entry_id": "edfaf99000374243bfa78c3dc3fec2cb",
                 "options": {},
-                "source": "import",
+                "source": "user",
                 "system_options": {
                     "disable_new_entities": false
                 },
-                "title": "192.168.1.229",
+                "title": "192.168.1.214",
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_poll",
+                "data": {
+                    "latitude": 58.056323832898094,
+                    "longitude": 12.205915862561113,
+                    "name": "Home"
+                },
+                "domain": "smhi",
+                "entry_id": "2a0d875a120b4de6b221d6d0eef524cd",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Home",
                 "version": 1
             }
         ]

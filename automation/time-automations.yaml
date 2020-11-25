@@ -11,6 +11,9 @@
         - wed
         - thu
         - fri
+    - condition: state
+      entity_id: sun.sun
+      state: 'below_horizon'
   action:
     - service: script.turn_on
       entity_id: script.sunrise_tak
@@ -27,6 +30,17 @@
         - wed
         - thu
         - fri
+    - condition: state
+      entity_id: sun.sun
+      state: 'below_horizon'
   action:
     - service: script.turn_on
       entity_id: script.sunrise_nattduk
+
+- alias: reset_good_night
+  trigger:
+    platform: time
+    at: "10:00:00"
+  action:
+    - service: state.turn_off
+      entity_id: input_boolean.night_time

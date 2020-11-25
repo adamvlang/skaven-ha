@@ -62,11 +62,11 @@
                             "type": "entities"
                         },
                         {
-                            "entity": "weather.skaven",
+                            "entity": "weather.smhi_home",
                             "type": "weather-forecast"
                         },
                         {
-                            "entity": "media_player.storarum",
+                            "entity": "media_player.bedroom",
                             "type": "media-control"
                         }
                     ],

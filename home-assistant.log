@@ -1,135 +1,348 @@
-2020-02-14 15:58:55 WARNING (SyncWorker_3) [homeassistant.components.sonos.media_player] Failed to initialize '192.168.1.25'
-2020-02-14 15:58:58 WARNING (SyncWorker_3) [homeassistant.components.sonos.media_player] Failed to initialize '192.168.1.36'
-2020-02-15 07:41:04 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.philips_tv is taking over 10 seconds
-2020-02-16 10:52:33 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 192.168.1.59
-2020-02-19 17:56:10 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.philips_tv is taking over 10 seconds
-2020-02-22 18:00:59 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.philips_tv is taking over 10 seconds
-2020-02-22 18:04:47 ERROR (MainThread) [homeassistant.components.hue.sensor_base] Unable to reach bridge 192.168.1.147 ()
-2020-02-22 18:16:29 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.philips_tv is taking over 10 seconds
-2020-02-22 18:17:31 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.philips_tv is taking over 10 seconds
-2020-02-22 18:49:33 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.philips_tv is taking over 10 seconds
-2020-02-22 23:19:26 ERROR (MainThread) [coap] Exception CancelledError() can not be represented as errno, setting -1.
-2020-02-22 23:19:26 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+2020-11-22 19:37:24 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 192.168.1.18
+2020-11-22 22:30:16 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection.1919805296] 3: resource, /lights/9/state, not available
 Traceback (most recent call last):
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
-    r = await pr.response
-  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
-    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
-  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
-    blockresponse = yield from blockrequest.response
-OSError: [Errno -1] No error information
-
-During handling of the above exception, another exception occurred:
-
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/commands.py", line 130, in handle_call_service
+    connection.context(msg),
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
+    await handler.func(service_call)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_component.py", line 213, in handle_service
+    self._platforms.values(), func, call, service_name, required_features
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 349, in entity_service_call
+    future.result()  # pop exception if have
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 371, in _handle_service_platform_call
+    await getattr(entity, func)(**data)
+  File "/usr/src/homeassistant/homeassistant/components/hue/light.py", line 440, in async_turn_off
+    await self.light.set_state(**command)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/lights.py", line 117, in set_state
+    json=data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 64, in request
+    _raise_on_error(data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 78, in _raise_on_error
+    raise_error(data['error'])
+  File "/usr/local/lib/python3.7/site-packages/aiohue/errors.py", line 39, in raise_error
+    raise cls("{}: {}".format(type, error['description']))
+aiohue.errors.AiohueException: 3: resource, /lights/9/state, not available
+2020-11-22 22:30:19 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection.1919805296] 3: resource, /lights/9/state, not available
 Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/commands.py", line 130, in handle_call_service
+    connection.context(msg),
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
   File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
     await handler.func(service_call)
   File "/usr/src/homeassistant/homeassistant/components/light/__init__.py", line 310, in async_handle_light_on_service
     await light.async_turn_on(**pars)
-  File "/usr/src/homeassistant/homeassistant/components/tradfri/light.py", line 337, in async_turn_on
-    await self._api(command)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 155, in request
-    result = await self._execute(api_commands)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 146, in _execute
-    _, res = await self._get_response(msg)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 105, in _get_response
-    await self._reset_protocol(e)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 78, in _reset_protocol
-    await protocol.shutdown()
-  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 133, in shutdown
-    for exchange_monitor, cancellable in self._active_exchanges.values():
-AttributeError: 'NoneType' object has no attribute 'values'
-2020-02-22 23:19:26 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+  File "/usr/src/homeassistant/homeassistant/components/hue/light.py", line 417, in async_turn_on
+    await self.light.set_state(**command)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/lights.py", line 117, in set_state
+    json=data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 64, in request
+    _raise_on_error(data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 78, in _raise_on_error
+    raise_error(data['error'])
+  File "/usr/local/lib/python3.7/site-packages/aiohue/errors.py", line 39, in raise_error
+    raise cls("{}: {}".format(type, error['description']))
+aiohue.errors.AiohueException: 3: resource, /lights/9/state, not available
+2020-11-22 22:30:35 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection.1919805296] 3: resource, /lights/9/state, not available
 Traceback (most recent call last):
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
-    r = await pr.response
-  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
-    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
-  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
-    blockresponse = yield from blockrequest.response
-OSError: [Errno -1] No error information
-
-During handling of the above exception, another exception occurred:
-
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/commands.py", line 130, in handle_call_service
+    connection.context(msg),
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
+    await handler.func(service_call)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_component.py", line 213, in handle_service
+    self._platforms.values(), func, call, service_name, required_features
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 349, in entity_service_call
+    future.result()  # pop exception if have
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 371, in _handle_service_platform_call
+    await getattr(entity, func)(**data)
+  File "/usr/src/homeassistant/homeassistant/components/hue/light.py", line 440, in async_turn_off
+    await self.light.set_state(**command)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/lights.py", line 117, in set_state
+    json=data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 64, in request
+    _raise_on_error(data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 78, in _raise_on_error
+    raise_error(data['error'])
+  File "/usr/local/lib/python3.7/site-packages/aiohue/errors.py", line 39, in raise_error
+    raise cls("{}: {}".format(type, error['description']))
+aiohue.errors.AiohueException: 3: resource, /lights/9/state, not available
+2020-11-22 22:30:36 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection.1919805296] 3: resource, /lights/9/state, not available
 Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/commands.py", line 130, in handle_call_service
+    connection.context(msg),
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
   File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
     await handler.func(service_call)
   File "/usr/src/homeassistant/homeassistant/components/light/__init__.py", line 310, in async_handle_light_on_service
     await light.async_turn_on(**pars)
-  File "/usr/src/homeassistant/homeassistant/components/tradfri/light.py", line 337, in async_turn_on
-    await self._api(command)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 155, in request
-    result = await self._execute(api_commands)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 146, in _execute
-    _, res = await self._get_response(msg)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 105, in _get_response
-    await self._reset_protocol(e)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 78, in _reset_protocol
-    await protocol.shutdown()
-  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 133, in shutdown
-    for exchange_monitor, cancellable in self._active_exchanges.values():
-AttributeError: 'NoneType' object has no attribute 'values'
-2020-02-22 23:19:26 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+  File "/usr/src/homeassistant/homeassistant/components/hue/light.py", line 417, in async_turn_on
+    await self.light.set_state(**command)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/lights.py", line 117, in set_state
+    json=data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 64, in request
+    _raise_on_error(data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 78, in _raise_on_error
+    raise_error(data['error'])
+  File "/usr/local/lib/python3.7/site-packages/aiohue/errors.py", line 39, in raise_error
+    raise cls("{}: {}".format(type, error['description']))
+aiohue.errors.AiohueException: 3: resource, /lights/9/state, not available
+2020-11-22 22:30:36 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection.1919805296] 3: resource, /lights/9/state, not available
 Traceback (most recent call last):
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
-    r = await pr.response
-  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
-    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
-  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
-    blockresponse = yield from blockrequest.response
-OSError: [Errno -1] No error information
-
-During handling of the above exception, another exception occurred:
-
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/commands.py", line 130, in handle_call_service
+    connection.context(msg),
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
+    await handler.func(service_call)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_component.py", line 213, in handle_service
+    self._platforms.values(), func, call, service_name, required_features
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 349, in entity_service_call
+    future.result()  # pop exception if have
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 371, in _handle_service_platform_call
+    await getattr(entity, func)(**data)
+  File "/usr/src/homeassistant/homeassistant/components/hue/light.py", line 440, in async_turn_off
+    await self.light.set_state(**command)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/lights.py", line 117, in set_state
+    json=data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 64, in request
+    _raise_on_error(data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 78, in _raise_on_error
+    raise_error(data['error'])
+  File "/usr/local/lib/python3.7/site-packages/aiohue/errors.py", line 39, in raise_error
+    raise cls("{}: {}".format(type, error['description']))
+aiohue.errors.AiohueException: 3: resource, /lights/9/state, not available
+2020-11-22 22:30:37 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection.1919805296] 3: resource, /lights/9/state, not available
 Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/commands.py", line 130, in handle_call_service
+    connection.context(msg),
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
   File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
     await handler.func(service_call)
   File "/usr/src/homeassistant/homeassistant/components/light/__init__.py", line 310, in async_handle_light_on_service
     await light.async_turn_on(**pars)
-  File "/usr/src/homeassistant/homeassistant/components/tradfri/light.py", line 337, in async_turn_on
-    await self._api(command)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 155, in request
-    result = await self._execute(api_commands)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 146, in _execute
-    _, res = await self._get_response(msg)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 105, in _get_response
-    await self._reset_protocol(e)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 78, in _reset_protocol
-    await protocol.shutdown()
-  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 133, in shutdown
-    for exchange_monitor, cancellable in self._active_exchanges.values():
-AttributeError: 'NoneType' object has no attribute 'values'
-2020-02-22 23:19:26 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+  File "/usr/src/homeassistant/homeassistant/components/hue/light.py", line 417, in async_turn_on
+    await self.light.set_state(**command)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/lights.py", line 117, in set_state
+    json=data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 64, in request
+    _raise_on_error(data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 78, in _raise_on_error
+    raise_error(data['error'])
+  File "/usr/local/lib/python3.7/site-packages/aiohue/errors.py", line 39, in raise_error
+    raise cls("{}: {}".format(type, error['description']))
+aiohue.errors.AiohueException: 3: resource, /lights/9/state, not available
+2020-11-22 22:30:37 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection.1919805296] 3: resource, /lights/9/state, not available
 Traceback (most recent call last):
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
-    r = await pr.response
-  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
-    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
-  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
-    blockresponse = yield from blockrequest.response
-OSError: [Errno -1] No error information
-
-During handling of the above exception, another exception occurred:
-
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/commands.py", line 130, in handle_call_service
+    connection.context(msg),
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
+    await handler.func(service_call)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_component.py", line 213, in handle_service
+    self._platforms.values(), func, call, service_name, required_features
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 349, in entity_service_call
+    future.result()  # pop exception if have
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 371, in _handle_service_platform_call
+    await getattr(entity, func)(**data)
+  File "/usr/src/homeassistant/homeassistant/components/hue/light.py", line 440, in async_turn_off
+    await self.light.set_state(**command)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/lights.py", line 117, in set_state
+    json=data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 64, in request
+    _raise_on_error(data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 78, in _raise_on_error
+    raise_error(data['error'])
+  File "/usr/local/lib/python3.7/site-packages/aiohue/errors.py", line 39, in raise_error
+    raise cls("{}: {}".format(type, error['description']))
+aiohue.errors.AiohueException: 3: resource, /lights/9/state, not available
+2020-11-23 08:14:50 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
 Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
+    await handler.func(service_call)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_component.py", line 213, in handle_service
+    self._platforms.values(), func, call, service_name, required_features
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 349, in entity_service_call
+    future.result()  # pop exception if have
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 371, in _handle_service_platform_call
+    await getattr(entity, func)(**data)
+  File "/usr/src/homeassistant/homeassistant/components/hue/light.py", line 440, in async_turn_off
+    await self.light.set_state(**command)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/lights.py", line 117, in set_state
+    json=data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 64, in request
+    _raise_on_error(data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 78, in _raise_on_error
+    raise_error(data['error'])
+  File "/usr/local/lib/python3.7/site-packages/aiohue/errors.py", line 39, in raise_error
+    raise cls("{}: {}".format(type, error['description']))
+aiohue.errors.AiohueException: 3: resource, /lights/5/state, not available
+2020-11-23 10:00:00 ERROR (MainThread) [homeassistant.components.automation] Error while executing automation automation.reset_good_night. Service not found for call_service at pos 1: Unable to find service state/turn_off
+2020-11-23 15:40:38 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
   File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
     await handler.func(service_call)
   File "/usr/src/homeassistant/homeassistant/components/light/__init__.py", line 310, in async_handle_light_on_service
     await light.async_turn_on(**pars)
-  File "/usr/src/homeassistant/homeassistant/components/tradfri/light.py", line 337, in async_turn_on
-    await self._api(command)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 155, in request
-    result = await self._execute(api_commands)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 146, in _execute
-    _, res = await self._get_response(msg)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 105, in _get_response
-    await self._reset_protocol(e)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 78, in _reset_protocol
-    await protocol.shutdown()
-  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 133, in shutdown
-    for exchange_monitor, cancellable in self._active_exchanges.values():
-AttributeError: 'NoneType' object has no attribute 'values'
-2020-02-22 23:19:26 WARNING (MainThread) [homeassistant.components.tradfri.sensor] Observation failed for pannrum_motion
+  File "/usr/src/homeassistant/homeassistant/components/hue/light.py", line 417, in async_turn_on
+    await self.light.set_state(**command)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/lights.py", line 117, in set_state
+    json=data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 64, in request
+    _raise_on_error(data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 78, in _raise_on_error
+    raise_error(data['error'])
+  File "/usr/local/lib/python3.7/site-packages/aiohue/errors.py", line 39, in raise_error
+    raise cls("{}: {}".format(type, error['description']))
+aiohue.errors.AiohueException: 3: resource, /lights/5/state, not available
+2020-11-23 15:40:40 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
+    await handler.func(service_call)
+  File "/usr/src/homeassistant/homeassistant/components/light/__init__.py", line 310, in async_handle_light_on_service
+    await light.async_turn_on(**pars)
+  File "/usr/src/homeassistant/homeassistant/components/hue/light.py", line 417, in async_turn_on
+    await self.light.set_state(**command)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/lights.py", line 117, in set_state
+    json=data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 64, in request
+    _raise_on_error(data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 78, in _raise_on_error
+    raise_error(data['error'])
+  File "/usr/local/lib/python3.7/site-packages/aiohue/errors.py", line 39, in raise_error
+    raise cls("{}: {}".format(type, error['description']))
+aiohue.errors.AiohueException: 3: resource, /lights/5/state, not available
+2020-11-23 15:42:21 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 162, in async_run
+    await self._handle_action(action, variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 246, in _handle_action
+    await self._actions[_determine_action(action)](action, variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 329, in _async_call_service
+    context=context,
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 98, in async_call_from_config
+    domain, service_name, service_data, blocking=blocking, context=context
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
+    await handler.func(service_call)
+  File "/usr/src/homeassistant/homeassistant/components/light/__init__.py", line 310, in async_handle_light_on_service
+    await light.async_turn_on(**pars)
+  File "/usr/src/homeassistant/homeassistant/components/hue/light.py", line 417, in async_turn_on
+    await self.light.set_state(**command)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/lights.py", line 117, in set_state
+    json=data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 64, in request
+    _raise_on_error(data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 78, in _raise_on_error
+    raise_error(data['error'])
+  File "/usr/local/lib/python3.7/site-packages/aiohue/errors.py", line 39, in raise_error
+    raise cls("{}: {}".format(type, error['description']))
+aiohue.errors.AiohueException: 3: resource, /lights/5/state, not available
+2020-11-24 08:16:55 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
+    await handler.func(service_call)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_component.py", line 213, in handle_service
+    self._platforms.values(), func, call, service_name, required_features
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 349, in entity_service_call
+    future.result()  # pop exception if have
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 371, in _handle_service_platform_call
+    await getattr(entity, func)(**data)
+  File "/usr/src/homeassistant/homeassistant/components/hue/light.py", line 440, in async_turn_off
+    await self.light.set_state(**command)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/lights.py", line 117, in set_state
+    json=data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 64, in request
+    _raise_on_error(data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 78, in _raise_on_error
+    raise_error(data['error'])
+  File "/usr/local/lib/python3.7/site-packages/aiohue/errors.py", line 39, in raise_error
+    raise cls("{}: {}".format(type, error['description']))
+aiohue.errors.AiohueException: 3: resource, /lights/5/state, not available
+2020-11-24 10:00:00 ERROR (MainThread) [homeassistant.components.automation] Error while executing automation automation.reset_good_night. Service not found for call_service at pos 1: Unable to find service state/turn_off
+2020-11-24 14:37:21 ERROR (MainThread) [homeassistant.components.hue.light] Unable to reach bridge 192.168.1.37 (Error requesting data from 192.168.1.37: Cannot connect to host 192.168.1.37:80 ssl:None [Connect call failed ('192.168.1.37', 80)])
+2020-11-24 15:39:08 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
+    await handler.func(service_call)
+  File "/usr/src/homeassistant/homeassistant/components/light/__init__.py", line 310, in async_handle_light_on_service
+    await light.async_turn_on(**pars)
+  File "/usr/src/homeassistant/homeassistant/components/hue/light.py", line 417, in async_turn_on
+    await self.light.set_state(**command)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/lights.py", line 117, in set_state
+    json=data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 64, in request
+    _raise_on_error(data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 78, in _raise_on_error
+    raise_error(data['error'])
+  File "/usr/local/lib/python3.7/site-packages/aiohue/errors.py", line 39, in raise_error
+    raise cls("{}: {}".format(type, error['description']))
+aiohue.errors.AiohueException: 3: resource, /lights/5/state, not available
+2020-11-24 15:39:10 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
+    await handler.func(service_call)
+  File "/usr/src/homeassistant/homeassistant/components/light/__init__.py", line 310, in async_handle_light_on_service
+    await light.async_turn_on(**pars)
+  File "/usr/src/homeassistant/homeassistant/components/hue/light.py", line 417, in async_turn_on
+    await self.light.set_state(**command)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/lights.py", line 117, in set_state
+    json=data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 64, in request
+    _raise_on_error(data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 78, in _raise_on_error
+    raise_error(data['error'])
+  File "/usr/local/lib/python3.7/site-packages/aiohue/errors.py", line 39, in raise_error
+    raise cls("{}: {}".format(type, error['description']))
+aiohue.errors.AiohueException: 3: resource, /lights/5/state, not available
+2020-11-24 15:40:51 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 162, in async_run
+    await self._handle_action(action, variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 246, in _handle_action
+    await self._actions[_determine_action(action)](action, variables, context)
+  File "/usr/src/homeassistant/homeassistant/helpers/script.py", line 329, in _async_call_service
+    context=context,
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 98, in async_call_from_config
+    domain, service_name, service_data, blocking=blocking, context=context
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1234, in async_call
+    await asyncio.shield(self._execute_service(handler, service_call))
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
+    await handler.func(service_call)
+  File "/usr/src/homeassistant/homeassistant/components/light/__init__.py", line 310, in async_handle_light_on_service
+    await light.async_turn_on(**pars)
+  File "/usr/src/homeassistant/homeassistant/components/hue/light.py", line 417, in async_turn_on
+    await self.light.set_state(**command)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/lights.py", line 117, in set_state
+    json=data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 64, in request
+    _raise_on_error(data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 78, in _raise_on_error
+    raise_error(data['error'])
+  File "/usr/local/lib/python3.7/site-packages/aiohue/errors.py", line 39, in raise_error
+    raise cls("{}: {}".format(type, error['description']))
+aiohue.errors.AiohueException: 3: resource, /lights/5/state, not available
+2020-11-25 08:20:31 ERROR (MainThread) [coap] Exception CancelledError() can not be represented as errno, setting -1.
+2020-11-25 08:20:31 WARNING (MainThread) [homeassistant.components.tradfri.sensor] Observation failed for pannrum_motion
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
     r = await pr.response
@@ -138,7 +351,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
     blockresponse = yield from blockrequest.response
 aiocoap.error.RequestTimedOut
-2020-02-22 23:19:26 WARNING (MainThread) [homeassistant.components.tradfri.sensor] Observation failed for TRADFRI remote control
+2020-11-25 08:20:31 WARNING (MainThread) [homeassistant.components.tradfri.sensor] Observation failed for TRADFRI motion sensor 4
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
     r = await pr.response
@@ -147,7 +360,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
     blockresponse = yield from blockrequest.response
 aiocoap.error.RequestTimedOut
-2020-02-22 23:19:26 WARNING (MainThread) [homeassistant.components.tradfri.sensor] Observation failed for kallartrapp_motion
+2020-11-25 08:20:31 WARNING (MainThread) [homeassistant.components.tradfri.sensor] Observation failed for TRADFRI motion sensor 3
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
     r = await pr.response
@@ -156,7 +369,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
     blockresponse = yield from blockrequest.response
 aiocoap.error.RequestTimedOut
-2020-02-22 23:19:26 WARNING (MainThread) [homeassistant.components.tradfri.sensor] Observation failed for TRADFRI motion sensor 3
+2020-11-25 08:20:31 WARNING (MainThread) [homeassistant.components.tradfri.sensor] Observation failed for TRADFRI remote control
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
     r = await pr.response
@@ -165,7 +378,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
     blockresponse = yield from blockrequest.response
 aiocoap.error.RequestTimedOut
-2020-02-22 23:19:26 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for svartvitt
+2020-11-25 08:20:31 WARNING (MainThread) [homeassistant.components.tradfri.sensor] Observation failed for kallartrapp_motion
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
     r = await pr.response
@@ -174,7 +387,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
     blockresponse = yield from blockrequest.response
 aiocoap.error.RequestTimedOut
-2020-02-22 23:19:26 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for pannrum
+2020-11-25 08:20:31 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for kokbank
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
     r = await pr.response
@@ -183,7 +396,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
     blockresponse = yield from blockrequest.response
 aiocoap.error.RequestTimedOut
-2020-02-22 23:19:26 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for kokbank
+2020-11-25 08:20:31 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for tvattstuga
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
     r = await pr.response
@@ -192,7 +405,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
     blockresponse = yield from blockrequest.response
 aiocoap.error.RequestTimedOut
-2020-02-22 23:19:26 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for groventre
+2020-11-25 08:20:31 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for sovrum_rund
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
     r = await pr.response
@@ -201,7 +414,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
     blockresponse = yield from blockrequest.response
 aiocoap.error.RequestTimedOut
-2020-02-22 23:19:26 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for kallartrapp
+2020-11-25 08:20:31 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for hanna_sang
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
     r = await pr.response
@@ -210,7 +423,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
     blockresponse = yield from blockrequest.response
 aiocoap.error.RequestTimedOut
-2020-02-22 23:19:26 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for nattduk_adam
+2020-11-25 08:20:31 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for groventre_ute
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
     r = await pr.response
@@ -219,7 +432,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
     blockresponse = yield from blockrequest.response
 aiocoap.error.RequestTimedOut
-2020-02-22 23:19:26 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for tvattstuga
+2020-11-25 08:20:31 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for TRADFRI bulb 13
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
     r = await pr.response
@@ -228,7 +441,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
     blockresponse = yield from blockrequest.response
 aiocoap.error.RequestTimedOut
-2020-02-22 23:19:26 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for svartvitt_2
+2020-11-25 08:20:31 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for pannrum
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
     r = await pr.response
@@ -237,7 +450,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
     blockresponse = yield from blockrequest.response
 aiocoap.error.RequestTimedOut
-2020-02-22 23:19:26 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for sovrum_hal
+2020-11-25 08:20:31 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for tv_golvlampa
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
     r = await pr.response
@@ -246,7 +459,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
     blockresponse = yield from blockrequest.response
 aiocoap.error.RequestTimedOut
-2020-02-22 23:19:26 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for lill_hall
+2020-11-25 08:20:31 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for guest_window
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
     r = await pr.response
@@ -255,7 +468,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
     blockresponse = yield from blockrequest.response
 aiocoap.error.RequestTimedOut
-2020-02-22 23:19:26 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for piano
+2020-11-25 08:20:31 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for TRADFRI bulb 16
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
     r = await pr.response
@@ -264,7 +477,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
     blockresponse = yield from blockrequest.response
 aiocoap.error.RequestTimedOut
-2020-02-22 23:19:26 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for kallarhall
+2020-11-25 08:20:31 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for sovrum_hal
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
     r = await pr.response
@@ -273,7 +486,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
     blockresponse = yield from blockrequest.response
 aiocoap.error.RequestTimedOut
-2020-02-22 23:19:26 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for sovrum_tak
+2020-11-25 08:20:31 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for tv_fonster
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
     r = await pr.response
@@ -282,7 +495,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
     blockresponse = yield from blockrequest.response
 aiocoap.error.RequestTimedOut
-2020-02-22 23:19:26 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+2020-11-25 08:20:31 WARNING (MainThread) [homeassistant.components.tradfri.light] Observation failed for sovrum_tak
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
     r = await pr.response
@@ -290,10 +503,8 @@ Traceback (most recent call last):
     yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
   File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
     blockresponse = yield from blockrequest.response
-OSError: [Errno -1] No error information
-
-During handling of the above exception, another exception occurred:
-
+aiocoap.error.RequestTimedOut
+2020-11-25 08:20:31 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
 Traceback (most recent call last):
   File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
     await handler.func(service_call)
@@ -303,135 +514,19 @@ Traceback (most recent call last):
     future.result()  # pop exception if have
   File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 371, in _handle_service_platform_call
     await getattr(entity, func)(**data)
-  File "/usr/src/homeassistant/homeassistant/components/tradfri/light.py", line 256, in async_turn_off
-    await self._api(self._light_control.set_state(False))
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 155, in request
-    result = await self._execute(api_commands)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 146, in _execute
-    _, res = await self._get_response(msg)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 105, in _get_response
-    await self._reset_protocol(e)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 78, in _reset_protocol
-    await protocol.shutdown()
-  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 133, in shutdown
-    for exchange_monitor, cancellable in self._active_exchanges.values():
-AttributeError: 'NoneType' object has no attribute 'values'
-2020-02-22 23:19:26 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
-    r = await pr.response
-  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
-    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
-  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
-    blockresponse = yield from blockrequest.response
-OSError: [Errno -1] No error information
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
-    await handler.func(service_call)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_component.py", line 213, in handle_service
-    self._platforms.values(), func, call, service_name, required_features
-  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 349, in entity_service_call
-    future.result()  # pop exception if have
-  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 371, in _handle_service_platform_call
-    await getattr(entity, func)(**data)
-  File "/usr/src/homeassistant/homeassistant/components/tradfri/light.py", line 256, in async_turn_off
-    await self._api(self._light_control.set_state(False))
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 155, in request
-    result = await self._execute(api_commands)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 146, in _execute
-    _, res = await self._get_response(msg)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 105, in _get_response
-    await self._reset_protocol(e)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 78, in _reset_protocol
-    await protocol.shutdown()
-  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 133, in shutdown
-    for exchange_monitor, cancellable in self._active_exchanges.values():
-AttributeError: 'NoneType' object has no attribute 'values'
-2020-02-22 23:19:26 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
-    r = await pr.response
-  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
-    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
-  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
-    blockresponse = yield from blockrequest.response
-OSError: [Errno -1] No error information
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
-    await handler.func(service_call)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_component.py", line 213, in handle_service
-    self._platforms.values(), func, call, service_name, required_features
-  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 349, in entity_service_call
-    future.result()  # pop exception if have
-  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 371, in _handle_service_platform_call
-    await getattr(entity, func)(**data)
-  File "/usr/src/homeassistant/homeassistant/components/tradfri/light.py", line 256, in async_turn_off
-    await self._api(self._light_control.set_state(False))
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 155, in request
-    result = await self._execute(api_commands)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 146, in _execute
-    _, res = await self._get_response(msg)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 105, in _get_response
-    await self._reset_protocol(e)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 78, in _reset_protocol
-    await protocol.shutdown()
-  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 133, in shutdown
-    for exchange_monitor, cancellable in self._active_exchanges.values():
-AttributeError: 'NoneType' object has no attribute 'values'
-2020-02-22 23:19:26 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
-    r = await pr.response
-  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
-    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
-  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
-    blockresponse = yield from blockrequest.response
-aiocoap.error.RequestTimedOut
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/core.py", line 1259, in _execute_service
-    await handler.func(service_call)
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_component.py", line 213, in handle_service
-    self._platforms.values(), func, call, service_name, required_features
-  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 349, in entity_service_call
-    future.result()  # pop exception if have
-  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 371, in _handle_service_platform_call
-    await getattr(entity, func)(**data)
-  File "/usr/src/homeassistant/homeassistant/components/tradfri/light.py", line 256, in async_turn_off
-    await self._api(self._light_control.set_state(False))
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 155, in request
-    result = await self._execute(api_commands)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 146, in _execute
-    _, res = await self._get_response(msg)
-  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 101, in _get_response
-    raise RequestTimeout('Request timed out.', e)
-pytradfri.error.RequestTimeout: ('Request timed out.', RequestTimedOut())
-2020-02-23 01:02:49 WARNING (MainThread) [root] Observation deleted without explicit cancellation
-2020-02-23 01:02:49 WARNING (MainThread) [root] Observation deleted without explicit cancellation
-2020-02-23 01:02:49 WARNING (MainThread) [root] Observation deleted without explicit cancellation
-2020-02-23 01:02:49 WARNING (MainThread) [root] Observation deleted without explicit cancellation
-2020-02-23 01:02:49 WARNING (MainThread) [root] Observation deleted without explicit cancellation
-2020-02-23 01:02:49 WARNING (MainThread) [root] Observation deleted without explicit cancellation
-2020-02-23 01:02:49 WARNING (MainThread) [root] Observation deleted without explicit cancellation
-2020-02-23 01:02:49 WARNING (MainThread) [root] Observation deleted without explicit cancellation
-2020-02-23 01:02:49 WARNING (MainThread) [root] Observation deleted without explicit cancellation
-2020-02-23 01:02:49 WARNING (MainThread) [root] Observation deleted without explicit cancellation
-2020-02-23 01:02:49 WARNING (MainThread) [root] Observation deleted without explicit cancellation
-2020-02-23 01:02:49 WARNING (MainThread) [root] Observation deleted without explicit cancellation
-2020-02-23 01:02:49 WARNING (MainThread) [root] Observation deleted without explicit cancellation
-2020-02-23 01:02:49 WARNING (MainThread) [root] Observation deleted without explicit cancellation
-2020-02-23 01:02:49 WARNING (MainThread) [root] Observation deleted without explicit cancellation
-2020-02-23 01:02:49 WARNING (MainThread) [root] Observation deleted without explicit cancellation
-2020-02-23 01:02:49 WARNING (MainThread) [root] Observation deleted without explicit cancellation
-2020-02-23 01:02:49 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+  File "/usr/src/homeassistant/homeassistant/components/hue/light.py", line 440, in async_turn_off
+    await self.light.set_state(**command)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/lights.py", line 117, in set_state
+    json=data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 64, in request
+    _raise_on_error(data)
+  File "/usr/local/lib/python3.7/site-packages/aiohue/bridge.py", line 78, in _raise_on_error
+    raise_error(data['error'])
+  File "/usr/local/lib/python3.7/site-packages/aiohue/errors.py", line 39, in raise_error
+    raise cls("{}: {}".format(type, error['description']))
+aiohue.errors.AiohueException: 3: resource, /lights/5/state, not available
+2020-11-25 10:00:00 ERROR (MainThread) [homeassistant.components.automation] Error while executing automation automation.reset_good_night. Service not found for call_service at pos 1: Unable to find service state/turn_off
+2020-11-25 11:15:51 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiocoap/transports/tinydtls.py", line 160, in _run
     message = yield from self._queue.get()
@@ -446,12 +541,48 @@ During handling of the above exception, another exception occurred:
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiocoap/transports/tinydtls.py", line 169, in _run
     self.coaptransport.new_error_callback(-1, self)
-  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 195, in _dispatch_error
-    self.outgoing_requests.pop(key)
-KeyError: (b'\x00\x00p\x15', <aiocoap.transports.tinydtls.DTLSClientConnection object at 0x7311ccd0>)
-2020-02-23 17:58:15 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.philips_tv is taking over 10 seconds
-2020-02-24 15:02:15 ERROR (MainThread) [homeassistant.components.hue.sensor_base] Unable to reach bridge 192.168.1.147 (Error requesting data from 192.168.1.147: None)
-2020-02-24 20:14:32 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.philips_tv is taking over 10 seconds
-2020-02-27 20:42:07 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.philips_tv is taking over 10 seconds
-2020-02-29 14:25:59 ERROR (MainThread) [homeassistant.components.hue.light] Unable to reach bridge 192.168.1.147 (Error requesting data from 192.168.1.147: None)
-2020-03-03 17:28:51 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.philips_tv is taking over 10 seconds
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 203, in _dispatch_error
+    for key, (monitor, cancellable_timeout) in self._active_exchanges.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+2020-11-25 11:15:51 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2020-11-25 11:15:51 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2020-11-25 11:15:51 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2020-11-25 11:15:51 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2020-11-25 11:15:51 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2020-11-25 11:15:51 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2020-11-25 11:15:51 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2020-11-25 11:15:51 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2020-11-25 11:15:51 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2020-11-25 11:15:51 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2020-11-25 11:15:51 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2020-11-25 11:15:51 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2020-11-25 11:15:51 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2020-11-25 11:15:51 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2020-11-25 11:15:51 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2020-11-25 11:15:51 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2020-11-25 11:15:51 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2020-11-25 11:15:51 WARNING (MainThread) [root] Observation deleted without explicit cancellation
+2020-11-25 11:15:51 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 95, in _get_response
+    r = await pr.response
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 816, in _run_outer
+    yield from cls._run(app_request, response, weak_observation, protocol, log, exchange_monitor_factory)
+  File "/usr/local/lib/python3.7/site-packages/aiocoap/protocol.py", line 865, in _run
+    blockresponse = yield from blockrequest.response
+aiocoap.error.RequestTimedOut
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 371, in _handle_service_platform_call
+    await getattr(entity, func)(**data)
+  File "/usr/src/homeassistant/homeassistant/components/tradfri/light.py", line 256, in async_turn_off
+    await self._api(self._light_control.set_state(False))
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 155, in request
+    result = await self._execute(api_commands)
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 146, in _execute
+    _, res = await self._get_response(msg)
+  File "/usr/local/lib/python3.7/site-packages/pytradfri/api/aiocoap_api.py", line 101, in _get_response
+    raise RequestTimeout('Request timed out.', e)
+pytradfri.error.RequestTimeout: ('Request timed out.', RequestTimedOut())

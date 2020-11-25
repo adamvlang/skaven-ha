@@ -4,98 +4,10 @@
             {
                 "area_id": null,
                 "config_entries": [
-                    "91e9022209284274b556ed7642415b52"
+                    "97a74cd86b5b45af8c5a26c597a37907"
                 ],
                 "connections": [],
-                "id": "69c55c8be30d471dbe772de8ad8e27dc",
-                "identifiers": [
-                    [
-                        "webhook_id",
-                        "69c90f1b65ab14577757c58798c4058eba1b70ba6fb869a6139350e879ba2ec6"
-                    ],
-                    [
-                        "device_id",
-                        "3acf96009c3a482998c619fc5e04a7bc"
-                    ]
-                ],
-                "manufacturer": "OnePlus",
-                "model": "ONEPLUS A6003",
-                "name": "Adam's ONEPLUS A6003",
-                "name_by_user": null,
-                "sw_version": "9",
-                "via_device_id": null
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "91e9022209284274b556ed7642415b52"
-                ],
-                "connections": [],
-                "id": "890bd440e9bf4b3f871bcc20e059ad70",
-                "identifiers": [
-                    [
-                        "mobile_app",
-                        "3acf96009c3a482998c619fc5e04a7bc"
-                    ]
-                ],
-                "manufacturer": "OnePlus",
-                "model": "ONEPLUS A6003",
-                "name": null,
-                "name_by_user": null,
-                "sw_version": "9",
-                "via_device_id": null
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "760e39f05d184d4db3bd9db6c0b7560b"
-                ],
-                "connections": [],
-                "id": "14c68e79f3244d1eb7e7756dee79f6d4",
-                "identifiers": [
-                    [
-                        "webhook_id",
-                        "21fec08cc6b36188d803a88c5700e54dddd82504a918a504f96532a96dcf75e8"
-                    ],
-                    [
-                        "device_id",
-                        "a0133cf40f8242298b488877d599127c"
-                    ]
-                ],
-                "manufacturer": "OnePlus",
-                "model": "OnePlus6",
-                "name": "OnePlus_6",
-                "name_by_user": null,
-                "sw_version": "9",
-                "via_device_id": null
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "760e39f05d184d4db3bd9db6c0b7560b"
-                ],
-                "connections": [],
-                "id": "da28d5524140437f9ffb3cc82f946077",
-                "identifiers": [
-                    [
-                        "mobile_app",
-                        "a0133cf40f8242298b488877d599127c"
-                    ]
-                ],
-                "manufacturer": "OnePlus",
-                "model": "OnePlus6",
-                "name": null,
-                "name_by_user": null,
-                "sw_version": "9",
-                "via_device_id": null
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "482999ac18064a8795941d276254bd20"
-                ],
-                "connections": [],
-                "id": "a851cdc8ad394d7d8d37e4b590900935",
+                "id": "5f7bad13591048b8bcaf0a42de596688",
                 "identifiers": [
                     [
                         "sonos",
@@ -112,7 +24,47 @@
             {
                 "area_id": null,
                 "config_entries": [
-                    "febe0a7ce56845a8b76812fefbcc04be"
+                    "97a74cd86b5b45af8c5a26c597a37907"
+                ],
+                "connections": [],
+                "id": "9242f15496de4f1482bae8ee9b4f6699",
+                "identifiers": [
+                    [
+                        "sonos",
+                        "RINCON_7828CAEC1B1E01400"
+                    ]
+                ],
+                "manufacturer": "Sonos",
+                "model": "One",
+                "name": "Bedroom",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "97a74cd86b5b45af8c5a26c597a37907"
+                ],
+                "connections": [],
+                "id": "5d4521b1ce344db8981da9a20f8ec0b3",
+                "identifiers": [
+                    [
+                        "sonos",
+                        "RINCON_7828CAEC1B4E01400"
+                    ]
+                ],
+                "manufacturer": "Sonos",
+                "model": "One",
+                "name": "Kitchen",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "72e4c0a344c8499ab3ec2bca43ab0230"
                 ],
                 "connections": [
                     [
@@ -120,7 +72,7 @@
                         "00:17:88:a1:45:b9"
                     ]
                 ],
-                "id": "b8722d6e461240c9862cdf12681f167b",
+                "id": "ed758feeaaf24ee981ac2046244cbf87",
                 "identifiers": [
                     [
                         "hue",
@@ -131,156 +83,176 @@
                 "model": "BSB002",
                 "name": "Philips hue",
                 "name_by_user": null,
-                "sw_version": "1935144040",
+                "sw_version": "1941056000",
                 "via_device_id": null
             },
             {
                 "area_id": null,
                 "config_entries": [
-                    "febe0a7ce56845a8b76812fefbcc04be"
+                    "72e4c0a344c8499ab3ec2bca43ab0230"
                 ],
                 "connections": [],
-                "id": "ea50d29e76b2432a9ce423ed1e2065a4",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:06:f5:2d:b2"
-                    ]
-                ],
-                "manufacturer": "Philips",
-                "model": "Hue motion sensor",
-                "name": "Hue motion sensor 1",
-                "name_by_user": null,
-                "sw_version": "6.1.1.27575",
-                "via_device_id": "b8722d6e461240c9862cdf12681f167b"
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "febe0a7ce56845a8b76812fefbcc04be"
-                ],
-                "connections": [],
-                "id": "dadbe6e8165544d3880b03efc3a20cd9",
+                "id": "e8d258e5022343138381e7f9f225d0d1",
                 "identifiers": [
                     [
                         "hue",
                         "00:17:88:01:03:79:8a:f0-0b"
                     ]
                 ],
-                "manufacturer": "Philips",
+                "manufacturer": "Signify Netherlands B.V.",
                 "model": "Hue ambiance lamp",
                 "name": "matsal 1",
                 "name_by_user": null,
-                "sw_version": "1.46.13_r26312",
-                "via_device_id": "b8722d6e461240c9862cdf12681f167b"
+                "sw_version": "1.50.2_r30933",
+                "via_device_id": "ed758feeaaf24ee981ac2046244cbf87"
             },
             {
                 "area_id": null,
                 "config_entries": [
-                    "febe0a7ce56845a8b76812fefbcc04be"
+                    "72e4c0a344c8499ab3ec2bca43ab0230"
                 ],
                 "connections": [],
-                "id": "ec111c649d934c41892648fa6b6475a7",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:04:d3:4f:98-0b"
-                    ]
-                ],
-                "manufacturer": "Philips",
-                "model": "Hue ambiance lamp",
-                "name": "K\u00f6k",
-                "name_by_user": null,
-                "sw_version": "1.46.13_r26312",
-                "via_device_id": "b8722d6e461240c9862cdf12681f167b"
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "febe0a7ce56845a8b76812fefbcc04be"
-                ],
-                "connections": [],
-                "id": "c60fba02bed54084a6d35f45e28cfa27",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:03:12:cd:11-0b"
-                    ]
-                ],
-                "manufacturer": "Philips",
-                "model": "Hue ambiance lamp",
-                "name": "vardagsrum",
-                "name_by_user": null,
-                "sw_version": "1.46.13_r26312",
-                "via_device_id": "b8722d6e461240c9862cdf12681f167b"
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "febe0a7ce56845a8b76812fefbcc04be"
-                ],
-                "connections": [],
-                "id": "7467f57552414855ac6df8e5c52ec06c",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:04:d3:35:b0-0b"
-                    ]
-                ],
-                "manufacturer": "Philips",
-                "model": "Hue ambiance lamp",
-                "name": "Hall",
-                "name_by_user": null,
-                "sw_version": "1.46.13_r26312",
-                "via_device_id": "b8722d6e461240c9862cdf12681f167b"
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "febe0a7ce56845a8b76812fefbcc04be"
-                ],
-                "connections": [],
-                "id": "04335869bdc54407b3603dd832308c9d",
-                "identifiers": [
-                    [
-                        "hue",
-                        "00:17:88:01:03:11:b2:9a-0b"
-                    ]
-                ],
-                "manufacturer": "Philips",
-                "model": "Hue ambiance lamp",
-                "name": "matsal 2",
-                "name_by_user": null,
-                "sw_version": "1.46.13_r26312",
-                "via_device_id": "b8722d6e461240c9862cdf12681f167b"
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "febe0a7ce56845a8b76812fefbcc04be"
-                ],
-                "connections": [],
-                "id": "d740b12c930f476395e460847352fd21",
+                "id": "3920e69467084995b33feb07dca3c719",
                 "identifiers": [
                     [
                         "hue",
                         "00:17:88:01:03:7e:1f:e2-0b"
                     ]
                 ],
-                "manufacturer": "Philips",
+                "manufacturer": "Signify Netherlands B.V.",
                 "model": "Hue ambiance candle",
                 "name": "gastrum",
                 "name_by_user": null,
-                "sw_version": "1.46.13_r26312",
-                "via_device_id": "b8722d6e461240c9862cdf12681f167b"
+                "sw_version": "1.50.2_r30933",
+                "via_device_id": "ed758feeaaf24ee981ac2046244cbf87"
             },
             {
                 "area_id": null,
                 "config_entries": [
-                    "412baa0c003e49bb8e4b4ceb65afe01e"
+                    "72e4c0a344c8499ab3ec2bca43ab0230"
                 ],
                 "connections": [],
-                "id": "66cbd8885a504230983bf9fc583e849d",
+                "id": "ceef73e5e1cc408b968334e0f19be2d6",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:03:11:b2:9a-0b"
+                    ]
+                ],
+                "manufacturer": "Signify Netherlands B.V.",
+                "model": "Hue ambiance lamp",
+                "name": "matsal 2",
+                "name_by_user": null,
+                "sw_version": "1.50.2_r30933",
+                "via_device_id": "ed758feeaaf24ee981ac2046244cbf87"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "72e4c0a344c8499ab3ec2bca43ab0230"
+                ],
+                "connections": [],
+                "id": "8f1f92e188064a16bf736c9148544c74",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:04:64:d7:a7-0b"
+                    ]
+                ],
+                "manufacturer": "Signify Netherlands B.V.",
+                "model": "Hue white lamp",
+                "name": "Hue white lamp 1",
+                "name_by_user": "??",
+                "sw_version": "1.50.2_r30933",
+                "via_device_id": "ed758feeaaf24ee981ac2046244cbf87"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "72e4c0a344c8499ab3ec2bca43ab0230"
+                ],
+                "connections": [],
+                "id": "29a76137bf814dd388d59218766231df",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:04:d3:35:b0-0b"
+                    ]
+                ],
+                "manufacturer": "Signify Netherlands B.V.",
+                "model": "Hue ambiance lamp",
+                "name": "Hall",
+                "name_by_user": "Hall tak",
+                "sw_version": "1.50.2_r30933",
+                "via_device_id": "ed758feeaaf24ee981ac2046244cbf87"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "72e4c0a344c8499ab3ec2bca43ab0230"
+                ],
+                "connections": [],
+                "id": "04ee4ec133de4eaab7ac91c05743ced9",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:04:d3:4f:98-0b"
+                    ]
+                ],
+                "manufacturer": "Signify Netherlands B.V.",
+                "model": "Hue ambiance lamp",
+                "name": "K\u00f6k",
+                "name_by_user": "??",
+                "sw_version": "1.50.2_r30933",
+                "via_device_id": "ed758feeaaf24ee981ac2046244cbf87"
+            },
+            {
+                "area_id": "224f64ab60904f398e5eda9be945019b",
+                "config_entries": [
+                    "72e4c0a344c8499ab3ec2bca43ab0230"
+                ],
+                "connections": [],
+                "id": "9f4f2b61c3ab4aa8adc3abf24eedd65d",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:03:12:cd:11-0b"
+                    ]
+                ],
+                "manufacturer": "Signify Netherlands B.V.",
+                "model": "Hue ambiance lamp",
+                "name": "vardagsrum",
+                "name_by_user": "Vardagsrum tak",
+                "sw_version": "1.50.2_r30933",
+                "via_device_id": "ed758feeaaf24ee981ac2046244cbf87"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "72e4c0a344c8499ab3ec2bca43ab0230"
+                ],
+                "connections": [],
+                "id": "e8cf0ed0094a4bb5aaab277c5e1e9ab1",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:06:f5:2d:b2"
+                    ]
+                ],
+                "manufacturer": "Signify Netherlands B.V.",
+                "model": "Hue motion sensor",
+                "name": "Hue motion sensor 1",
+                "name_by_user": null,
+                "sw_version": "6.1.1.27575",
+                "via_device_id": "ed758feeaaf24ee981ac2046244cbf87"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "edfaf99000374243bfa78c3dc3fec2cb"
+                ],
+                "connections": [],
+                "id": "7904cd550acc4ef89e03305af0058508",
                 "identifiers": [
                     [
                         "tradfri",
@@ -291,16 +263,16 @@
                 "model": "E1526",
                 "name": "Gateway",
                 "name_by_user": null,
-                "sw_version": "1.10.29",
+                "sw_version": "1.11.51",
                 "via_device_id": null
             },
             {
                 "area_id": null,
                 "config_entries": [
-                    "412baa0c003e49bb8e4b4ceb65afe01e"
+                    "edfaf99000374243bfa78c3dc3fec2cb"
                 ],
                 "connections": [],
-                "id": "0307bbcbd16e4111a8b43a3fbcb2e4b3",
+                "id": "4b5c6752db774bf7ae4c5e59822e52c8",
                 "identifiers": [
                     [
                         "tradfri",
@@ -311,116 +283,56 @@
                 "model": "TRADFRI bulb E27 WW 806lm",
                 "name": "tvattstuga",
                 "name_by_user": null,
-                "sw_version": "2.1.022",
-                "via_device_id": "66cbd8885a504230983bf9fc583e849d"
+                "sw_version": "2.3.050",
+                "via_device_id": "7904cd550acc4ef89e03305af0058508"
             },
             {
                 "area_id": null,
                 "config_entries": [
-                    "412baa0c003e49bb8e4b4ceb65afe01e"
+                    "edfaf99000374243bfa78c3dc3fec2cb"
                 ],
                 "connections": [],
-                "id": "6c914b9d95c24078917340f6ce1514aa",
+                "id": "9267e3aa30334a798378d4fe7424ab92",
                 "identifiers": [
                     [
                         "tradfri",
-                        65542
-                    ]
-                ],
-                "manufacturer": "IKEA of Sweden",
-                "model": "TRADFRI bulb E27 WS opal 1000lm",
-                "name": "sovrum_tak",
-                "name_by_user": null,
-                "sw_version": "2.0.023",
-                "via_device_id": "66cbd8885a504230983bf9fc583e849d"
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "412baa0c003e49bb8e4b4ceb65afe01e"
-                ],
-                "connections": [],
-                "id": "170bf27e0b1d4b788db2bb4414569d52",
-                "identifiers": [
-                    [
-                        "tradfri",
-                        65545
+                        65547
                     ]
                 ],
                 "manufacturer": "IKEA of Sweden",
                 "model": "TRADFRI bulb E27 WW 806lm",
-                "name": "groventre",
+                "name": "pannrum",
                 "name_by_user": null,
-                "sw_version": "2.1.022",
-                "via_device_id": "66cbd8885a504230983bf9fc583e849d"
+                "sw_version": "2.3.050",
+                "via_device_id": "7904cd550acc4ef89e03305af0058508"
             },
             {
                 "area_id": null,
                 "config_entries": [
-                    "412baa0c003e49bb8e4b4ceb65afe01e"
+                    "edfaf99000374243bfa78c3dc3fec2cb"
                 ],
                 "connections": [],
-                "id": "06c7840475c042a0a3c46c80bf0933c1",
+                "id": "4d3a1796bd8e4fec8a7dd082db856f4a",
                 "identifiers": [
                     [
                         "tradfri",
-                        65541
+                        65561
                     ]
                 ],
                 "manufacturer": "IKEA of Sweden",
                 "model": "TRADFRI bulb E27 WW clear 250lm",
-                "name": "nattduk_adam",
+                "name": "sovrum_rund",
                 "name_by_user": null,
-                "sw_version": "2.1.022",
-                "via_device_id": "66cbd8885a504230983bf9fc583e849d"
+                "sw_version": "2.3.050",
+                "via_device_id": "7904cd550acc4ef89e03305af0058508"
             },
             {
                 "area_id": null,
                 "config_entries": [
-                    "412baa0c003e49bb8e4b4ceb65afe01e"
+                    "edfaf99000374243bfa78c3dc3fec2cb"
                 ],
                 "connections": [],
-                "id": "cbd87bba0afe443e9b4e143a923df2e6",
-                "identifiers": [
-                    [
-                        "tradfri",
-                        65549
-                    ]
-                ],
-                "manufacturer": "IKEA of Sweden",
-                "model": "TRADFRI bulb E27 WW 806lm",
-                "name": "kallarhall",
-                "name_by_user": null,
-                "sw_version": "2.1.022",
-                "via_device_id": "66cbd8885a504230983bf9fc583e849d"
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "412baa0c003e49bb8e4b4ceb65afe01e"
-                ],
-                "connections": [],
-                "id": "d52b9062da0f434e92c6ef15b19aa5b1",
-                "identifiers": [
-                    [
-                        "tradfri",
-                        65550
-                    ]
-                ],
-                "manufacturer": "IKEA of Sweden",
-                "model": "TRADFRI bulb E27 WW 806lm",
-                "name": "svartvitt_2",
-                "name_by_user": null,
-                "sw_version": "2.1.022",
-                "via_device_id": "66cbd8885a504230983bf9fc583e849d"
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "412baa0c003e49bb8e4b4ceb65afe01e"
-                ],
-                "connections": [],
-                "id": "a30926e862754a65a84eeb5ca420f583",
+                "id": "0fa6ec79c1de4570a542b35259c41e6e",
                 "identifiers": [
                     [
                         "tradfri",
@@ -432,119 +344,39 @@
                 "name": "kokbank",
                 "name_by_user": null,
                 "sw_version": "1.2.245",
-                "via_device_id": "66cbd8885a504230983bf9fc583e849d"
+                "via_device_id": "7904cd550acc4ef89e03305af0058508"
             },
             {
                 "area_id": null,
                 "config_entries": [
-                    "412baa0c003e49bb8e4b4ceb65afe01e"
+                    "edfaf99000374243bfa78c3dc3fec2cb"
                 ],
                 "connections": [],
-                "id": "2646e86359b74a40a9fb662d7dc36174",
+                "id": "74bf05923cc14a9e9c616cb4cbe296ab",
                 "identifiers": [
                     [
                         "tradfri",
-                        65547
+                        65545
                     ]
                 ],
                 "manufacturer": "IKEA of Sweden",
                 "model": "TRADFRI bulb E27 WW 806lm",
-                "name": "pannrum",
+                "name": "groventre",
                 "name_by_user": null,
-                "sw_version": "2.1.022",
-                "via_device_id": "66cbd8885a504230983bf9fc583e849d"
+                "sw_version": "2.3.050",
+                "via_device_id": "7904cd550acc4ef89e03305af0058508"
             },
             {
                 "area_id": null,
                 "config_entries": [
-                    "412baa0c003e49bb8e4b4ceb65afe01e"
+                    "edfaf99000374243bfa78c3dc3fec2cb"
                 ],
                 "connections": [],
-                "id": "6d8ab20bec0e4090a6d98fb33dd12574",
+                "id": "9690e8a5ed7140f3a7f9a4fe49eaaf0e",
                 "identifiers": [
                     [
                         "tradfri",
-                        65548
-                    ]
-                ],
-                "manufacturer": "IKEA of Sweden",
-                "model": "TRADFRI bulb E27 WW 806lm",
-                "name": "kallartrapp",
-                "name_by_user": null,
-                "sw_version": "2.1.022",
-                "via_device_id": "66cbd8885a504230983bf9fc583e849d"
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "412baa0c003e49bb8e4b4ceb65afe01e"
-                ],
-                "connections": [],
-                "id": "4a9ca82430ea493db670e53bbc464649",
-                "identifiers": [
-                    [
-                        "tradfri",
-                        65537
-                    ]
-                ],
-                "manufacturer": "IKEA of Sweden",
-                "model": "TRADFRI bulb E27 WS opal 1000lm",
-                "name": "piano",
-                "name_by_user": null,
-                "sw_version": "2.0.023",
-                "via_device_id": "66cbd8885a504230983bf9fc583e849d"
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "412baa0c003e49bb8e4b4ceb65afe01e"
-                ],
-                "connections": [],
-                "id": "04b1aba6d74b4172bea72fcde764e322",
-                "identifiers": [
-                    [
-                        "tradfri",
-                        65546
-                    ]
-                ],
-                "manufacturer": "IKEA of Sweden",
-                "model": "TRADFRI bulb E27 WW 806lm",
-                "name": "svartvitt",
-                "name_by_user": null,
-                "sw_version": "2.1.022",
-                "via_device_id": "66cbd8885a504230983bf9fc583e849d"
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "412baa0c003e49bb8e4b4ceb65afe01e"
-                ],
-                "connections": [],
-                "id": "a81e84ad26f5411ebeaffdc30901ddb9",
-                "identifiers": [
-                    [
-                        "tradfri",
-                        65538
-                    ]
-                ],
-                "manufacturer": "IKEA of Sweden",
-                "model": "TRADFRI bulb E27 WS opal 1000lm",
-                "name": "lill_hall",
-                "name_by_user": null,
-                "sw_version": "2.0.023",
-                "via_device_id": "66cbd8885a504230983bf9fc583e849d"
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "412baa0c003e49bb8e4b4ceb65afe01e"
-                ],
-                "connections": [],
-                "id": "eb2572ab7ba54a529c752ad0fabc0e53",
-                "identifiers": [
-                    [
-                        "tradfri",
-                        65540
+                        65556
                     ]
                 ],
                 "manufacturer": "IKEA of Sweden",
@@ -552,7 +384,147 @@
                 "name": "sovrum_hal",
                 "name_by_user": null,
                 "sw_version": "1.2.245",
-                "via_device_id": "66cbd8885a504230983bf9fc583e849d"
+                "via_device_id": "7904cd550acc4ef89e03305af0058508"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "edfaf99000374243bfa78c3dc3fec2cb"
+                ],
+                "connections": [],
+                "id": "fc520d93a1474887a43897f3f020cc16",
+                "identifiers": [
+                    [
+                        "tradfri",
+                        65559
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E27 WW 806lm",
+                "name": "TRADFRI bulb 16",
+                "name_by_user": null,
+                "sw_version": "2.3.050",
+                "via_device_id": "7904cd550acc4ef89e03305af0058508"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "edfaf99000374243bfa78c3dc3fec2cb"
+                ],
+                "connections": [],
+                "id": "06833bf0655c40f092b3a363306e642b",
+                "identifiers": [
+                    [
+                        "tradfri",
+                        65560
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E27 WW 806lm",
+                "name": "TRADFRI bulb 13",
+                "name_by_user": null,
+                "sw_version": "2.3.050",
+                "via_device_id": "7904cd550acc4ef89e03305af0058508"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "edfaf99000374243bfa78c3dc3fec2cb"
+                ],
+                "connections": [],
+                "id": "5ff2c144aa4c4192bd89baf70e7744b1",
+                "identifiers": [
+                    [
+                        "tradfri",
+                        65555
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E27 WS opal 1000lm",
+                "name": "sovrum_tak",
+                "name_by_user": null,
+                "sw_version": "2.0.029",
+                "via_device_id": "7904cd550acc4ef89e03305af0058508"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "edfaf99000374243bfa78c3dc3fec2cb"
+                ],
+                "connections": [],
+                "id": "13e8b38a005f4ee695bface2773819d4",
+                "identifiers": [
+                    [
+                        "tradfri",
+                        65565
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "LWB010",
+                "name": "tv_golvlampa",
+                "name_by_user": null,
+                "sw_version": "1.50.2_r30933",
+                "via_device_id": "7904cd550acc4ef89e03305af0058508"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "edfaf99000374243bfa78c3dc3fec2cb"
+                ],
+                "connections": [],
+                "id": "018b850cd28c4960a2a0b09674bad827",
+                "identifiers": [
+                    [
+                        "tradfri",
+                        65566
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E14 WS 470lm",
+                "name": "tv_fonster",
+                "name_by_user": null,
+                "sw_version": "2.3.050",
+                "via_device_id": "7904cd550acc4ef89e03305af0058508"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "edfaf99000374243bfa78c3dc3fec2cb"
+                ],
+                "connections": [],
+                "id": "04c51c329bff4f7ea8043fa7d1c1a634",
+                "identifiers": [
+                    [
+                        "tradfri",
+                        65564
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "LTW012",
+                "name": "hanna_sang",
+                "name_by_user": null,
+                "sw_version": "1.50.2_r30933",
+                "via_device_id": "7904cd550acc4ef89e03305af0058508"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "edfaf99000374243bfa78c3dc3fec2cb"
+                ],
+                "connections": [],
+                "id": "89030353e9e64a48a4b97e25ca4bc2c5",
+                "identifiers": [
+                    [
+                        "tradfri",
+                        65567
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI bulb E14 WS 470lm",
+                "name": "guest_window",
+                "name_by_user": null,
+                "sw_version": "2.3.050",
+                "via_device_id": "7904cd550acc4ef89e03305af0058508"
             }
         ]
     },

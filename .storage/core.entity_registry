@@ -20,71 +20,35 @@
                 "unique_id": "7bd4385ffe554c96aa40dec61638b596"
             },
             {
-                "config_entry_id": "551072e212cc47a99332e38f7cbf5dd8",
-                "device_id": null,
+                "config_entry_id": "97a74cd86b5b45af8c5a26c597a37907",
+                "device_id": "5f7bad13591048b8bcaf0a42de596688",
                 "disabled_by": null,
-                "entity_id": "weather.skaven",
-                "name": null,
-                "platform": "met",
-                "unique_id": "home"
-            },
-            {
-                "config_entry_id": "91e9022209284274b556ed7642415b52",
-                "device_id": "890bd440e9bf4b3f871bcc20e059ad70",
-                "disabled_by": null,
-                "entity_id": "device_tracker.adam_s_oneplus_a6003",
-                "name": null,
-                "platform": "mobile_app",
-                "unique_id": "3acf96009c3a482998c619fc5e04a7bc"
-            },
-            {
-                "config_entry_id": "760e39f05d184d4db3bd9db6c0b7560b",
-                "device_id": "da28d5524140437f9ffb3cc82f946077",
-                "disabled_by": null,
-                "entity_id": "device_tracker.oneplus_6",
-                "name": null,
-                "platform": "mobile_app",
-                "unique_id": "a0133cf40f8242298b488877d599127c"
-            },
-            {
-                "config_entry_id": "482999ac18064a8795941d276254bd20",
-                "device_id": "a851cdc8ad394d7d8d37e4b590900935",
-                "disabled_by": null,
-                "entity_id": "media_player.storarum",
+                "entity_id": "media_player.living_room",
                 "name": null,
                 "platform": "sonos",
                 "unique_id": "RINCON_7828CA2579F401400"
             },
             {
-                "config_entry_id": "febe0a7ce56845a8b76812fefbcc04be",
-                "device_id": "ea50d29e76b2432a9ce423ed1e2065a4",
+                "config_entry_id": "97a74cd86b5b45af8c5a26c597a37907",
+                "device_id": "9242f15496de4f1482bae8ee9b4f6699",
                 "disabled_by": null,
-                "entity_id": "sensor.hue_motion_sensor_1_temperature",
+                "entity_id": "media_player.bedroom",
                 "name": null,
-                "platform": "hue",
-                "unique_id": "00:17:88:01:06:f5:2d:b2-02-0402"
+                "platform": "sonos",
+                "unique_id": "RINCON_7828CAEC1B1E01400"
             },
             {
-                "config_entry_id": "febe0a7ce56845a8b76812fefbcc04be",
-                "device_id": "ea50d29e76b2432a9ce423ed1e2065a4",
+                "config_entry_id": "97a74cd86b5b45af8c5a26c597a37907",
+                "device_id": "5d4521b1ce344db8981da9a20f8ec0b3",
                 "disabled_by": null,
-                "entity_id": "sensor.hue_motion_sensor_1_light_level",
+                "entity_id": "media_player.kitchen",
                 "name": null,
-                "platform": "hue",
-                "unique_id": "00:17:88:01:06:f5:2d:b2-02-0400"
+                "platform": "sonos",
+                "unique_id": "RINCON_7828CAEC1B4E01400"
             },
             {
-                "config_entry_id": "febe0a7ce56845a8b76812fefbcc04be",
-                "device_id": "ea50d29e76b2432a9ce423ed1e2065a4",
-                "disabled_by": null,
-                "entity_id": "binary_sensor.hue_motion_sensor_1_motion",
-                "name": null,
-                "platform": "hue",
-                "unique_id": "00:17:88:01:06:f5:2d:b2-02-0406"
-            },
-            {
-                "config_entry_id": "febe0a7ce56845a8b76812fefbcc04be",
-                "device_id": "dadbe6e8165544d3880b03efc3a20cd9",
+                "config_entry_id": "72e4c0a344c8499ab3ec2bca43ab0230",
+                "device_id": "e8d258e5022343138381e7f9f225d0d1",
                 "disabled_by": null,
                 "entity_id": "light.matsal_1",
                 "name": null,
@@ -92,44 +56,8 @@
                 "unique_id": "00:17:88:01:03:79:8a:f0-0b"
             },
             {
-                "config_entry_id": "febe0a7ce56845a8b76812fefbcc04be",
-                "device_id": "ec111c649d934c41892648fa6b6475a7",
-                "disabled_by": null,
-                "entity_id": "light.kok",
-                "name": null,
-                "platform": "hue",
-                "unique_id": "00:17:88:01:04:d3:4f:98-0b"
-            },
-            {
-                "config_entry_id": "febe0a7ce56845a8b76812fefbcc04be",
-                "device_id": "c60fba02bed54084a6d35f45e28cfa27",
-                "disabled_by": null,
-                "entity_id": "light.vardagsrum",
-                "name": null,
-                "platform": "hue",
-                "unique_id": "00:17:88:01:03:12:cd:11-0b"
-            },
-            {
-                "config_entry_id": "febe0a7ce56845a8b76812fefbcc04be",
-                "device_id": "7467f57552414855ac6df8e5c52ec06c",
-                "disabled_by": null,
-                "entity_id": "light.hall",
-                "name": null,
-                "platform": "hue",
-                "unique_id": "00:17:88:01:04:d3:35:b0-0b"
-            },
-            {
-                "config_entry_id": "febe0a7ce56845a8b76812fefbcc04be",
-                "device_id": "04335869bdc54407b3603dd832308c9d",
-                "disabled_by": null,
-                "entity_id": "light.matsal_2",
-                "name": null,
-                "platform": "hue",
-                "unique_id": "00:17:88:01:03:11:b2:9a-0b"
-            },
-            {
-                "config_entry_id": "febe0a7ce56845a8b76812fefbcc04be",
-                "device_id": "d740b12c930f476395e460847352fd21",
+                "config_entry_id": "72e4c0a344c8499ab3ec2bca43ab0230",
+                "device_id": "3920e69467084995b33feb07dca3c719",
                 "disabled_by": null,
                 "entity_id": "light.gastrum",
                 "name": null,
@@ -137,8 +65,80 @@
                 "unique_id": "00:17:88:01:03:7e:1f:e2-0b"
             },
             {
-                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
-                "device_id": "0307bbcbd16e4111a8b43a3fbcb2e4b3",
+                "config_entry_id": "72e4c0a344c8499ab3ec2bca43ab0230",
+                "device_id": "ceef73e5e1cc408b968334e0f19be2d6",
+                "disabled_by": null,
+                "entity_id": "light.matsal_2",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:03:11:b2:9a-0b"
+            },
+            {
+                "config_entry_id": "72e4c0a344c8499ab3ec2bca43ab0230",
+                "device_id": "8f1f92e188064a16bf736c9148544c74",
+                "disabled_by": null,
+                "entity_id": "light.hue_white_lamp_1",
+                "name": "??",
+                "platform": "hue",
+                "unique_id": "00:17:88:01:04:64:d7:a7-0b"
+            },
+            {
+                "config_entry_id": "72e4c0a344c8499ab3ec2bca43ab0230",
+                "device_id": "29a76137bf814dd388d59218766231df",
+                "disabled_by": null,
+                "entity_id": "light.hall",
+                "name": "Hall tak",
+                "platform": "hue",
+                "unique_id": "00:17:88:01:04:d3:35:b0-0b"
+            },
+            {
+                "config_entry_id": "72e4c0a344c8499ab3ec2bca43ab0230",
+                "device_id": "04ee4ec133de4eaab7ac91c05743ced9",
+                "disabled_by": null,
+                "entity_id": "light.kok",
+                "name": "??",
+                "platform": "hue",
+                "unique_id": "00:17:88:01:04:d3:4f:98-0b"
+            },
+            {
+                "config_entry_id": "72e4c0a344c8499ab3ec2bca43ab0230",
+                "device_id": "9f4f2b61c3ab4aa8adc3abf24eedd65d",
+                "disabled_by": null,
+                "entity_id": "light.vardagsrum",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:03:12:cd:11-0b"
+            },
+            {
+                "config_entry_id": "72e4c0a344c8499ab3ec2bca43ab0230",
+                "device_id": "e8cf0ed0094a4bb5aaab277c5e1e9ab1",
+                "disabled_by": null,
+                "entity_id": "sensor.hue_motion_sensor_1_temperature",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:06:f5:2d:b2-02-0402"
+            },
+            {
+                "config_entry_id": "72e4c0a344c8499ab3ec2bca43ab0230",
+                "device_id": "e8cf0ed0094a4bb5aaab277c5e1e9ab1",
+                "disabled_by": null,
+                "entity_id": "sensor.hue_motion_sensor_1_light_level",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:06:f5:2d:b2-02-0400"
+            },
+            {
+                "config_entry_id": "72e4c0a344c8499ab3ec2bca43ab0230",
+                "device_id": "e8cf0ed0094a4bb5aaab277c5e1e9ab1",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.hue_motion_sensor_1_motion",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:06:f5:2d:b2-02-0406"
+            },
+            {
+                "config_entry_id": "edfaf99000374243bfa78c3dc3fec2cb",
+                "device_id": "4b5c6752db774bf7ae4c5e59822e52c8",
                 "disabled_by": null,
                 "entity_id": "light.tvattstuga",
                 "name": null,
@@ -146,62 +146,8 @@
                 "unique_id": "light-7e36515204400075-65544"
             },
             {
-                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
-                "device_id": "6c914b9d95c24078917340f6ce1514aa",
-                "disabled_by": null,
-                "entity_id": "light.sovrum_tak",
-                "name": null,
-                "platform": "tradfri",
-                "unique_id": "light-7e36515204400075-65542"
-            },
-            {
-                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
-                "device_id": "170bf27e0b1d4b788db2bb4414569d52",
-                "disabled_by": null,
-                "entity_id": "light.groventre",
-                "name": null,
-                "platform": "tradfri",
-                "unique_id": "light-7e36515204400075-65545"
-            },
-            {
-                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
-                "device_id": "06c7840475c042a0a3c46c80bf0933c1",
-                "disabled_by": null,
-                "entity_id": "light.nattduk_adam",
-                "name": null,
-                "platform": "tradfri",
-                "unique_id": "light-7e36515204400075-65541"
-            },
-            {
-                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
-                "device_id": "cbd87bba0afe443e9b4e143a923df2e6",
-                "disabled_by": null,
-                "entity_id": "light.kallarhall",
-                "name": null,
-                "platform": "tradfri",
-                "unique_id": "light-7e36515204400075-65549"
-            },
-            {
-                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
-                "device_id": "d52b9062da0f434e92c6ef15b19aa5b1",
-                "disabled_by": null,
-                "entity_id": "light.svartvitt_2",
-                "name": null,
-                "platform": "tradfri",
-                "unique_id": "light-7e36515204400075-65550"
-            },
-            {
-                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
-                "device_id": "a30926e862754a65a84eeb5ca420f583",
-                "disabled_by": null,
-                "entity_id": "light.kokbank",
-                "name": null,
-                "platform": "tradfri",
-                "unique_id": "light-7e36515204400075-65551"
-            },
-            {
-                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
-                "device_id": "2646e86359b74a40a9fb662d7dc36174",
+                "config_entry_id": "edfaf99000374243bfa78c3dc3fec2cb",
+                "device_id": "9267e3aa30334a798378d4fe7424ab92",
                 "disabled_by": null,
                 "entity_id": "light.pannrum",
                 "name": null,
@@ -209,49 +155,112 @@
                 "unique_id": "light-7e36515204400075-65547"
             },
             {
-                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
-                "device_id": "6d8ab20bec0e4090a6d98fb33dd12574",
+                "config_entry_id": "edfaf99000374243bfa78c3dc3fec2cb",
+                "device_id": "4d3a1796bd8e4fec8a7dd082db856f4a",
                 "disabled_by": null,
-                "entity_id": "light.kallartrapp",
+                "entity_id": "light.tradfri_bulb_12",
                 "name": null,
                 "platform": "tradfri",
-                "unique_id": "light-7e36515204400075-65548"
+                "unique_id": "light-7e36515204400075-65561"
             },
             {
-                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
-                "device_id": "4a9ca82430ea493db670e53bbc464649",
+                "config_entry_id": "edfaf99000374243bfa78c3dc3fec2cb",
+                "device_id": "0fa6ec79c1de4570a542b35259c41e6e",
                 "disabled_by": null,
-                "entity_id": "light.piano",
+                "entity_id": "light.kokbank",
                 "name": null,
                 "platform": "tradfri",
-                "unique_id": "light-7e36515204400075-65537"
+                "unique_id": "light-7e36515204400075-65551"
             },
             {
-                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
-                "device_id": "04b1aba6d74b4172bea72fcde764e322",
+                "config_entry_id": "edfaf99000374243bfa78c3dc3fec2cb",
+                "device_id": "74bf05923cc14a9e9c616cb4cbe296ab",
                 "disabled_by": null,
-                "entity_id": "light.svartvitt",
+                "entity_id": "light.groventre",
                 "name": null,
                 "platform": "tradfri",
-                "unique_id": "light-7e36515204400075-65546"
+                "unique_id": "light-7e36515204400075-65545"
             },
             {
-                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
-                "device_id": "a81e84ad26f5411ebeaffdc30901ddb9",
+                "config_entry_id": "edfaf99000374243bfa78c3dc3fec2cb",
+                "device_id": "9690e8a5ed7140f3a7f9a4fe49eaaf0e",
                 "disabled_by": null,
-                "entity_id": "light.lill_hall",
+                "entity_id": "light.tradfri_driver_3",
                 "name": null,
                 "platform": "tradfri",
-                "unique_id": "light-7e36515204400075-65538"
+                "unique_id": "light-7e36515204400075-65556"
             },
             {
-                "config_entry_id": "412baa0c003e49bb8e4b4ceb65afe01e",
-                "device_id": "eb2572ab7ba54a529c752ad0fabc0e53",
+                "config_entry_id": "edfaf99000374243bfa78c3dc3fec2cb",
+                "device_id": "fc520d93a1474887a43897f3f020cc16",
                 "disabled_by": null,
-                "entity_id": "light.sovrum_hal",
+                "entity_id": "light.tradfri_bulb_16",
                 "name": null,
                 "platform": "tradfri",
-                "unique_id": "light-7e36515204400075-65540"
+                "unique_id": "light-7e36515204400075-65559"
+            },
+            {
+                "config_entry_id": "edfaf99000374243bfa78c3dc3fec2cb",
+                "device_id": "06833bf0655c40f092b3a363306e642b",
+                "disabled_by": null,
+                "entity_id": "light.tradfri_bulb_13",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65560"
+            },
+            {
+                "config_entry_id": "edfaf99000374243bfa78c3dc3fec2cb",
+                "device_id": "5ff2c144aa4c4192bd89baf70e7744b1",
+                "disabled_by": null,
+                "entity_id": "light.tradfri_bulb_14",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65555"
+            },
+            {
+                "config_entry_id": "2a0d875a120b4de6b221d6d0eef524cd",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "weather.smhi_home",
+                "name": null,
+                "platform": "smhi",
+                "unique_id": "58.056323832898094, 12.205915862561113"
+            },
+            {
+                "config_entry_id": "edfaf99000374243bfa78c3dc3fec2cb",
+                "device_id": "13e8b38a005f4ee695bface2773819d4",
+                "disabled_by": null,
+                "entity_id": "light.tv_golvlampa",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65565"
+            },
+            {
+                "config_entry_id": "edfaf99000374243bfa78c3dc3fec2cb",
+                "device_id": "018b850cd28c4960a2a0b09674bad827",
+                "disabled_by": null,
+                "entity_id": "light.tv_fonster",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65566"
+            },
+            {
+                "config_entry_id": "edfaf99000374243bfa78c3dc3fec2cb",
+                "device_id": "04c51c329bff4f7ea8043fa7d1c1a634",
+                "disabled_by": null,
+                "entity_id": "light.hanna_sang",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65564"
+            },
+            {
+                "config_entry_id": "edfaf99000374243bfa78c3dc3fec2cb",
+                "device_id": "89030353e9e64a48a4b97e25ca4bc2c5",
+                "disabled_by": null,
+                "entity_id": "light.guest_window",
+                "name": null,
+                "platform": "tradfri",
+                "unique_id": "light-7e36515204400075-65567"
             }
         ]
     },

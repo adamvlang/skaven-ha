@@ -26,23 +26,25 @@ homeassistant:
 # Set up devices
 hue:
   bridges:
-    - host: 192.168.1.147
+    - host: 192.168.1.37
       allow_hue_groups: false
       allow_unreachable: true
 
 sonos:
   media_player:
     hosts: 
-    - 192.168.1.25
-    - 192.168.1.36
-    - 192.168.1.179
+    - 192.168.1.54
+    - 192.168.1.171
+    - 192.168.1.219
 media_player:
   - platform: philips_js
-    host: 192.168.1.96
+    host: 192.168.1.206
     
 tradfri:
-  host: 192.168.1.229
+  host: 192.168.1.214
   allow_tradfri_groups: false
+ 
+
 
 input_boolean:
   at_home:
